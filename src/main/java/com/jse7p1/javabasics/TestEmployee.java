@@ -117,8 +117,44 @@ abstract class Employee
 
 }
 */
+/*
+    Q3 What will be the output of the code below?
+
+
+    Answers:
+    a) Have a nice day!
+    b)Compile time Error.
+    c)Run time Error
+
+    Correct Answer:
+
+    b) Class must be abstract if any one method of class is abstract.
+
+ */
+/*
+ class employee
+{
+    abstract void employer();
+}
+class TestEmployee extends employee
+{
+    void employer()
+    {
+        System.out.println("Have a nice day!");
+    }
+    public static void main(String[] args)
+    {
+        TestEmployee te = new TestEmployee();
+        te.employer();
+    }
+}
+
+*/
+
 
 /*
+Testing Topic 2: Testing variable scope
+
     Q3 What will be the output of the code below?
 
 
@@ -313,4 +349,275 @@ Q9 Static variable’s value is same for all the objects(or instances) of the cl
         a) yes, instances(objects) of the same class share a single copy of static variables.
 
  */
+
+/*
+Q10 What will be the output of the code below?
+
+
+        Answers:
+        a)  x=9
+        b)Compile time Error.
+        c) x=10
+
+
+
+
+        Correct Answer:
+
+        b) Local variables can not be static allowed
+
+ */
+
+/*
+class TestEmployee {
+
+              static int Employee()
+             {
+                 static int x= 10;
+                 return --x;
+             }
+    public static void main(String args[]) {
+        System.out.println(Employee());
+    }
+}
+*/
+
+
+/*
+Q11 What will be the output of the code below?
+
+
+        Answers:
+        a)  x=21
+        b)Compile time Error.
+        c) x=22
+
+
+
+
+        Correct Answer:
+
+        c) x=22
+
+ */
+
+/*
+class TestEmployee {
+    static int x= 10;
+
+              static int Employee()
+             {
+
+                 return x = ++x + x++;
+             }
+    public static void main(String args[]) {
+        System.out.println(Employee());
+    }
+}
+
+*/
+
+
+/*
+Q12 What will be the output of the code below?
+
+
+        Answers:
+        a)  x=21
+        b)Compile time Error.
+        c) x=22
+
+
+
+
+        Correct Answer:
+
+        b) non-static variable cannot be referenced from a static method
+
+ */
+
+/*
+class TestEmployee {
+     int x= 10;
+
+              static int Employee()
+             {
+
+                 return x = ++x + --x;
+             }
+    public static void main(String args[]) {
+        System.out.println(Employee());
+    }
+}
+
+*/
+
+/*
+Q13 What will be the output of the code below?
+
+
+        Answers:
+        a)  x=12
+        b) x=10
+        c) Compile time Error.
+
+
+
+
+        Correct Answer:
+
+        c) non-static method cannot be referenced from a static method
+
+ */
+
+/*
+class TestEmployee {
+     int x= 10;
+
+              int Employee()
+             {
+                  int x= 12;
+                 return x;
+             }
+    public static void main(String args[]) {
+        System.out.println(Employee());
+    }
+}
+*/
+
+/*
+Q14 What will be the output of the code below?
+
+
+        Answers:
+        a)  x=12
+        b) x=10
+        c) Compile time Error.
+        d) Run time error.
+
+
+
+
+        Correct Answer:
+
+        c) main method should be static
+
+ */
+
+/*
+class TestEmployee {
+     int x= 10;
+
+               int Employee()
+             {
+                  int x= 12;
+                 return x;
+             }
+    public void main(String args[]) {
+        System.out.println(Employee());
+    }
+}
+
+*/
+
+/*
+Q15 What will be the output of the code below?
+
+
+        Answers:
+        a)  Total 2 cars manufactured
+        b) Total 2 cars manufactured
+        c) Compile time Error.
+        d) Total 0 cars manufactured
+
+
+
+
+        Correct Answer:
+
+        d) Total 0 cars manufactured
+
+ */
+
+/*
+class Company {
+        static int count = 2;
+
+    Company() {
+            count--;
+        }
+        public static void main(String arr[]) {
+            Company t1 = new Company();
+            Company t2 = new Company();
+            System.out.println("Total " + count + " cars manufactured");
+        }
+    }
+
+*/
+
+/*
+Q16 A static method can access :
+
+
+        Answers:
+        a) Static data
+        b) Non-static data
+        c) Both static and non-static data
+
+
+
+        Correct Answer:
+
+        b)static data
+*/
+
+/*
+Q17 A static method can access instance variable?
+
+
+        Answers:
+        a) yes
+        b) No
+        c) none
+
+
+
+        Correct Answer:
+
+        b) No
+*/
+
+/*
+Q18 What will be the output of the code below?
+
+
+        Answers:
+        a) -1
+        b) -2
+        c) -3
+        d)Compile time Error.
+
+
+        Correct Answer:
+
+        c) -3
+
+ */
+
+/*
+class TestEmployee {
+
+    static int Employee()
+    {
+
+        return x = x-- + x++;
+    }
+    public static void main(String args[]) {
+        System.out.println(Employee());
+    }
+    static int x= -1;
+}
+*/
+
+
 
