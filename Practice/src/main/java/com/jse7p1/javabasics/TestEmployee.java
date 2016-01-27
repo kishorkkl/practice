@@ -1260,3 +1260,425 @@ Q44 Can we inherit private methods?
 
  */
 
+
+/*
+Q45 What will be the output of the code below?
+
+
+        Answers:
+        a) Run time error
+        b)Compile time error
+        c) 5000 ABC
+
+        Correct Answer:
+
+        b) value can not be assigned to final variable.
+
+*/
+/*
+class TestEmployee{
+   final int esalary=5000;
+    String ename = "ABC";
+
+    TestEmployee(int sal,String name){
+        esalary = sal;
+        ename = name;
+    }
+    void display(){System.out.println(esalary+" "+ename);}
+
+    public static void main(String args[]){
+        TestEmployee s1 = new TestEmployee(5000,"ABC");
+        s1.display();
+    }
+}
+*/
+
+// Testing Topic 4: class constructor
+
+/*
+Q46 What will be the output of the code below?
+
+
+        Answers:
+        a) Run time error
+        b)Compile time error
+        c) Good Morning
+
+        Correct Answer:
+
+        c) Good Morning
+
+*/
+
+/*
+class TestEmployee{
+    TestEmployee(){System.out.println("Good Morning");}
+    public static void main(String args[]){TestEmployee te=new TestEmployee();}}
+*/
+
+/*
+Q47 What will be the output of the code below?
+
+
+        Answers:
+        a) Run time error
+        b)Compile time error
+        c) 5000 is salary of ABC
+
+        Correct Answer:
+
+        c) 5000 is salary of ABC
+
+*/
+/*
+class TestEmployee{
+    final int Salary=5000;
+    String ename ="ABC";
+
+    void display(){System.out.println(Salary+" is salary of "+ename);}
+
+    public static void main(String args[]){
+        TestEmployee s1=new TestEmployee();
+        s1.display();
+    }
+}
+*/
+
+/*
+Q48 What will be the output of the code below?
+
+
+        Answers:
+        a) Run time error
+        b)Compile time error
+        c) 5000 ABC
+
+        Correct Answer:
+
+        c) 5000 ABC
+
+*/
+/*
+class TestEmployee{
+    int esalary;
+    String ename;
+
+    TestEmployee(int sal,String name){
+        esalary = sal;
+        ename = name;
+    }
+    void display(){System.out.println(esalary+" "+ename);}
+
+    public static void main(String args[]){
+        TestEmployee s1 = new TestEmployee(5000,"ABC");
+        s1.display();
+    }
+}
+*/
+
+/*
+Q49 What will be the output of the code below?
+
+
+        Answers:
+        a) Run time error
+        b)Compile time error
+        c) 5000 ABC
+
+        Correct Answer:
+
+        b) Actual argument int can not be converted to String(See parameters in Constructor)
+
+*/
+/*
+class TestEmployee{
+    int esalary;
+    String ename;
+
+    TestEmployee(String name,int sal){
+        esalary = sal;
+        ename = name;
+    }
+    void display(){System.out.println(esalary+" "+ename);}
+
+    public static void main(String args[]){TestEmployee s1 = new TestEmployee(5000,"ABC");s1.display();}}
+*/
+
+
+/*
+Q50 What will be the output of the code below?
+
+
+        Answers:
+        a) Run time error
+        b)Compile time error
+        c) 5000 ABC
+
+        Correct Answer:
+
+        b) parameters given in Constructor but value is not given in main() method.
+
+*/
+/*
+class TestEmployee{
+    int esalary=5000;
+    String ename = "ABC";
+
+    TestEmployee(int sal,String name){
+        esalary = sal;
+        ename = name;
+    }
+    void display(){System.out.println(esalary+" "+ename);}
+
+    public static void main(String args[]){
+        TestEmployee s1 = new TestEmployee();
+        s1.display();
+    }
+}
+*/
+
+/*
+Q51 What will be the output of the code below?
+
+
+        Answers:
+        a) Hello
+        b)Run time error
+        c) Compile time error
+
+        Correct Answer:
+
+        a) when we do not declare constructor, compiler do it by itself
+
+*/
+/*
+class TestEmployee{public void employee(){System.out.println("hello");}
+
+    public static void main(String args[]){TestEmployee obj = new TestEmployee();obj.employee();}}
+*/
+
+/*
+Q52 What will be the output of the code below?
+
+
+        Answers:
+        a) employee salary is : 10
+        b)Run time error
+        c) Compile time error
+
+        Correct Answer:
+
+        a) employee salary is : 10
+
+*/
+
+/*
+class TestEmployee{
+    private int sal;
+    public TestEmployee(){ sal = 10;}
+    public TestEmployee(int salary){sal = salary;}
+    public int getValue(){return sal;}
+    public static void main(String args[]){TestEmployee te = new TestEmployee();System.out.println("employee salary is: "+te.getValue());}}
+
+*/
+
+/*
+Q53 What will be the output of the code below?
+
+
+        Answers:
+        a) x = 10
+        b)Run time error
+        c) Compile time error
+
+        Correct Answer:
+
+        b) Run time error
+
+*/
+/*
+class TestEmployee
+{
+    TestEmployee()
+    {
+        this(10);
+    }
+    TestEmployee(int x)
+    {
+        System.out.println("x="+x);
+    }
+}
+
+*/
+
+/*
+Q54 What will be the output of the code below?
+
+
+        Answers:
+        a) Run time error
+        b)1108,1109
+        c) Compile time error
+
+        Correct Answer:
+
+        b) 1108,1109
+
+*/
+
+/*
+class Employee {int eid1;Employee(int id){this.eid1 = id;}}
+
+class Engineer extends Employee {int eid2;Engineer(int id1, int id2) {super(id1);this.eid2 = id2;}void show() {System.out.println( eid1);System.out.println( eid2);}}
+
+class TestEmployee {public static void main(String args[]) {Engineer err = new Engineer(1108, 1109);err.show();}}
+*/
+
+/*
+Q55 What will be the output of the code below?
+
+
+        Answers:
+        a) Run time error
+        b)1108,1109
+        c) Compile time error
+
+        Correct Answer:
+
+        c) Compile time error
+
+*/
+
+/*
+class Employee {int eid1;Employee(int id){this.eid1 = id;}}
+
+class Engineer extends Employee {int eid2;Engineer(int id1, int id2) {this.eid1=id1;this.eid2 = id2;}void show() {System.out.println( eid1);System.out.println( eid2);}}
+
+class TestEmployee {public static void main(String args[]) {Engineer err = new Engineer(1108, 1109);err.show();}}
+*/
+
+/*
+Q56 What will be the output of the code below?
+
+
+        Answers:
+        a) Run time error
+        b) 200
+        c) Compile time error
+
+        Correct Answer:
+
+        c) 200
+
+*/
+
+/*
+class Rectangle {
+    int length;
+    int breadth;
+    int area;
+
+    Rectangle(int len,int bre){length  = len;breadth = bre;}
+    void area(){area=length*breadth;System.out.println(area);}}
+
+
+class TestEmployee {public static void main(String args[]) {Rectangle r1 = new Rectangle(20,10);r1.area();}}
+
+*/
+
+/*
+Q57 Can a constructor be private?
+
+
+        Answers:
+        a) yes
+        b) No
+        c) none of the above
+
+        Correct Answer:
+
+        a) Private constructor is used to serve singleton classes
+
+*/
+
+
+/*
+Q58 Can we call a constructor from other?
+
+
+        Answers:
+        a) yes
+        b) No
+        c) none of the above
+
+        Correct Answer:
+
+        a) calling one constructor from other is called constructor chianing.
+*/
+
+/*
+Q59 How manu arguments we can give in copy constructor?
+
+
+        Answers:
+        a) any number
+        b) one
+        c) none of the above
+
+        Correct Answer:
+
+        a) Copy constructor can have only one argument.
+*/
+
+/*
+Q60 what is return type of constructor?
+
+
+        Answers:
+        a) int
+        b) float
+        c) void
+        d) none of the above
+
+        Correct Answer:
+
+        d) Constructors does not have any return type.
+*/
+
+
+
+
+
+// Testing Topic 4: class constructor
+
+
+/*
+Q61 What will be the output of the code below?
+
+
+        Answers:
+        a) Run time error
+        b)Compile time error
+        c) 5000null, 5000 ABC XYZ Corp
+
+        Correct Answer:
+
+        c) 5000null, 5000 ABC XYZ Corp
+
+*/
+/*
+class TestEmployee{int esalary;String ename;String ecompany;
+
+    TestEmployee(int sal,String name){esalary = sal;ename = name;}
+
+    TestEmployee(int sal,String name, String cname){esalary = sal;ename = name;ecompany = cname;}
+
+    void display(){System.out.println(esalary+" "+ename+ ""+ecompany);}
+
+    public static void main(String args[]){TestEmployee s1 = new TestEmployee(5000,"ABC");TestEmployee s2 = new TestEmployee(5000,"ABC"," XYZ Corp");
+
+        s1.display();s2.display();}}
+
+*/
+
+
