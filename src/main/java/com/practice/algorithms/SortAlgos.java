@@ -90,3 +90,4 @@ class InsertionSort<T extends Comparable> extends AbstractSort{
         }
     }
 }
+
