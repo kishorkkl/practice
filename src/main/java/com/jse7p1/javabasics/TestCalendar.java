@@ -225,3 +225,191 @@ public class TestCalendar{
     }
 }
 */
+
+/*
+Q9.  javac.exe FileName.java  the command line is used to?
+
+    Answers:-
+
+    a) Execute the java file
+    b) Compile the java file
+    c) Execute and Compile the java file
+    d) None of the above
+
+        Correct Answer:
+        b)compile the java file
+
+*/
+
+/*Q10.What will be the output of the code below?
+
+Answers:-
+
+a)Compile Time Error
+b)1
+c)2
+d)-1
+
+correct answer:-
+d)-1
+
+ */
+
+
+/*
+public class TestCalendar {
+
+    static int i = 1;
+
+    public static void main(String[] args) {
+        int k = Employee();
+        System.out.println(Employee());
+    }
+
+    static int Employee() {
+        int j;
+        i = i++;
+        j = i--;
+        return i;
+
+    }
+
+}
+*/
+
+
+/*Q11.  What will be the output of the code below?*/
+
+/*Answers:-
+
+        a)Compile Time Error
+        b)Run Time Error
+        c)4
+        d)5
+
+        correct answers:-
+        b)main method must return a value of type void
+*/
+
+
+
+/*
+public class TestCalendar {
+
+    static int i = 5;
+
+    public static int main(String[] args) {
+        int k = cars();
+        return k;
+    }
+
+    static int cars() {
+        int j;
+        i = i++;
+        j = i--;
+        return j;
+
+    }
+}
+*/
+
+/*Q12.  What will be the output of the code below?*/
+
+/*Answers:-
+
+        a)Compile Time Error
+        b)Run Time Error
+        c)No. of Cars = 13
+        d)None of the above
+
+        correct answers:-
+       a)non-static method cars() cannot be referenced from a static context
+*/
+
+
+/*
+public class TestCalendar {
+
+    public static void main(String[] args) {
+        int k = cars();
+       System.out.println("No. of Cars = "+ k);
+    }
+
+     int cars() {
+        int j=7,k=6;
+        j = j++ + k--;
+        return j;
+
+    }
+}*/
+
+/*Q13.  What will be the output of the code below?*/
+
+/*Answers:-
+
+        a)Compile Time Error
+        b)Run Time Error
+        c)13
+        d)None of the Above
+
+        correct answers:-
+           b)Exception in thread "main"  java.lang.NoSuchMethodException:
+*/
+
+
+
+/*
+public class TestCalendar {
+
+    public static void main() {
+        int k = cars();
+        System.out.println(k);
+    }
+
+    static int cars() {
+        int j = 7, k = 6;
+        j = j++ + k--;
+        return j;
+
+    }
+}
+*/
+
+
+/*Q14.  What will be the output of the code below?*/
+
+/*Answers:-
+
+        a)Compile Time Error
+        b)Run Time Error
+        c)0,1
+        d)1,4
+
+        correct answers:-
+        a)non-static method cannot be referenced from a static context
+
+*/
+
+/*
+public class TestCalendar {
+
+     int i = 0;
+
+    public static void main(String[] args){
+        cars();
+    }
+
+     void cars() {
+
+        int j,k;
+        j = i*2 + i++;
+        k= j*3 + i++;
+        System.out.println(j +","+ k);
+
+    }
+}
+
+
+*/
+
+
