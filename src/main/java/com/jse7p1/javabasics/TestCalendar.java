@@ -287,14 +287,14 @@ public class TestCalendar {
         c)4
         d)5
 
-        correct answers:-
+        correct answer:-
         b)main method must return a value of type void
 */
 
 
 
-/*
-public class TestCalendar {
+
+/*public class TestCalendar {
 
     static int i = 5;
 
@@ -310,8 +310,8 @@ public class TestCalendar {
         return j;
 
     }
-}
-*/
+}*/
+
 
 /*Q12.  What will be the output of the code below?*/
 
@@ -322,7 +322,7 @@ public class TestCalendar {
         c)No. of Cars = 13
         d)None of the above
 
-        correct answers:-
+        correct answer:-
        a)non-static method cars() cannot be referenced from a static context
 */
 
@@ -352,7 +352,7 @@ public class TestCalendar {
         c)13
         d)None of the Above
 
-        correct answers:-
+        correct answer:-
            b)Exception in thread "main"  java.lang.NoSuchMethodException:
 */
 
@@ -385,7 +385,7 @@ public class TestCalendar {
         c)0,1
         d)1,4
 
-        correct answers:-
+        correct answer:-
         a)non-static method cannot be referenced from a static context
 
 */
@@ -412,4 +412,134 @@ public class TestCalendar {
 
 */
 
+/* Q15. Is it possible to use a member from a different package without importing that package ?
+Answers:-
 
+a)Yes
+b)No
+
+Correct Answer:-
+a) yes,by using the member's fully qualified name, which includes the package name
+
+ */
+
+
+/*Q16.import fruits.A* will import?
+
+Answers:-
+
+a)all members of fruits package.
+b)all members of fruits package begin with A.
+c)Nothing.
+
+Correct Answer:-
+C)It cannot be used to match a subset of the classes in a package.
+
+ */
+
+/*Q.17 import graphics.Rectangle.Square; is used to import?
+Answers:-
+
+a)Rectangle & Square classes of graphics package
+b)Rectangle class of graphics package
+c)nested class of enclosing class
+d)both b and c
+
+Correct Answer:-
+C) allows you to import the public nested classes of an enclosing class as
+import package.Class.NestedClass
+
+ */
+
+/*Q18.Qualified name of the package member and the path name to the java file are ?
+
+Answers:-
+a)opposite to each other
+b)parallel to each other
+
+ Correct Answer:-
+
+   b)  class name – graphics.Rectangle
+       pathname to file – graphics\Rectangle.java
+
+*/
+
+/*Q19. import static java.lang.Math.*; is used to import?
+
+Answers:-
+
+a)members of enclosing class
+b)static nested classes of enclosing class
+c)static members of enclosing class
+d)None of the above
+
+correct answer:-
+c)
+static import statement is used to import the static members of java.lang.Math so that you don't need to prefix the class name as
+double x = cos(PI * theta);
+
+without static import:-
+double x = Math.cos(Math.PI * theta);
+
+*/
+
+/*Q20.To use a public package member from outside its package?
+
+    A.Refer to the member by its fully qualified name
+    B.Import the package member
+    C.Import the member's entire package
+
+    Answers:-
+    a)B & C
+    b)B
+    c)C
+    d)A,B and C
+
+    correct answer:-
+    d)
+
+ */
+
+/*Q21. Java provides which specifier when no access modifier is declared ?
+
+Answers:-
+a)private
+b)protected
+c)package
+d)public
+
+    correct answer:-
+   c) Any class, field, method or constructor that has no declared access modifier is accessible only by classes in the same package
+
+*/
+
+/*Q22.Java compiler automatically imports which entire package for each source file?
+ Answers:-
+  a)java.lang package
+  b)java.util package
+  c)the package for the current file
+  d)both a & b
+  e)both a & c
+
+  correct answer:-
+  e)
+ Java compiler automatically imports two entire packages for each source file:
+(1) the java.lang package and
+(2) the current package (the package for the current file).
+  */
+
+/*Q23. A package is a collection of ?
+
+a)classes
+b)interfaces
+c)exceptions ,errors and enums
+
+
+Answers:-
+a)A
+b)A & B
+c)A,B and C
+
+correct answers:-
+c)A package is a collection of related Java entities (such as classes, interfaces, exceptions, errors and enums)
+*/
