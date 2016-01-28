@@ -833,7 +833,7 @@ Q28 What will be the output of the code below?
 
         Answers:
         a)  Total 2 cars manufactured
-        b) Total 2 cars manufactured
+        b) Total 1 cars manufactured
         c) Compile time Error.
         d) Total 0 cars manufactured
 
@@ -1613,7 +1613,7 @@ Q58 Can we call a constructor from other?
 
         Correct Answer:
 
-        a) calling one constructor from other is called constructor chianing.
+        a) calling one constructor from other is called constructor chaining.
 */
 
 /*
@@ -1649,7 +1649,7 @@ Q60 what is return type of constructor?
 
 
 
-// Testing Topic 4: class constructor
+// Testing Topic 5: constructor overloading
 
 
 /*
@@ -1681,4 +1681,329 @@ class TestEmployee{int esalary;String ename;String ecompany;
 
 */
 
+/*
+Q62 What will be the output of the code below?
 
+
+        Answers:
+        a) 112
+        b)Compile time error
+        c) 12
+
+        Correct Answer:
+
+        a) 112
+
+*/
+/*
+ class Employee{
+
+    private int eid;
+    Employee(){eid =100;}
+
+    Employee(int id){this();eid = eid+ id;}
+
+    public int geteid() {return eid;}
+
+    public void seteid(int eid1) {this.eid = eid1;}}
+
+class TestEmployee{public static void main(String args[]){Employee em = new Employee(12);System.out.println(em.geteid());}}
+*/
+
+/*
+Q63 What will be the output of the code below?
+
+
+        Answers:
+        a) 112
+        b)Compile time error
+        c) 12
+
+        Correct Answer:
+
+        c) 12
+
+*/
+/*
+ class Employee{
+
+    private int eid;
+    Employee(){eid =100;}
+
+    Employee(int id){eid = eid+ id;}
+
+    public int geteid() {return eid;}
+
+    public void seteid(int eid1) {this.eid = eid1;}}
+
+class TestEmployee{public static void main(String args[]){Employee em = new Employee(12);System.out.println(em.geteid());}}
+*/
+
+/*
+Q64 What will be the output of the code below?
+
+
+        Answers:
+        a) 112
+        b)Compile time error
+        c) -12
+
+        Correct Answer:
+
+        c) -12
+
+*/
+/*
+ class Employee{
+
+    private int eid;
+    Employee(){eid =100;}
+
+    Employee(int id){eid = eid+ id;}
+
+    public int geteid() {return eid;}
+
+    public void seteid(int eid1) {this.eid = eid1;}}
+
+class TestEmployee{public static void main(String args[]){Employee em = new Employee(-12);System.out.println(em.geteid());}}
+*/
+
+/*
+Q65 What will be the output of the code below?
+
+
+        Answers:
+        a) 112
+        b)Compile time error
+        c) -12
+        d) 88
+        Correct Answer:
+
+        d) 88
+
+*/
+/*
+ class Employee{
+
+    private int eid;
+    Employee(){eid =100;}
+
+    Employee(int id){this();eid = eid+ id;}
+
+    public int geteid() {return eid;}
+
+    public void seteid(int eid1) {this.eid = eid1;}}
+
+class TestEmployee{public static void main(String args[]){Employee em = new Employee(-12);System.out.println(em.geteid());}}
+*/
+
+/*
+Q66 What will be the output of the code below?
+
+
+        Answers:
+        a) 112
+        b)Compile time error
+        c) -12
+        d) 88
+        Correct Answer:
+
+        b) Compile time error
+
+*/
+/*
+ class Employee{
+
+    private int eid;
+    Employee(){eid =100;}
+
+    Employee(int id){this();eid = eid+ id;}
+
+    public int geteid() {return eid;}
+
+    public void seteid(int eid1) {this.eid = eid1;}}
+
+class TestEmployee{public static void main(String args[]){Employee em = new Employee(-12);System.out.println(em.seteid());}}
+*/
+
+/*
+Q67 What will be the output of the code below?
+
+
+        Answers:
+        a) Employee name: John  Employee name: Player
+        b)Compile time error
+        c) -12
+        Correct Answer:
+
+        a) Employee name: John  Employee name: Player
+
+*/
+/*
+class TestEmployee {String ename;TestEmployee() {}TestEmployee(String name) {ename = name;}
+
+    public static void main(String[] args) {TestEmployee te1  = new TestEmployee();TestEmployee te2 = new TestEmployee("John");te1.setName("Player");te2.getName();te1.getName();}
+
+    void setName(String name) {ename = name;}
+
+    void getName() {System.out.println("Employee name: " + ename);}}
+*/
+
+/*
+Q68 What will be the output of the code below?
+
+
+        Answers:
+        a)30,50
+        b)Compile time error
+        c) Runtime error
+        Correct Answer:
+
+        a) 30,50
+
+*/
+/*
+class TestEmployee{TestEmployee(){}
+    TestEmployee(int p, int z){System.out.println((p+z));}
+    TestEmployee(int p, int z, int b){System.out.println((p+z+b));}
+    public static void main(String []args){TestEmployee te = new TestEmployee(10, 20);TestEmployee te1 = new TestEmployee( 30,20);}}
+*/
+
+/*
+Q69 What will be the output of the code below?
+
+
+        Answers:
+        a)30,50
+        b)Compile time error
+        c) Runtime error
+        Correct Answer:
+
+        b) Compile time error
+
+*/
+/*
+class TestEmployee{TestEmployee(){}
+    TestEmployee(int p, int z){System.out.println((p+z));}
+    TestEmployee(int p, int z){System.out.println((p+z+b));}
+    public static void main(String []args){TestEmployee te = new TestEmployee(10, 20);TestEmployee te1 = new TestEmployee( 30,20);}}
+*/
+
+/*
+Q70 What will be the output of the code below?
+
+
+        Answers:
+        a)100, 500
+        b)Compile time error
+        c) Runtime error
+        Correct Answer:
+
+        c) Runtime error
+
+*/
+/*
+class TestEmployee {
+     int salary;
+
+    TestEmployee() {
+        salary = 100;
+    }
+
+    TestEmployee(int n) {
+        salary = n;
+    }
+
+    public static void main() {
+        TestEmployee e1 = new TestEmployee();
+        System.out.println(e1.salary);
+        TestEmployee e2 = new TestEmployee(500);
+        System.out.println(e2.salary);
+    }
+}
+*/
+
+/*
+Q71 What will be the output of the code below?
+
+
+        Answers:
+        a) 123
+        b)Compile time error
+        c) 1,2,3
+        Correct Answer:
+
+        a) 123
+
+*/
+/*
+public class TestEmployee {int a,b,c;TestEmployee(){this(1);}TestEmployee(int a){this(a,2);}
+
+    TestEmployee(int a, int b){this(a,b,3);}
+
+    TestEmployee(int a, int b,int c){this.a=1;this.b=2;this.c=3;System.out.println(a+""+b+""+c);}
+
+    public static void main(String args[]){TestEmployee te = new TestEmployee();}}
+*/
+
+/*
+Q72 Is constructor overloading same as method overloading ?
+
+
+        Answers:
+        a) yes
+        b) no
+        c) none of the above
+
+        Correct Answer:
+        a) yes
+*/
+
+/*
+Q73 What will be the output of the code below ?
+
+
+        Answers:
+        a) Blank(No output)
+        b) no
+        c) none of the above
+
+        Correct Answer:
+        a) Blank(No output) --- when no parameter is passed during object creation, default constructor will be called automatically.
+*/
+/*
+public class TestEmployee {int a,b,c;TestEmployee(){}TestEmployee(int a){this(a,2);}
+
+    TestEmployee(int a, int b){this(a,b,3);}
+
+    TestEmployee(int a, int b,int c){this.a=1;this.b=2;this.c=3;System.out.println(a+""+b+""+c);}
+
+    public static void main(String args[]){TestEmployee te = new TestEmployee();}}
+*/
+
+/*
+Q74 How compiler differentiate in constructor overloading ?
+
+
+        Answers:
+        a) according to declaration order
+        b) according top to below
+        c) according to given parameters
+        d)none of the above
+
+        Correct Answer:
+        c) according to given parameters
+*/
+
+/*
+Q75 when is constructor called in program ?
+
+
+        Answers:
+        a) at starting of program
+        b) at ending of program
+        c) none of the above
+
+        Correct Answer:
+        a) constructor is called at starting of program and at ending destructor is called.
+*/
