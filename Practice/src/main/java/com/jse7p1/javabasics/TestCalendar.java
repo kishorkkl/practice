@@ -412,6 +412,8 @@ public class TestCalendar {
 
 */
 
+/*Testing Topic 2: Import other Java packages to make them accessible in your code*/
+
 /* Q15. Is it possible to use a member from a different package without importing that package ?
 Answers:-
 
