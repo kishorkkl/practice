@@ -265,35 +265,30 @@ public class TestEmployee {
 
 
 /*
-    Testing Topic 2: Differentiate between object reference variables and primitive variables
+
     Q10. What will be the output of the code below?
 
     Answers:
 
     a)Compile Time Error
-    b)Run time Error
-    c)3
+    b)Run Time Error
+    c)50
+    d)None of these
 
 
     Correct Answer:
-    a) Because Arithmetic Operators can only be applied on Primitive Variables, not on Object reference variables.
+    c)
 
 */
 
-/*
-class Employee{
-    Employee(){
-        System.out.println("Employee Object Created");
-    }
-}
-public class TestEmployee {
+/*class TestEmployee {
     public static void main(String args[]){
-        int a = 1;
-        int b = 2;
-        Employee emp1 = new Employee();
-        Employee emp2 = new Employee();
-        System.out.println("Sum of Primitive Variables is : "+ (a+b));
-        System.out.println("Sum of Object Reference Variables is  : "+ (emp1+emp2));
+        for(int i=1,j=50;i<10;){
+            i=j;
+            System.out.println("Value of i will be : " + i);
+            i++;
+            j--;
+        }
     }
 }*/
 
@@ -467,3 +462,404 @@ public class TestEmployee {
 
 
 
+/*
+
+    Q16. What will be the output of the code below?
+
+    Answers:
+
+    a)Compile Time Error
+    b)Run Time Error
+    c)21000
+
+
+    Correct Answer:
+    c) As da instance variable is not initialized, so its 0 value will be added to salary
+
+*/
+
+/*class Employee{
+    int basic;
+    int hra;
+    int da;
+    int salary;
+    void get(int basic, int hra){
+        this.basic = basic;
+        this.hra = hra;
+        this.da = da;
+    }
+    void display(){
+        salary = basic + hra + da;
+        System.out.println("Salary is : " + salary);
+    }
+}
+class TestEmployee{
+    public static void main(String args[]){
+        Employee emp = new Employee();
+        emp.get(15000,6000);
+        emp.display();
+    }
+}*/
+
+
+
+
+/*
+
+    Q17. What will be the output of the code below?
+
+    Answers:
+
+    a)Compile Time Error
+    b)Run Time Error
+    c)21000
+
+
+    Correct Answer:
+    a) We can not assign a value to final instance variable salary.
+
+*/
+
+/*class Employee{
+    int basic = 0;
+    int hra = 0;
+    int da = 0;
+    final int salary = 100000;
+    void get(int basic, int hra){
+        this.basic = basic;
+        this.hra = hra;
+        this.da = da;
+    }
+    void display(){
+        salary = basic + hra + da;
+        System.out.println("Salary is : " + salary);
+    }
+}
+class TestEmployee{
+    public static void main(String args[]){
+        Employee emp = new Employee();
+        emp.get(15000,6000);
+        emp.display();
+    }
+}*/
+
+
+
+
+
+/*
+
+    Q18. What will be the output of the code below?
+
+    Answers:
+
+    a)Compile Time Error
+    b)Run Time Error
+    c)20000	8000	2000
+    d)30000	10000	5000
+
+
+    Correct Answer:
+    c)
+
+*/
+
+/*class Employee{
+    int basic;
+    int hra;
+    int da;
+
+    Employee(){
+        basic = 20000; hra = 8000; da = 2000;
+    }
+}
+class TestEmployee extends Employee {
+    int basic;
+    int hra;
+    int da;
+     TestEmployee(){
+         basic = 30000; hra = 10000; da = 5000;
+     }
+
+    public static void main(String args[]){
+        Employee emp = new TestEmployee();
+        System.out.println(emp.basic +  "\t" + emp.hra + "\t" + emp.da );
+    }
+}*/
+
+
+
+
+/*
+
+    Q19. What will be the output of the code below?
+
+    Answers:
+
+    a)Compile Time Error
+    b)Run Time Error
+    c)20000	8000	2000
+    d)30000	10000	5000
+
+
+    Correct Answer:
+    a) can not find method display()
+
+*/
+
+/*
+class Employee{
+    int basic;
+    int hra;
+    int da;
+
+    void insert(){
+        basic = 20000; hra = 8000; da = 2000;
+    }
+}
+class TestEmployee extends Employee {
+    int basic;
+    int hra;
+    int da;
+    void insert(){
+        basic = 30000; hra = 10000; da = 5000;
+    }
+    void display(){
+        System.out.println(basic +  "\t" + hra + "\t" + da );
+    }
+    public static void main(String args[]){
+        Employee emp = new TestEmployee();
+        emp.insert();
+        emp.display();
+    }
+}
+*/
+
+
+
+
+/*
+
+    Q20. What will be the output of the code below?
+
+    Answers:
+
+    a)Compile Time Error
+    b)Run Time Error
+    c)Employee Class Called
+    d)TestEmployee Class Called
+
+
+    Correct Answer:
+    d) TestEmployee Class Method display() will override the display() method of Employee Class.
+
+*/
+
+
+/*
+class Employee{
+    void display(){
+        System.out.println("Employee Class Called");
+    }
+}
+class TestEmployee extends Employee {
+    void display(){
+        System.out.println("TestEmployee Class Called");
+    }
+    public static void main(String args[]){
+        Employee emp = new TestEmployee();
+        emp.display();
+    }
+}
+*/
+
+/*
+
+    Q21. What will be the output of the code below?
+
+    Answers:
+
+    a)40000	30000	20000
+    b)20000	30000	40000
+    c)30000	20000	40000
+    d)40000	20000	30000
+
+
+    Correct Answer:
+    b)
+
+*/
+
+/*class Employee{
+    int getSalary(){
+        return 0;
+    }
+}
+class Employee1 extends Employee{
+    int getSalary(){
+        return 20000;
+    }
+}
+class Employee2 extends Employee{
+    int getSalary(){
+        return 30000;
+    }
+}
+class Employee3 extends Employee{
+    int getSalary(){
+        return 40000;
+    }
+}
+class TestEmployee extends Employee {
+    public static void main(String args[]){
+        Employee1 e1 = new Employee1();
+        Employee2 e2 = new Employee2();
+        Employee3 e3 = new Employee3();
+        e1.getSalary();
+        System.out.println(e1.getSalary() + "\t" + e2.getSalary() + "\t" + e3.getSalary());
+    }
+}*/
+
+
+
+
+/*
+    Testing Topic 2: Differentiate between object reference variables and primitive variables
+    Q22. What will be the output of the code below?
+
+    Answers:
+
+    a)Compile Time Error
+    b)Run time Error
+    c)3
+
+
+    Correct Answer:
+    a) Because Arithmetic Operators can only be applied on Primitive Variables, not on Object reference variables.
+
+*/
+
+/*
+class Employee{
+    Employee(){
+        System.out.println("Employee Object Created");
+    }
+}
+public class TestEmployee {
+    public static void main(String args[]){
+        int a = 1;
+        int b = 2;
+        Employee emp1 = new Employee();
+        Employee emp2 = new Employee();
+        System.out.println("Sum of Primitive Variables is : "+ (a+b));
+        System.out.println("Sum of Object Reference Variables is  : "+ (emp1+emp2));
+    }
+}*/
+
+
+
+
+/*
+
+    Q23. Primitive variables which are defined as part of an instance of a class are stored in which memory?
+
+    Answers:
+
+    a)Heap Memory
+    b)Stack Memory
+    c)None of these
+
+
+    Correct Answer:
+    b) Stored in Stack Memory
+
+*/
+
+
+/*
+
+    Q24. Primitive variables and Object Reference variables are both stored in which memory?
+
+    Answers:
+
+    a)Heap Memory
+    b)Stack Memory
+    c)None of these
+
+
+    Correct Answer:
+    b) Stored in Stack Memory
+
+*/
+
+
+
+
+/*
+
+    Q25. How many variables, objects and reference variables are created by the following lines of code?
+
+    Answers:
+
+    a)Compile Time Error
+    b)Run Time Error
+    c) 2 Variables, 2 Objects and 3 Reference Variables
+
+
+    Correct Answer:
+    c) 2 Variables, 2 Objects and 3 Reference Variables
+
+*/
+
+/*class Employee {
+    Employee() {
+        System.out.println("Employee Object Created");
+    }
+}
+
+class TestEmployee {
+    public static void main(String args[]){
+        int a, b;
+        Employee emp1, emp2;
+        emp1 = new Employee();
+        Employee emp3 = new Employee();
+    }
+}*/
+
+
+
+
+/*
+
+    Q26. Which of the following types are used defined in Java?
+
+    Answers:
+
+    a)Primitive Types
+    b)Object Reference Types
+    c)Both
+    d)None of these
+
+
+    Correct Answer:
+    b) Object Reference Types
+
+*/
+
+
+/*
+
+    Q27. How many Object Reference Types are there in Java?
+
+    Answers:
+
+    a)8
+    b)Not Defined
+    c)User Defined
+    d)None of these
+
+
+    Correct Answer:
+    b) Object Reference Types are user defined in Java
+
+*/
