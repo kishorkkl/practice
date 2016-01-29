@@ -438,7 +438,7 @@ public class TestEmployee {
 
 /*
 
-    Q15. What is default value of an object variable?
+    Q15. What will be the output of the code below?
 
     Answers:
 
@@ -462,3 +462,8 @@ public class TestEmployee {
         emp.salary(15000,6000);
     }
 }*/
+
+
+
+
+
