@@ -473,24 +473,24 @@ public class TestCalendar {
 
     Answers
 
-        a)21
-          31
+        a)28
+          29
         b)15
           34
-        c)21
+        c)28
           34
         d)15
-          31
+          29
 
       Correct Answer:
-         a)21
-           31
+         a)28
+           29
 */
 /*
 public class TestCalendar {
     public static void main(String args[]){
-             StringBuilder sb=new StringBuilder("Himanshu bansal");
-             System.out.println(sb.append("Ramesh").length());
+             StringBuilder sb=new StringBuilder("Java Platform");
+             System.out.println(sb.append("Object Oriented").length());
              System.out.println(sb.capacity());
  }
 }
