@@ -578,5 +578,492 @@ public class TestEmployee
     }
 */
 
+// Topic 2: Use parenthesis to override operator precedence
+
+
+/*
+Q28 What will be the output of the code below ?
+
+
+        Answers:
+        a) 4
+        b) 2
+        c) compile time error
+
+        Correct Answer:
+        b) 2
+*/
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+
+        int x = 1;
+        System.out.println( x << 1 * 2 >> 1);
+
+    }
+}
+*/
+
+/*
+Q29 What will be the output of the code below ?
+
+
+        Answers:
+        a) 4
+        b) 2
+        c) compile time error
+
+        Correct Answer:
+        a) 4
+*/
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+
+        int x = 1;
+        System.out.println( x << 1 * 2 );
+
+    }
+}
+*/
+
+/*
+Q30 What will be the output of the code below ?
+
+
+        Answers:
+        a) 4
+        b) 2
+        c) 0
+        d)compile time error
+
+        Correct Answer:
+        c) 0
+*/
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+
+        int x = 1;
+        System.out.println( x << 1 * 1 >> 2);
+
+    }
+}
+*/
+
+/*
+Q31 What will be the output of the code below ?
+
+
+        Answers:
+        a) 7
+        b) 5
+        c) 1
+        d)compile time error
+
+        Correct Answer:
+        a) 7
+*/
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+        int x = 1;
+        System.out.println( x++ + ++x * --x );
+    }
+}
+*/
+
+/*
+Q32 What will be the output of the code below ?
+
+
+        Answers:
+        a) 7
+        b) 5
+        c) 1
+        d)compile time error
+
+        Correct Answer:
+        b) 5
+*/
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+        int x = 1;
+        System.out.println( x++ + x++ * --x );
+    }
+}
+*/
+
+/*
+Q33 What will be the output of the code below ?
+
+
+        Answers:
+        a) 7
+        b) 5
+        c) 6
+        d)compile time error
+
+        Correct Answer:
+        c) 6
+*/
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+        int x = 1;
+        System.out.println( x++ + x++ + x-- );
+    }
+}
+*/
+
+/*
+Q34 What will be the output of the code below ?
+
+
+        Answers:
+        a) 7
+        b) 5
+        c) 6
+        d)compile time error
+
+        Correct Answer:
+        c) 6
+*/
+/*
+public class TestEmployee {
+    public static void main(String... args) {
+        int x = 1;
+        System.out.println( x++ + x++ + x-- );
+    }
+}
+*/
+
+/*
+Q35 What will be the output of the code below ?
+
+
+        Answers:
+        a) 7
+        b) 5
+        c) 6
+        d)compile time error
+
+        Correct Answer:
+        c) 6
+*/
+/*
+public class TestEmployee {
+    public static void main(String [] args) {
+        int x = 1;
+        System.out.println( ++x + + x^2 );
+    }
+}
+*/
+
+/*
+Q36 What will be the output of the code below ?
+
+
+        Answers:
+        a) 17
+        b) 15
+        c) 16
+        d)compile time error
+
+        Correct Answer:
+        b) 15
+*/
+/*
+public class TestEmployee {
+    public static void main(String [] args) {
+        int x = 0xf;
+        System.out.println( 0xf & 0x5 | 0xa );
+    }
+}
+*/
+
+/*
+Q37 What will be the output of the code below ?
+
+
+        Answers:
+        a) 9
+        b) 12
+        c) compile time error
+
+        Correct Answer:
+        a) 9
+*/
+/*
+public class TestEmployee {
+    public static void main(String [] args) {
+        int x = 0xf;
+        System.out.println( 3 + 3 * 2 );
+    }
+}
+*/
+
+/*
+Q38 What will be the output of the code below ?
+
+
+        Answers:
+        a) 18
+        b) 14
+        c) compile time error
+
+        Correct Answer:
+        b) 14
+*/
+/*
+public class TestEmployee {
+    public static void main(String [] args) {
+        System.out.println(4 + (5 * 6 / 3));
+    }
+}
+*/
+
+/*
+Q39 What will be the output of the code below ?
+
+
+        Answers:
+        a) 18
+        b) 14
+        c) compile time error
+
+        Correct Answer:
+        a) 18
+*/
+/*
+public class TestEmployee {
+    public static void main(String [] args) {
+        System.out.println((4 + 5) * 6 / 3);
+    }
+}
+*/
+
+/*
+Q40 What will be the output of the code below ?
+
+
+        Answers:
+        a) 12
+        b) 11
+        c) compile time error
+
+        Correct Answer:
+        b) 11
+*/
+/*
+class TestEmployee {
+    public static void main(String args[])
+    {
+        int x1 = 5;
+        int x2 = 6;
+        int x3;
+        x3 =  + + x2 * x1 / x2 + x2;
+        System.out.print(x3);
+    }
+}
+*/
+
+/*
+Q41 What will be the output of the code below ?
+
+
+        Answers:
+        a) 12
+        b) 11
+        c) compile time error
+
+        Correct Answer:
+        a) 12
+*/
+/*
+class TestEmployee {
+    public static void main(String args[])
+    {
+        int x1 = 5;
+        int x2 = 6;
+        int x3;
+        x3 =  + + x2 *  x1 / x2 + + ++x2;
+        System.out.print(x3);
+    }
+}
+*/
+
+/*
+Q42 What will be the output of the code below ?
+
+
+        Answers:
+        a) 18 5
+        b) 18 6
+        c) compile time error
+
+        Correct Answer:
+        b) 18 6
+*/
+/*
+class TestEmployee {
+
+    public static void main(String args[])
+    {
+        int x = 5;
+        System.out.println(++x * 3  + " " + + + x);
+    }
+}
+*/
+
+/*
+Q43 What will be the output of the code below ?
+
+
+        Answers:
+        a) 2
+        b) 3
+        c) compile time error
+        d) Run time error
+
+        Correct Answer:
+        d) Arithmetic exception(divide by zero is not possible)
+*/
+/*
+class TestEmployee {
+
+        public static void main(String args[])
+        {
+            int x , y = 2;
+            x = 11;
+            if (x != 10 && x / 0 == 0)
+                System.out.println(y);
+            else
+                System.out.println(++y);
+        }
+    }
+*/
+
+/*
+Q44 What will be the output of the code below ?
+
+
+        Answers:
+        a) 2
+        b) 3
+        c) compile time error
+        d) Run time error
+
+        Correct Answer:
+        b) 3 ( when first condition is false of && operator, then second condition is not executed)
+*/
+/*
+class TestEmployee {
+
+        public static void main(String args[])
+        {
+            int x , y = 2;
+            x = 10;
+            if (x != 10 && x / 0 == 0)
+                System.out.println(y);
+            else
+                System.out.println(++y);
+        }
+    }
+*/
+
+/*
+Q45 What will be the output of the code below ?
+
+
+        Answers:
+        a) 13 20
+        b) 20 20
+        c) compile time error
+
+        Correct Answer:
+        a) 13 20
+*/
+
+/*
+class TestEmployee
+{
+    public static void main(String[] args)
+    {
+        int x = 7 + 3 * 2;
+        int y = (7 + 3) * 2;
+        System.out.println(x + " " +y);
+    }
+}
+*/
+
+/*
+Q46 What is Precedence ?
+
+
+        Answers:
+        a) Priority of an operator
+        b) Priority of an operand
+        c) None of the Above
+
+        Correct Answer:
+        a) Priority of an operator
+*/
+
+/*
+Q47 Unary operator operates on ?
+
+
+        Answers:
+        a) Two operand
+        b) One operand
+        c) More than Two operand
+        d) None of the Above
+
+        Correct Answer:
+        b) One operand (++a, a-- etc.)
+*/
+
+/*
+Q48 Arithmetic operators are example of ?
+
+
+        Answers:
+        a) Unary Operator
+        b) Binary Operator
+        c) Ternary Operator
+        d) None of the Above
+
+        Correct Answer:
+        a) Binary Operator
+*/
+
+/*
+Q49 java has how many ternary operator ?
+
+
+        Answers:
+        a) 1
+        b) 2
+        c) None of the Above
+
+        Correct Answer:
+        a) 1
+*/
+
+/*
+Q50 Ternary operator is also known as ?
+
+
+        Answers:
+        a) Arithmetic operator
+        b) Assignment Operator
+        c) Conditional Operator
+        c) None of the Above
+
+        Correct Answer:
+        c) Conditional Operator (combination of two symbols ? and :)
+*/
 
 
