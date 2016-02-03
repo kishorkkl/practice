@@ -7,7 +7,7 @@ package com.jse7p1.operators;
  *  This class should Test the following
  *  a) Use Java operators
  *  b) Use parenthesis to override operator precedence
- *  c) Test equality between Strings and other objects using == and equals ()
+ *  c) Test equality between Strings and other objects using == and equals()
  */
 //  Topic:1 Java Operator:-
 /*
@@ -1064,6 +1064,457 @@ Q50 Ternary operator is also known as ?
 
         Correct Answer:
         c) Conditional Operator (combination of two symbols ? and :)
+*/
+
+// Topic 3 : Test equality between Strings and other objects using == and equals()
+
+/*
+Q51 What will be the output of the code below ?
+
+
+        Answers:
+        a) TRUE
+        b) FALSE
+        c) compile time error
+
+        Correct Answer:
+        b) FALSE
+*/
+
+/*
+class TestEmployee
+{
+    public static void main(String[] args)
+    {
+        String s1=new String("hello");
+        String s2=new String("hello");
+        if(s1==s2) {
+            System.out.println("TRUE");
+        } else{
+            System.out.println("FALSE");
+        }
+    }
+}
+*/
+
+/*
+Q52 What will be the output of the code below ?
+
+
+        Answers:
+        a) TRUE
+        b) FALSE
+        c) compile time error
+
+        Correct Answer:
+        a) TRUE
+*/
+
+/*
+class TestEmployee
+{
+    public static void main(String[] args)
+    {
+        String s1=new String("hello");
+        String s2=new String("hello");
+        if(s1.equals(s2)) {
+            System.out.println("TRUE");
+        } else{
+            System.out.println("FALSE");
+        }
+    }
+}
+*/
+
+/*
+Q53 What will be the output of the code below ?
+
+
+        Answers:
+        a) TRUE
+        b) FALSE
+        c) compile time error
+
+        Correct Answer:
+        a) TRUE
+*/
+
+/*
+class TestEmployee
+{
+    public static void main(String[] args)
+    {
+        String s1="hello";
+        String s2="hello";
+        if(s1==(s2)) {
+            System.out.println("TRUE");
+        } else{
+            System.out.println("FALSE");
+        }
+    }
+}
+*/
+
+
+/*
+Q54 What will be the output of the code below ?
+
+
+        Answers:
+        a) TRUE
+        b) FALSE
+        c) compile time error
+
+        Correct Answer:
+        b) FALSE
+*/
+
+/*
+class TestEmployee
+{
+    public static void main(String[] args)
+    {
+        String s1="hello";
+        String s2= new String("hello");
+        if(s1==(s2)) {
+            System.out.println("TRUE");
+        } else{
+            System.out.println("FALSE");
+        }
+    }
+}
+*/
+
+/*
+Q55 What will be the output of the code below ?
+
+
+        Answers:
+        a) TRUE
+        b) FALSE
+        c) compile time error
+
+        Correct Answer:
+        b) FALSE
+*/
+
+/*
+class TestEmployee
+{
+    public static void main(String[] args)
+    {
+        String s1="hello";
+        String s2= new String("hello");
+        String s3=s2;
+        if(s1==(s3)) {
+            System.out.println("TRUE");
+        } else{
+            System.out.println("FALSE");
+        }
+    }
+}
+*/
+
+
+/*
+Q56 What will be the output of the code below ?
+
+
+        Answers:
+        a) TRUE
+        b) FALSE
+        c) compile time error
+
+        Correct Answer:
+        b) FALSE
+*/
+
+/*
+class TestEmployee
+{
+    public static void main(String[] args)
+    {
+        String s1="hello";
+        String s2= new String("hello");
+        String s3=s2;
+        if(s1==(s3)) {
+            System.out.println("TRUE");
+        } else{
+            System.out.println("FALSE");
+        }
+    }
+}
+*/
+
+/*
+Q57 What will be the output of the code below ?
+
+
+        Answers:
+        a) TRUE
+        b) FALSE
+        c) compile time error
+
+        Correct Answer:
+        a) TRUE
+*/
+
+/*
+class TestEmployee
+{
+    public static void main(String[] args)
+    {
+        String s1="hello";
+        String s2="Hello";
+        if(s1==(s2)) {
+            System.out.println("TRUE");
+        } else{
+            System.out.println("FALSE");
+        }
+    }
+}
+*/
+
+
+/*
+Q58 What will be the output of the code below ?
+
+
+        Answers:
+        a) TRUE
+        b) FALSE
+        c) compile time error
+
+        Correct Answer:
+        c) compile time error
+*/
+
+/*
+class TestEmployee
+{
+    public static void main(String[] args)
+    {
+        String s1=new String("hello");
+        String s2=new String("Hello");
+        if (s1.compareTo(s2)){
+            System.out.println("TRUE");
+        } else{
+            System.out.println("FALSE");
+        }
+    }
+}
+
+*/
+
+/*
+Q59 What will be the output of the code below ?
+
+
+        Answers:
+        a) TRUE
+        b) FALSE
+        c) compile time error
+
+        Correct Answer:
+        b) false
+*/
+
+/*
+class TestEmployee {
+    String name;
+    TestEmployee(String name){
+        this.name=name;
+    }
+    public static void main(String args[]){
+
+        TestEmployee te1= new TestEmployee("BYE");
+        TestEmployee te2= new TestEmployee("BYE");
+        System.out.println(te1.equals(te2));
+    }
+}
+*/
+
+/*
+Q60 What will be the output of the code below ?
+
+
+        Answers:
+        a) TRUE
+        b) FALSE
+        c) compile time error
+
+        Correct Answer:
+        a) TRUE
+*/
+
+/*
+class TestEmployee {
+
+    public static void main(String args[]){
+
+        String x = "hello";
+        String y = new String(new char[] { 'h', 'e', 'l', 'l', 'o' });
+        System.out.println(x.equals(y));
+    }
+}
+*/
+
+
+/*
+Q61 What will be the output of the code below ?
+
+
+        Answers:
+        a) TRUE
+        b) FALSE
+        c) compile time error
+
+        Correct Answer:
+        b) FALSE
+*/
+
+/*
+class TestEmployee {
+
+    public static void main(String args[]){
+
+        String x = "hello";
+        String y = new String(new char[] { 'h', 'e', 'l', 'l', 'o' });
+        System.out.println(x==y);
+    }
+}
+*/
+
+/*
+Q62 What will be the output of the code below ?
+
+
+        Answers:
+        a) TRUE
+        b) FALSE
+        c) compile time error
+
+        Correct Answer:
+        a) TRUE
+*/
+
+/*
+class TestEmployee {
+
+    public static void main(String args[]){
+
+        String x = "hello";
+        String y = "he" + "llo";
+        System.out.println(x==y);
+    }
+}
+*/
+
+
+/*
+Q63 what is ==?
+
+
+        Answers:
+        a) Method
+        b) Operator
+        c) None of above
+
+        Correct Answer:
+        b) Operator
+*/
+
+/*
+Q64 what is difference between == and equals?
+
+
+        Answers:
+        a) == is operator and equals is method
+        b) == is method and equals is operator
+        c) Both are method
+        d) Both are operator
+
+        Correct Answer:
+        a) == is operator and equals is method (equals() is method defined in java.lang.Object class)
+*/
+
+/*
+Q65 What will be the output of the code below ?
+
+
+        Answers:
+        a) TRUE
+        b) FALSE
+        c) compile time error
+
+        Correct Answer:
+        b) FALSE
+*/
+
+/*
+class TestEmployee {
+
+    public static void main(String args[]){
+
+        String str1 = "abc";
+        String str2 = "aBc";
+        System.out.println (str1.equals(str2));
+    }
+}
+
+*/
+
+/*
+Q66 What will be the output of the code below ?
+
+
+        Answers:
+        a) TRUE
+        b) FALSE
+        c) compile time error
+
+        Correct Answer:
+        a) TRUE
+*/
+
+/*
+class TestEmployee {
+
+    public static void main(String args[]){
+
+        String str1 = "abc";
+        String str2 = "aBc";
+        System.out.println (str1.equalsIgnoreCase(str2));
+    }
+}
+*/
+
+/*
+Q67 == Operator compares the?
+
+
+        Answers:
+        a) reference identity
+        b) only contents
+        c) Both
+        d) None of the above
+
+        Correct Answer:
+        a) reference identity
+*/
+
+/*
+Q68 Equals() method compares?
+
+
+        Answers:
+        a) reference identity
+        b) only contents
+        c) Both
+        d) None of the above
+
+        Correct Answer:
+        b) only contents
 */
 
 
