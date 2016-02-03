@@ -1437,7 +1437,6 @@ public class TestCalendar {
 }*/
 
 /*Q53.What will be the output of the code below?*/
-
 /*Answers:-
 A)21
 B)12
