@@ -1465,9 +1465,1180 @@ public class TestCalendar {
 }
 */
 
+/*Q54.What will be the output of the code below?*/
+/*Answers:-
+A)ABC
+B)AB
+C)BC
+D)B
+
+correct answer:-
+D)B */
+
+/*
+public class TestCalendar {
+    public static void main(String[] args) {int value = 100;
+switch (value) {
+        case 10 * 1:System.out.print("A");break;
+        case 10 * 10:System.out.print("B");break;
+        case 10 * 100:System.out.print("C");break;
+        }}}
+*/
+
+/*Q55.What will be the output of the code below?*/
+/*Answers:-
+A)ABC
+B)AB
+C)BC
+D)B
+
+correct answer:-
+D)B */
+
+
+/*
+public class TestCalendar {
+    public static void main(String[] args) {int value = 0;
+switch (value) {
+        case 2:System.out.print("A");break;
+        case 5 % 5:System.out.print("B");break;
+        case 1:System.out.print("C");break;
+        }}}
+*/
+
+/*Q56.What will be the output of the code below?*/
+/*Answers:-
+A)00123
+B)0123
+C)12341234
+D)0123401234
+
+correct answer:-
+A)00123 */
+
+/*
+public class TestCalendar {
+    public static void main(String[] args) {
+
+        for (int i = 0; i < 4; i++) {
+            switch (i) {
+                case 0:
+                    System.out.print(i);
+            }
+            System.out.print(i);
+        }
+    }
+}
+*/
+
+/*Q57.What will be the output of the code below?*/
+/*Answers:-
+A)00123
+B)0123
+C)123
+D)01
+
+correct answer:-
+D)01 */
+
+/*
+public class TestCalendar {
+    public static void main(String[] args) {
+        for (int i = 0; i <4; ++i) {
+            switch (i) {
+                case 0:
+                case 1:
+                    System.out.print(i);
+                    continue;
+                default:
+                    break;
+            }
+        }
+    }
+}
+*/
+
+/*Q58.What will be the output of the code below?*/
+/*Answers:-
+A)false
+B)Compile time error
+C)Run time error
+
+
+correct answer:-
+B)Compile time error
+ Type mismatch: cannot convert from int to byte
+  A byte can never equal 1000 so an error occurs. */
+
+/*public class TestCalendar {
+        public static void main(String[] args) {
+            byte value = 100;
+            switch (value) {
+                case 100 * 10:
+                    System.out.println(false);
+                    return ;
+            }
+        }
+}*/
+
+/*Q59.What will be the output of the code below?*/
+/*Answers:-
+A)Values are h, e
+B)Values are h, e??
+C)?
+
+
+correct answer:-
+A)Values are h, e */
+
+/*
+public class TestCalendar {
+    public static void main(String[] args) {
+        String value = "Hello";
+        switch (value.charAt(0)) {
+            case 'H':
+                switch (value.charAt(1)) {
+                    case 'e':
+                        System.out.println("Values are h, e");
+                        break;
+                    case 'l':
+                        System.out.println("?");
+                        break;
+                }
+                break;
+            case 'e':
+                System.out.println("?");
+                break;
+        }
+    }
+}
+*/
+
+/*Q60.What will be the output of the code below?*/
+/*Answers:-
+A)true
+B)truetrue
+C)compile time error
+D)Run time error
+
+correct answer:-
+C)compile time error : duplicate case label*/
+
+/*
+public class TestCalendar {
+        public static void main(String[] args) {
+
+            int value = 10;
+            switch (value) {
+                case 10:
+                    System.out.println(true);
+                    break;
+                case 10:
+                    System.out.println(true);
+                    break;
+            }
+        }
+    }
+*/
+
+/*Q61.What will be the output of the code below?*/
+/*Answers:-
+A)10
+B)20
+C)compile time error
+D)0
+
+correct answer:-
+A)10*/
+
+/*public class TestCalendar {
+        public static void main(String[] args) {
+            int a = 10,b=20;
+            char c = '%';
+            switch (c) {
+                case '%':
+                    System.out.println(a % b);
+                    break;
+            }
+        }
+    }*/
+
+/*Q62.What will be the output of the code below?*/
+/*Answers:-
+A)150
+B)30
+C)Run time error
+D)Compile time error
+
+correct answer:-
+A)150*/
+
+/*
+public class TestCalendar {
+        public static void main(String[] args) {
+            int a = 5,b=6;
+            char c = '*';
+            switch (c) {
+                case '*':
+                    System.out.println(a *= b *= 5);
+                    break;
+            }
+        }
+    }
+*/
+
+/*Q63.What will be the output of the code below?*/
+/*Answers:-
+A)5
+B)30
+C)Run time error
+D)Compile time error
+
+correct answer:-
+A)5*/
+
+/*
+public class TestCalendar {
+        public static void main(String[] args) {
+            int a = 5,b=6;
+            char c = '/';
+            switch (c) {
+                case '/':
+                    System.out.println(a *= b /= 5);
+                    break;
+            }
+        }
+    }
+*/
+
+/*Q64.What will be the output of the code below?*/
+/*Answers:-
+A)5611
+B)5613
+C)6713
+D)6715
+
+correct answer:-
+B)5613*/
+
+/*
+public class TestCalendar {
+    public static void main(String[] args) {
+        int a = 5, b = 6;
+        char c = '+';
+        if ((c != '*')) {
+            switch (c) {
+                case '+':
+                    System.out.print(a++);
+                    System.out.print(b++);
+                    System.out.print(a + b);
+                    break;
+            }
+        }
+    }
+}
+*/
+
+/*Q65.What will be the output of the code below?*/
+/*Answers:-
+A)9716
+B)8614
+C)9718
+D)9714
+
+correct answer:-
+A)9716*/
+
+/*
+
+public class TestCalendar {
+    public static void main(String[] args) {
+        int a = 8, b = 6;
+        char c = '+';
+        if ((c != '*')) {
+            switch (c) {
+                case '+':
+                    System.out.print(++a);
+                    System.out.print(++b);
+                    System.out.print(a + b);
+                    break;
+            }
+        }
+    }
+}
+*/
+
+/*Q66.What will be the output of the code below?*/
+/*Answers:-
+A)9616
+B)9716
+C)8715
+D)8717
+
+correct answer:-
+A)9616*/
+
+/*public class TestCalendar {
+    public static void main(String[] args) {
+        int a = 8, b = 6;
+        char c = '+';
+        if ((c != '*')) {
+            switch (c) {
+                case '+':
+                    System.out.print(++a);
+                    System.out.print(b++);
+                    System.out.print(a + b);
+                    break;
+            }
+        }
+    }
+}*/
+
+/*Q67.What will be the output of the code below?*/
+/*Answers:-
+A)457
+B)347
+C)349
+D)459
+
+correct answer:-
+A)457*/
+
+/*
+public class TestCalendar {
+    public static void main(String[] args) {
+        int a = 4, b = 5;
+        char c = '+';
+        if ((c == '+')) {
+            switch (c) {
+                case '+':
+                    System.out.print(a--);
+                    System.out.print(b--);
+                    System.out.print(a + b);
+                    break;
+            }
+        }
+    }
+}
+*/
+
+/*Q68.What will be the output of the code below?*/
+/*Answers:-
+A)9412
+B)8412
+C)9512
+D)9413
+
+correct answer:-
+A)9412*/
+
+/*public class TestCalendar {
+    public static void main(String[] args) {
+        int a = 9, b = 5;
+        char c = '+';
+        if ((c == '+')) {
+            switch (c) {
+                case '+':
+                    System.out.print(a--);
+                    System.out.print(--b);
+                    System.out.print(a + b);
+                    break;
+            }
+        }
+    }
+}*/
+
+/*Q69.What will be the output of the code below?*/
+/*Answers:-
+A)941
+B)840
+C)940
+D)No output
+
+correct answer:-
+D)No output*/
+
+/*public class TestCalendar {
+    public static void main(String[] args) {
+        int a = 9, b = 5;
+        char c = '%';
+        if ((c == '+')) {
+            switch (c) {
+                case '%':
+                    System.out.print(a--);
+                    System.out.print(--b);
+                    System.out.print(a % b);
+                    break;
+            }
+        }
+    }
+}*/
+
+/*Q70.What will be the output of the code below?*/
+/*Answers:-
+A)941
+B)840
+C)940
+D)No output
+
+correct answer:-
+C)940*/
+
+/*
+public class TestCalendar {
+    public static void main(String[] args) {
+        int a = 9, b = 5;
+        char c = '%';
+        if ((c != '+')) {
+            switch (c) {
+                case '%':
+                    System.out.print(a--);
+                    System.out.print(--b);
+                    System.out.print(a % b);
+                    break;
+            }
+        }
+    }
+}
+*/
+
+/*Q71.What will be the output of the code below?*/
+/*Answers:-
+A)941
+B)840
+C)940
+D)No output
+
+correct answer:-
+C)940*/
+
+/*public class TestCalendar {
+    public static void main(String[] args) {
+        int a = 9, b = 5;
+        char c = '%';
+        if ((c != '+' || c== '%')) {
+            switch (c) {
+                case '%':
+                    System.out.print(a--);
+                    System.out.print(--b);
+                    System.out.print(a % b);
+                    break;
+            }
+        }
+    }
+}*/
+
+/*Q72.What will be the output of the code below?*/
+/*Answers:-
+A)10
+B)0
+C)5
+D)No output
+
+correct answer:-
+C)5*/
+
+/*
+public class TestCalendar {
+    public static void main(String[] args) {
+        int a = 10, b = 5;
+        if (a>1) {
+            switch (a) {
+                case 10:
+                    System.out.print(a = b);
+                    break;
+            }
+        }
+    }
+}
+*/
+
+/*Q73.What will be the output of the code below?*/
+/*Answers:-
+A)12
+B)0
+C)32
+D)No output
+
+correct answer:-
+B)0
+& (bitwise and) */
+
+/*
+
+public class TestCalendar {
+    public static void main(String[] args) {
+        int a = 8, b = 4;
+        if (a>1) {
+            switch (a) {
+                case 8:
+                    System.out.print(a & b);
+                    break;
+            }
+        }
+    }
+}
+
+*/
+
+/*Q74.What will be the output of the code below?*/
+/*Answers:-
+A)12
+B)0
+C)32
+D)No output
+
+correct answer:-
+A)12
+| (bitwise or) */
+
+/*
+public class TestCalendar {
+    public static void main(String[] args) {
+        int a = 8, b = 4;
+        if (a>1) {
+            switch (a) {
+                case 8:
+                    System.out.print(a | b);
+                    break;
+            }
+        }
+    }
+}
+*/
+
+/*Q75.What will be the output of the code below?*/
+/*Answers:-
+A)12
+B)0
+C)32
+D)No output
+
+correct answer:-
+A)12
+^ (bitwise XOR) */
+
+
+/*
+public class TestCalendar {
+    public static void main(String[] args) {
+        int a = 8, b = 4;
+        if (a>1) {
+            switch (a) {
+                case 8:
+                    System.out.print(a ^ b);
+                    break;
+            }
+        }
+    }
+}
+
+*/
+
+/*Q76.What will be the output of the code below?*/
+/*Answers:-
+A)1000
+B)1110
+C)0001
+D)0111
+
+correct answer:-
+D)0111
+ 	~ (bitwise compliment)  */
+
+/*
+public class TestCalendar {
+    public static void main(String[] args) {
+        int a = 8;
+            switch (a) {
+                case 8:
+                    System.out.print(Integer.toBinaryString(~a));
+                    break;
+            }
+        }
+    }
+*/
+
+/*Q77.What will be the output of the code below?*/
+/*Answers:-
+A)4100
+B)81000
+C)121100
+D)9111
+
+correct answer:-
+A)4100
+ << (left shift)*/
+
+/*
+public class TestCalendar {
+    public static void main(String[] args) {
+        int a = 1;
+            switch (a) {
+                case 1:
+                    System.out.print(a<<2);
+                    System.out.print(Integer.toBinaryString(a<<2));
+                    break;
+            }
+        }
+    }
+*/
+
+/*Q78.What will be the output of the code below?*/
+/*Answers:-
+A)210
+B)81000
+C)121100
+D)4100
+
+correct answer:-
+A)210
+ 	>> (right shift)*/
+
+/*public class TestCalendar {
+    public static void main(String[] args) {
+        int a = 8;
+            switch (a) {
+                case 8:
+                    System.out.print(a>>2);
+                    System.out.print(Integer.toBinaryString(a>>2));
+                    break;
+            }
+        }
+    }*/
+
+/*Q79.What will be the output of the code below?*/
+/*Answers:-
+A)210
+B)311
+C)5101
+D)4100
+
+correct answer:-
+B)311
+ >>> (zero fill right shift)*/
+
+/*
+public class TestCalendar {
+    public static void main(String[] args) {
+        int a = 12;
+            switch (a) {
+                case 12:
+                    System.out.print(a>>>2);
+                    System.out.print(Integer.toBinaryString(a>>>2));
+                    break;
+            }
+        }
+    }
+*/
+
+/*Q80.What will be the output of the code below?*/
+/*Answers:-
+A)4100
+B)311
+C)5101
+D)None of the above
+
+correct answer:-
+D)None of the above
+ <<< No such operator in java*/
+
+
+/*public class TestCalendar {
+    public static void main(String[] args) {
+        int a = 12;
+            switch (a) {
+                case 12:
+                    System.out.print(a<<<2);
+                    System.out.print(Integer.toBinaryString(a<<<2));
+                    break;
+            }
+        }
+    }*/
+
+/*Q81.What will be the output of the code below?*/
+/*Answers:-
+A)true
+B)false
+
+correct answer:-
+A)true */
+
+/*
+public class TestCalendar {
+    public static void main(String[] args) {
+        boolean t=true,f=false;
+        int n=0;
+        if(t==true && f == false)
+            switch (n) {
+                case 0:
+                    System.out.print(t && f || t && t);
+                    break;
+            }
+        }
+    }
+*/
+
+
+/*Q82.What will be the output of the code below?*/
+/*Answers:-
+A)true
+B)false
+
+correct answer:-
+A)true */
+
+/*
+
+public class TestCalendar {
+    public static void main(String[] args) {
+        boolean t=true,f=false;
+        int n=0;
+        if(t==true && f == false)
+            switch (n) {
+                case 0:
+                    System.out.print(t || f || t || t);
+                    break;
+            }
+        }
+    }
+*/
+
+/*Q83.What will be the output of the code below?*/
+/*Answers:-
+A)true
+B)false
+
+correct answer:-
+A)true */
+
+/*
+public class TestCalendar {
+    public static void main(String[] args) {
+        boolean t=true,f=false;
+        int n=0;
+        if(t==true && f == false)
+            switch (n) {
+                case 0:
+                    System.out.print(t || f && t || t);
+                    break;
+            }
+        }
+    }
+*/
+
+/*Q84.What will be the output of the code below?*/
+/*Answers:-
+A)true
+B)false
+
+correct answer:-
+B)false */
+
+
+/*
+public class TestCalendar {
+    public static void main(String[] args) {
+        boolean t=true,f=false;
+        int n=0;
+        if(t==true && f == false)
+            switch (n) {
+                case 0:
+                    System.out.print(t && f && t && t);
+                    break;
+            }
+        }
+    }
+*/
+
+/*Q85.What will be the output of the code below?*/
+/*Answers:-
+A)true
+B)false
+
+correct answer:-
+B)false */
+
+
+/*
+public class TestCalendar {
+    public static void main(String[] args) {
+        boolean t=true,f=false;
+        int n=0;
+        if(t==true && f == false)
+            switch (n) {
+                case 0:
+                    System.out.print(!(t && f || t && t));
+                    break;
+            }
+        }
+    }
+*/
+
+/*Q86.What will be the output of the code below?*/
+/*Answers:-
+A)true
+B)false
+
+correct answer:-
+B)false */
+
+/*
+public class TestCalendar {
+    public static void main(String[] args) {
+        boolean t=true,f=false;
+        int n=0;
+        if(t==true && f == false)
+            switch (n) {
+                case 0:
+                    System.out.print(!(t && !f || t && !t));
+                    break;
+            }
+        }
+    }*/
+
+/*Q87.What will be the output of the code below?*/
+/*Answers:-
+A)28
+B)4
+C)12
+D)None of the above
+
+correct answer:-
+A)28*/
+
+/*
+public class TestCalendar {
+    public static void main(String[] args) {
+        int a = 12,b=4;
+            switch (a) {
+                case 12:
+                    System.out.print(a += b += a);
+                    break;
+            }
+        }
+    }
+*/
+
+
+/*Q88.What will be the output of the code below?*/
+/*Answers:-
+A)14
+B)28
+C)22
+D)None of the above
+
+correct answer:-
+C)22*/
+
+
+/*
+
+public class TestCalendar {
+    public static void main(String[] args) {
+        int a = 12,b=4;
+            switch (a) {
+                case 12:
+                    System.out.print(a += b += a /=2);
+                    break;
+            }
+        }
+    }
+*/
+
+
+/*Q89.What will be the output of the code below?*/
+/*Answers:-
+A)84
+B)52
+C)13
+D)None of the above
+
+correct answer:-
+A)84*/
+
+
+/*
+public class TestCalendar {
+    public static void main(String[] args) {
+        int a = 12,b=4;
+            switch (a) {
+                case 12:
+                    System.out.print(a *= b +=a /=b );
+                    break;
+            }
+        }
+    }
+*/
+
+
+/*Q90.What will be the output of the code below?*/
+/*Answers:-
+A)0
+B)48
+C)12
+D)None of the above
+
+correct answer:-
+B)48*/
+
+/*public class TestCalendar {
+    public static void main(String[] args) {
+        int a = 12,b=4;
+            switch (a) {
+                case 12:
+                    System.out.print(a *= b +=a % b );
+                    break;
+            }
+        }
+    }*/
+
+/*Q91.What will be the output of the code below?*/
+/*Answers:-
+A)0
+B)8
+C)12
+D)None of the above
+
+correct answer:-
+B)8
+*/
+
+
+/*
+public class TestCalendar {
+    public static void main(String[] args) {
+        int a = 12,b=4;
+            switch (a) {
+                case 12:
+                    System.out.print(a -= b +=a % b );
+                    break;
+            }
+        }
+    }
+*/
 
 
 
+/*Q92.What will be the output of the code below?*/
+/*Answers:-
+A)0
+B)8
+C)24
+D)20
+
+correct answer:-
+D)20
+(According to precedence order of Assignment operator (Right to Left))*/
+
+/*public class TestCalendar {
+    public static void main(String[] args) {
+        int a = 12,b=4;
+            switch (a) {
+                case 12:
+                    System.out.print(a += b +=b += b % b);
+                    break;
+            }
+        }
+    }*/
+
+/*Q93.What will be the output of the code below?*/
+/*Answers:-
+A)28
+B)8
+C)24
+D)20
+
+correct answer:-
+A)28
+(According to precedence order of Assignment operator (Right to Left))*/
+/*
+public class TestCalendar {
+    public static void main(String[] args) {
+    int a = 12,b=4;
+    switch (a) {
+        case 12:
+            System.out.print(a -= b -=b += b * b);
+            break;
+    }
+}
+}*/
+
+/*Q94.What will be the output of the code below?*/
+/*Answers:-
+A)0
+B)3
+C)-3
+D)-1
+
+correct answer:-
+C)-3
+(According to precedence order of Assignment operator (Right to Left))*/
+
+
+/*public class TestCalendar {
+    public static void main(String[] args) {
+        int a = 12,b=4;
+            switch (a) {
+                case 12:
+                    System.out.print(a /= b -=b + b );
+                    break;
+            }
+        }
+    }*/
+
+
+/*Q95.What will be the output of the code below?*/
+/*Answers:-
+A)8
+B)96
+C)52
+D)0
+
+correct answer:-
+C)52
+(According to precedence order of Assignment operator (Right to Left))*/
+
+
+/*
+public class TestCalendar {
+    public static void main(String[] args) {
+        int a = 12,b=4;
+            switch (a) {
+                case 12:
+                    System.out.print(a % b + b + b * a);
+                    break;
+            }
+        }
+    }
+
+*/
+
+
+/*Q96.What will be the output of the code below?*/
+/*Answers:-
+A)8
+B)12
+C)-8
+D)0
+
+correct answer:-
+B)12
+(According to precedence order of Assignment operator (Right to Left))*/
+
+/*public class TestCalendar {
+    public static void main(String[] args) {
+        int a = 12,b=4;
+            switch (a) {
+                case 12:
+                    System.out.print(a %= b += b += b -= a *=b);
+                    break;
+            }
+        }
+    }*/
+
+
+/*Q97.What will be the output of the code below?*/
+/*Answers:-
+A)8
+B)4
+C)-8
+D)0
+
+correct answer:-
+C)-8
+(According to precedence order of Assignment operator (Right to Left))*/
+
+/*
+public class TestCalendar {
+    public static void main(String[] args) {
+        int a = 2,b=4;
+            switch (a) {
+                case 2:
+                    System.out.print(a *= b -= a *=b);
+                    break;
+            }
+        }
+    }
+*/
+
+
+/*Q98.What will be the output of the code below?*/
+/*Answers:-
+A)8
+B)4
+C)1
+D)2
+
+correct answer:-
+D)2
+(According to precedence order of Assignment operator (Right to Left))*/
+
+/*
+public class TestCalendar {
+    public static void main(String[] args) {
+        int a = 2,b=4;
+            switch (a) {
+                case 2:
+                    System.out.print(a *= b -= a +=b /=b);
+                    break;
+            }
+        }
+    }
+*/
+
+
+/*Q99.What will be the output of the code below?*/
+/*Answers:-
+A)8
+B)4
+C)1
+D)None of the above
+
+correct answer:-
+D)None of the above
+compile time error: expecting variable instead of 2 */
+
+
+/*
+public class TestCalendar {
+    public static void main(String[] args) {
+        int a = 2,b=4;
+            switch (a) {
+                case 2:
+                    System.out.print(a *= b -= a +=b * 2 /=b );
+                    break;
+            }
+        }
+    }
+*/
+
+
+/*Q100.What will be the output of the code below?*/
+/*Answers:-
+A)0
+B)1
+C)192
+D)None of the above
+
+correct answer:-
+A)0
+(According to precedence order of Assignment operator (Right to Left))
+*/
+
+/*
+public class TestCalendar {
+    public static void main(String[] args) {
+        int a = 2,b=4;
+            switch (a) {
+                case 2:
+                    System.out.print(a *= b *= a *=b %= b );
+                    break;
+            }
+        }
+    }
+
+*/
 
 
 
