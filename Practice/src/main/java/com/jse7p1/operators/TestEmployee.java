@@ -423,7 +423,7 @@ public class TestEmployee{public static void main(String args[]){int x = 5, y = 
 */
 
 /*
-Q22 What will be the output of the code below ?
+Q23 What will be the output of the code below ?
 
 
         Answers:
@@ -448,7 +448,7 @@ public class TestEmployee{
 
 
 /*
-Q23 What will be the output of the code below ?
+Q24 What will be the output of the code below ?
 
 
         Answers:
@@ -471,7 +471,7 @@ public class TestEmployee{
 
 
 /*
-Q24 What will be the output of the code below ?
+Q25 What will be the output of the code below ?
 
 
         Answers:
@@ -500,7 +500,7 @@ public class TestEmployee{
 */
 
 /*
-Q25 What will be the output of the code below ?
+Q26 What will be the output of the code below ?
 
 
         Answers:
@@ -525,7 +525,7 @@ Q25 What will be the output of the code below ?
 */
 
 /*
-Q26 What will be the output of the code below ?
+Q27 What will be the output of the code below ?
 
 
         Answers:
@@ -551,7 +551,7 @@ class TestEmployee {
 */
 
 /*
-Q27 What will be the output of the code below ?
+Q28 What will be the output of the code below ?
 
 
         Answers:
@@ -578,11 +578,302 @@ public class TestEmployee
     }
 */
 
-// Topic 2: Use parenthesis to override operator precedence
+/*
+Q29 What will be the output of the code below ?
 
+
+        Answers:
+        a) 11
+        b) 12
+        c) 13
+        d) compile time error
+
+        Correct Answer:
+        b) 12
+*/
+/*
+public class TestEmployee {
+
+    public static void main(String args[]) {
+        int a = 60;
+        int b = 13;
+        int c = 0;
+        c = a & b;
+        System.out.println(c);
+    }
+}
+*/
+/*
+Q30 What will be the output of the code below ?
+
+
+        Answers:
+        a) 61
+        b) 60
+        c) 62
+        d) compile time error
+
+        Correct Answer:
+        a) 61
+*/
+/*
+public class TestEmployee {
+
+    public static void main(String args[]) {
+        int a = 60;
+        int b = 13;
+        int c = 0;
+        c = a | b;
+        System.out.println(c);
+    }
+}
+*/
 
 /*
-Q28 What will be the output of the code below ?
+Q31 What will be the output of the code below ?
+
+
+        Answers:
+        a) 61
+        b) 55
+        c) 49
+        d) compile time error
+
+        Correct Answer:
+        c) 49
+*/
+/*
+public class TestEmployee {
+
+    public static void main(String args[]) {
+        int a = 60;
+        int b = 13;
+        int c = 0;
+        c = a ^ b;
+        System.out.println(c);
+    }
+}
+*/
+
+/*
+Q32 What will be the output of the code below ?
+
+
+        Answers:
+        a) 0
+        b) 1
+        c) 7
+        d) compile time error
+
+        Correct Answer:
+        a) 0
+*/
+/*
+public class TestEmployee {
+
+    public static void main(String args[]) {
+        int a = 60;
+        int b = 13;
+        int c = 0;
+        c = a >> b;
+        System.out.println(c);
+    }
+}
+*/
+
+/*
+Q33 What will be the output of the code below ?
+
+
+        Answers:
+        a) True
+        b) False
+        c) compile time error
+
+        Correct Answer:
+        b) False
+*/
+/*
+public class TestEmployee {
+
+    public static void main(String args[]) {
+        boolean a = true;
+        boolean b = false;
+
+        System.out.println(a&&b);
+    }
+}
+*/
+
+/*
+Q34 What will be the output of the code below ?
+
+
+        Answers:
+        a) True
+        b) False
+        c) compile time error
+
+        Correct Answer:
+        a) True
+*/
+/*
+public class TestEmployee {
+
+    public static void main(String args[]) {
+        boolean a = true;
+        boolean b = false;
+
+        System.out.println(a||b);
+    }
+}
+*/
+
+/*
+Q35 What will be the output of the code below ?
+
+
+        Answers:
+        a) True
+        b) False
+        c) compile time error
+
+        Correct Answer:
+        b) False
+*/
+/*
+public class TestEmployee {
+
+    public static void main(String args[]) {
+        boolean a = true;
+        boolean b = false;
+
+        System.out.println(!(a||b));
+    }
+}
+*/
+
+/*
+Q36 What will be the output of the code below ?
+
+
+        Answers:
+        a) True
+        b) False
+        c) compile time error
+
+        Correct Answer:
+        a) True
+*/
+/*
+public class TestEmployee {
+
+    public static void main(String args[]) {
+        boolean a = true;
+        boolean b = false;
+
+        System.out.println(!(a&&b));
+    }
+}
+*/
+
+/*
+Q37 What will be the output of the code below ?
+
+
+        Answers:
+        a) 5
+        b) 10
+        c) compile time error
+
+        Correct Answer:
+        a) 10
+*/
+/*
+public class TestEmployee {
+
+    public static void main(String args[]) {
+       int  a = 15,c = 10;
+        c %= a ;
+        System.out.println(c);
+    }
+}
+*/
+
+/*
+Q38 What will be the output of the code below ?
+
+
+        Answers:
+        a) 10
+        b) 0
+        c) compile time error
+
+        Correct Answer:
+        b) 0
+*/
+/*
+public class TestEmployee {
+
+    public static void main(String args[]) {
+       int  a = 10,c = 05;
+        c &= a ;
+        System.out.println(c);
+    }
+}
+*/
+
+/*
+Q39 What will be the output of the code below ?
+
+
+        Answers:
+        a) 15
+        b) 10
+        c) compile time error
+
+        Correct Answer:
+        a) 15
+*/
+/*
+public class TestEmployee {
+
+    public static void main(String args[]) {
+       int  a = 15,c = 10;
+        c |= a ;
+        System.out.println(c);
+    }
+}
+*/
+
+/*
+Q40 What will be the output of the code below ?
+
+
+        Answers:
+        a) 24
+        b) 30
+        c) compile time error
+
+        Correct Answer:
+        b) 30
+*/
+/*
+public class TestEmployee {
+
+    public static void main(String args[]) {
+        int x,y;
+        x = y = -2 + 5 * 7 - 7 / 2 % 5;
+        System.out.println(x);
+    }
+}
+
+*/
+
+// Topic 2: Use parenthesis to override operator precedence
+
+/*
+Q41 What will be the output of the code below ?
 
 
         Answers:
@@ -605,7 +896,7 @@ public class TestEmployee {
 */
 
 /*
-Q29 What will be the output of the code below ?
+Q42 What will be the output of the code below ?
 
 
         Answers:
@@ -628,7 +919,7 @@ public class TestEmployee {
 */
 
 /*
-Q30 What will be the output of the code below ?
+Q43 What will be the output of the code below ?
 
 
         Answers:
@@ -652,7 +943,7 @@ public class TestEmployee {
 */
 
 /*
-Q31 What will be the output of the code below ?
+Q44 What will be the output of the code below ?
 
 
         Answers:
@@ -674,7 +965,7 @@ public class TestEmployee {
 */
 
 /*
-Q32 What will be the output of the code below ?
+Q45 What will be the output of the code below ?
 
 
         Answers:
@@ -696,7 +987,7 @@ public class TestEmployee {
 */
 
 /*
-Q33 What will be the output of the code below ?
+Q46 What will be the output of the code below ?
 
 
         Answers:
@@ -718,7 +1009,7 @@ public class TestEmployee {
 */
 
 /*
-Q34 What will be the output of the code below ?
+Q47 What will be the output of the code below ?
 
 
         Answers:
@@ -740,7 +1031,7 @@ public class TestEmployee {
 */
 
 /*
-Q35 What will be the output of the code below ?
+Q48 What will be the output of the code below ?
 
 
         Answers:
@@ -762,7 +1053,7 @@ public class TestEmployee {
 */
 
 /*
-Q36 What will be the output of the code below ?
+Q49 What will be the output of the code below ?
 
 
         Answers:
@@ -784,7 +1075,7 @@ public class TestEmployee {
 */
 
 /*
-Q37 What will be the output of the code below ?
+Q50 What will be the output of the code below ?
 
 
         Answers:
@@ -805,7 +1096,7 @@ public class TestEmployee {
 */
 
 /*
-Q38 What will be the output of the code below ?
+Q51 What will be the output of the code below ?
 
 
         Answers:
@@ -825,7 +1116,7 @@ public class TestEmployee {
 */
 
 /*
-Q39 What will be the output of the code below ?
+Q52 What will be the output of the code below ?
 
 
         Answers:
@@ -845,7 +1136,7 @@ public class TestEmployee {
 */
 
 /*
-Q40 What will be the output of the code below ?
+Q53 What will be the output of the code below ?
 
 
         Answers:
@@ -870,7 +1161,7 @@ class TestEmployee {
 */
 
 /*
-Q41 What will be the output of the code below ?
+Q54 What will be the output of the code below ?
 
 
         Answers:
@@ -895,7 +1186,7 @@ class TestEmployee {
 */
 
 /*
-Q42 What will be the output of the code below ?
+Q55 What will be the output of the code below ?
 
 
         Answers:
@@ -918,7 +1209,7 @@ class TestEmployee {
 */
 
 /*
-Q43 What will be the output of the code below ?
+Q56 What will be the output of the code below ?
 
 
         Answers:
@@ -946,7 +1237,7 @@ class TestEmployee {
 */
 
 /*
-Q44 What will be the output of the code below ?
+Q57 What will be the output of the code below ?
 
 
         Answers:
@@ -974,7 +1265,7 @@ class TestEmployee {
 */
 
 /*
-Q45 What will be the output of the code below ?
+Q58 What will be the output of the code below ?
 
 
         Answers:
@@ -999,7 +1290,7 @@ class TestEmployee
 */
 
 /*
-Q46 What is Precedence ?
+Q59 What is Precedence ?
 
 
         Answers:
@@ -1012,7 +1303,7 @@ Q46 What is Precedence ?
 */
 
 /*
-Q47 Unary operator operates on ?
+Q60 Unary operator operates on ?
 
 
         Answers:
@@ -1026,7 +1317,7 @@ Q47 Unary operator operates on ?
 */
 
 /*
-Q48 Arithmetic operators are example of ?
+Q61 Arithmetic operators are example of ?
 
 
         Answers:
@@ -1040,7 +1331,7 @@ Q48 Arithmetic operators are example of ?
 */
 
 /*
-Q49 java has how many ternary operator ?
+Q62 java has how many ternary operator ?
 
 
         Answers:
@@ -1053,7 +1344,7 @@ Q49 java has how many ternary operator ?
 */
 
 /*
-Q50 Ternary operator is also known as ?
+Q63 Ternary operator is also known as ?
 
 
         Answers:
@@ -1069,7 +1360,7 @@ Q50 Ternary operator is also known as ?
 // Topic 3 : Test equality between Strings and other objects using == and equals()
 
 /*
-Q51 What will be the output of the code below ?
+Q64 What will be the output of the code below ?
 
 
         Answers:
@@ -1098,7 +1389,7 @@ class TestEmployee
 */
 
 /*
-Q52 What will be the output of the code below ?
+Q65 What will be the output of the code below ?
 
 
         Answers:
@@ -1127,7 +1418,7 @@ class TestEmployee
 */
 
 /*
-Q53 What will be the output of the code below ?
+Q66 What will be the output of the code below ?
 
 
         Answers:
@@ -1157,7 +1448,7 @@ class TestEmployee
 
 
 /*
-Q54 What will be the output of the code below ?
+Q67 What will be the output of the code below ?
 
 
         Answers:
@@ -1186,7 +1477,7 @@ class TestEmployee
 */
 
 /*
-Q55 What will be the output of the code below ?
+Q68 What will be the output of the code below ?
 
 
         Answers:
@@ -1217,7 +1508,7 @@ class TestEmployee
 
 
 /*
-Q56 What will be the output of the code below ?
+Q69 What will be the output of the code below ?
 
 
         Answers:
@@ -1247,7 +1538,7 @@ class TestEmployee
 */
 
 /*
-Q57 What will be the output of the code below ?
+Q70 What will be the output of the code below ?
 
 
         Answers:
@@ -1277,7 +1568,7 @@ class TestEmployee
 
 
 /*
-Q58 What will be the output of the code below ?
+Q71 What will be the output of the code below ?
 
 
         Answers:
@@ -1307,7 +1598,7 @@ class TestEmployee
 */
 
 /*
-Q59 What will be the output of the code below ?
+Q72 What will be the output of the code below ?
 
 
         Answers:
@@ -1335,7 +1626,7 @@ class TestEmployee {
 */
 
 /*
-Q60 What will be the output of the code below ?
+Q73 What will be the output of the code below ?
 
 
         Answers:
@@ -1361,7 +1652,7 @@ class TestEmployee {
 
 
 /*
-Q61 What will be the output of the code below ?
+Q74 What will be the output of the code below ?
 
 
         Answers:
@@ -1386,7 +1677,7 @@ class TestEmployee {
 */
 
 /*
-Q62 What will be the output of the code below ?
+Q75 What will be the output of the code below ?
 
 
         Answers:
@@ -1412,7 +1703,7 @@ class TestEmployee {
 
 
 /*
-Q63 what is ==?
+Q76 what is ==?
 
 
         Answers:
@@ -1425,7 +1716,7 @@ Q63 what is ==?
 */
 
 /*
-Q64 what is difference between == and equals?
+Q77 what is difference between == and equals?
 
 
         Answers:
@@ -1439,7 +1730,7 @@ Q64 what is difference between == and equals?
 */
 
 /*
-Q65 What will be the output of the code below ?
+Q78 What will be the output of the code below ?
 
 
         Answers:
@@ -1465,7 +1756,7 @@ class TestEmployee {
 */
 
 /*
-Q66 What will be the output of the code below ?
+Q79 What will be the output of the code below ?
 
 
         Answers:
@@ -1490,7 +1781,7 @@ class TestEmployee {
 */
 
 /*
-Q67 == Operator compares the?
+Q80 == Operator compares the?
 
 
         Answers:
@@ -1504,7 +1795,7 @@ Q67 == Operator compares the?
 */
 
 /*
-Q68 Equals() method compares?
+Q81 Equals() method compares?
 
 
         Answers:
@@ -1516,5 +1807,244 @@ Q68 Equals() method compares?
         Correct Answer:
         b) only contents
 */
+/*
+Q82 What will be the output of the code below ?
+
+
+        Answers:
+        a) Yes No
+        b) No Yes
+        c) Compile time Error
+        d) Run time Error
+
+        Correct Answer:
+        a) Yes No
+*/
+/*
+public final class TestEmployee {
+    public static void main(String args[]) {
+        String text = new String("SUV");aEquals(text);aOperator(text);}
+    private static final String CAR = "SUV";
+    private static void aEquals(String a) {
+        if (CAR.equals(a)) {System.out.println("Yes");}
+        else {System.out.println("No");}}
+    private static void aOperator(String a) {
+        if (a == CAR) {System.out.println("Yes");}
+        else {System.out.println("No");}}}
+*/
+
+/*
+Q83 What will be the output of the code below ?
+
+
+        Answers:
+        a) Yes No
+        b) No Yes
+        c) Compile time Error
+        d) Run time Error
+
+        Correct Answer:
+        c) Compile time Error
+*/
+/*
+public final class TestEmployee {
+    public static void main(String args[]) {
+        String text = new String("SUV");Equals(text);aOperator(text);}
+    private static final String CAR = "SUV";
+    private static void aEquals(String a) {
+        if (CAR.equals(a)) {System.out.println("Yes");}
+        else {System.out.println("No");}}
+    private static void aOperator(String a) {
+        if (a == CAR) {System.out.println("Yes");}
+        else {System.out.println("No");}}}
+*/
+
+/*
+Q84 What will be the output of the code below ?
+
+
+        Answers:
+        a) Yes No
+        b) No No
+        c) Yes Yes
+        d) Compile time Error
+
+        Correct Answer:
+        c) Yes Yes
+*/
+/*
+public final class TestEmployee {
+    public static void main(String args[]) {
+        String text = "SUV";aEquals(text);aOperator(text);}
+    private static final String CAR = "SUV";
+    private static void aEquals(String a) {
+        if (CAR.equals(a)) {System.out.println("Yes");}
+        else {System.out.println("No");}}
+    private static void aOperator(String a) {
+        if (a == CAR) {System.out.println("Yes");}
+        else {System.out.println("No");}}}
+*/
+
+/*
+Q85 What will be the output of the code below ?
+
+
+        Answers:
+        a) Yes No
+        b) No Yes
+        c) Yes Yes
+        d) Compile time Error
+
+        Correct Answer:
+        b) No Yes
+*/
+/*
+public final class TestEmployee {
+    public static void main(String args[]) {
+        String text = "suv";aEquals(text);String texl = "SUV";aOperator(texl);}
+    private static final String CAR = "SUV";
+    private static void aEquals(String a) {
+        if (CAR.equals(a)) {System.out.println("Yes");}
+        else {System.out.println("No");}}
+    private static void aOperator(String a) {
+        if (a == CAR) {System.out.println("Yes");}
+        else {System.out.println("No");}}}
+*/
+
+/*
+Q86 What will be the output of the code below ?
+
+
+        Answers:
+        a) True False
+        b) False True
+        c) Compile time Error
+
+        Correct Answer:
+        a) True False
+*/
+/*
+public final class TestEmployee {
+        public static void main(String[] args) {
+            Integer obj1 = new Integer(75);
+            Integer obj2 = new Integer(75);
+            System.out.println(obj1.equals(obj2));
+            obj1 = new Integer(32);
+            obj2 = new Integer(26);
+            System.out.println(obj1.equals(obj2));
+        }
+    }
+*/
+
+/*
+Q87 What will be the output of the code below ?
+
+
+        Answers:
+        a) True False
+        b) False True
+        c) Compile time Error
+
+        Correct Answer:
+        a) True False
+*/
+/*
+public class TestEmployee {
+    public static void main(String args[]) {
+        String Str1 = new String("First");
+        String Str2 = Str1;
+        String Str3 = new String("Second");
+        boolean val;
+        val = Str1.equals( Str2 );
+        System.out.println(val );
+        val = Str1.equals( Str3 );
+        System.out.println(val );
+    }
+}
+*/
+
+/*
+Q88 What will be the output of the code below ?
+
+
+        Answers:
+        a) True False
+        b) True True
+        c) Compile time Error
+
+        Correct Answer:
+        b) True True
+*/
+/*
+public class TestEmployee {
+    public static void main(String args[]) {
+        String Str1 = new String("First");
+        String Str2 = Str1;
+        String Str3 = new String("First");
+        String Str4 = Str3;
+        boolean val;
+        val = Str1.equals( Str2 );
+        System.out.println(val );
+        val = Str3.equals( Str4 );
+        System.out.println(val );
+    }
+}
+*/
+
+/*
+Q89 What will be the output of the code below ?
+
+        Answers:
+        a) Equal
+        b) Not Equal
+        c) Compile time Error
+
+        Correct Answer:
+        b) Not Equal
+*/
+/*
+class Employee {
+    private double a, b;
+    public Employee(double a, double b) {this.a = a;this.b = b;}}
+public class TestEmployee {
+    public static void main(String[] args) {
+        Employee c1 = new Employee(5, 10);
+        Employee c2 = new Employee(5, 10);
+        if (c1.equals(c2)) {
+            System.out.println("Equal ");
+        } else {
+            System.out.println("Not Equal ");
+        }
+    }
+}
+*/
+
+/*
+Q90 What will be the output of the code below ?
+
+        Answers:
+        a) Equal
+        b) Not Equal
+        c) Compile time Error
+
+        Correct Answer:
+        a) Equal (Here, we overriding equals() method)
+*/
+
+/*
+class Employee {
+    private double a, b;
+    public Employee(double a, double b) {this.a = b;this.a = b;}
+    public boolean equals(Object obj) {
+        if (obj == this) {return true;}
+        if (!(obj instanceof Employee)) {return false;}
+        Employee e = (Employee) obj;return Double.compare(a, e.a) == 0 && Double.compare(b, e.b) == 0;}}
+public class TestEmployee {
+    public static void main(String[] args) {Employee c1 = new Employee(5, 10);Employee c2 = new Employee(5, 10);
+        if (c1.equals(c2)) {System.out.println("Equal ");}
+        else {System.out.println("Not Equal ");}}}
+*/
+
+
 
 
