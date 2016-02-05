@@ -12,7 +12,7 @@ package com.jse7p1.datatypes;
 
 
 /*
-     Testing Topic 1: Declare and initialize variables
+    Testing Topic 1: Declare and initialize variables
     Q1. What will be the output of the code below?
 
     Answers:
@@ -771,14 +771,14 @@ public class TestEmployee {
 
 
     Correct Answer:
-    b) Stored in Stack Memory
+    a) Stored in Heap Memory
 
 */
 
 
 /*
 
-    Q24. Primitive variables and Object Reference variables are both stored in which memory?
+    Q24. Primitive variables and Object Reference type variables are both stored in which memory?
 
     Answers:
 
@@ -854,12 +854,118 @@ class TestEmployee {
     Answers:
 
     a)8
-    b)Not Defined
+    b)4
     c)User Defined
     d)None of these
 
 
     Correct Answer:
-    b) Object Reference Types are user defined in Java
+    c) Object Reference Types are user defined in Java
+
+*/
+
+
+
+
+
+/*
+
+    Q28. What will be the output of the following code?
+
+    Answers:
+
+    a) Compile Time Error
+    b) Run Time Error
+    c) bonus and incentives are equal	Both name and user name are equal
+    d) bonus and incentives are equal	Both name and user name are equal by equals()
+
+
+    Correct Answer:
+    d) primitive variables are rightly compared using == operator but String Object Reference Variables can not be compared
+       using == operator. Those can only be compared using equals() method.
+
+*/
+
+/*class TestEmployee {
+    public static void main(String args[]){
+        int bonus = 5000;
+        int incentives = 5000;
+
+        if (bonus == incentives) {
+            System.out.print("bonus and incentives are equal" + "\t");
+        }
+
+        String Emp_user_name = new String("Steve");
+        String Emp_name = new String("Steve");
+
+        if (Emp_user_name == Emp_name) {
+            System.out.print("Both name and user name are equal");
+        }
+
+        if (Emp_name.equals(Emp_user_name)) {
+            System.out.print("Both name and user name are equal by equals()");
+        }
+    }
+}*/
+
+
+
+
+
+/*
+
+    Q29. NullPointerException is thrown by which type of variables when not initialized?
+
+    Answers:
+
+    a) Primitive Type Variables
+    b) Object Reference Type Variables
+    c) None of these
+
+
+    Correct Answer:
+    b) Primitive variables are by default initialized with their default value, which is not null and they will not throw
+       NullPointerException, but if we access an uninitialized Object reference variable it will throw NullPointerException.
+
+*/
+
+
+
+
+/*
+
+    Q30. Object Reference type Variables store ?
+
+    Answers:
+
+    a) Values
+    b) Handle to object in heap space
+    c) None of these
+
+
+    Correct Answer:
+    b) Primitive types stores values but Object reference type stores handle to object in heap space.
+
+
+*/
+
+
+
+
+
+/*
+
+    Q31. Object Reference type Variables takes more memory than Primitive type variables because?
+
+    Answers:
+
+    a) They need to maintain object meta data
+    b) They are stored in Heap Space
+    c) Wrong Statement
+
+
+    Correct Answer:
+    a) Object Reference type Variables takes more memory because they have to maintain object meta data.
+
 
 */
