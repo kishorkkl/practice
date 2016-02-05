@@ -952,7 +952,6 @@ class TestEmployee {
 
 
 
-
 /*
 
     Q31. Object Reference type Variables takes more memory than Primitive type variables because?
