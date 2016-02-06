@@ -8,7 +8,8 @@ public class SortAlgos {
 
     public static void main(String[] args)
     {
-        SortAlgos.testInsertionSort();
+//        SortAlgos.testInsertionSort();
+//        SortAlgos.testSelectionSort();
         SortAlgos.testSelectionSort();
     }
 
@@ -28,6 +29,15 @@ public class SortAlgos {
         inSort.show(tempUnSorted);
         inSort.sort(tempUnSorted);
         inSort.show(tempUnSorted);
+    }
+
+    private static void testShellSort() {
+        Double[] tempUnSorted = {10.9,11.1,23.19,98.28,1.37,90.45,80.44,78.67};
+
+        ShellSort shellSort = new ShellSort();
+        shellSort.show(tempUnSorted);
+        shellSort.sort(tempUnSorted);
+        shellSort.show(tempUnSorted);
     }
 }
 
@@ -60,6 +70,11 @@ abstract class AbstractSort<T extends Comparable>
 
 }
 
+/*
+    Iterate from left
+    Iterate through the array and find the min value and replace with the first
+    Then move to second and again iterate to rest of array and replace second with min.
+ */
   class SelectionSort<T extends Comparable> extends AbstractSort{
 
     public void sort(Comparable[] a)
@@ -76,6 +91,10 @@ abstract class AbstractSort<T extends Comparable>
     }
 }
 
+/*
+    Iterate from left
+    Iterate from end of the rest of array to start replacing the min of two values next to each other exchanging with the min value
+ */
 class InsertionSort<T extends Comparable> extends AbstractSort{
 
     public void sort(Comparable[] a)
@@ -92,5 +111,26 @@ class InsertionSort<T extends Comparable> extends AbstractSort{
 }
 
 //shell sort
+
+class ShellSort extends AbstractSort
+{
+    public  void sort(Comparable[] a)
+    { // Sort a[] into increasing order.
+        int N = a.length;
+        int h = 1;
+        while (h < N/3) h = 3*h + 1; // 1, 4, 13, 40, 121, 364, 1093, ...
+        while (h >= 1)
+        { // h-sort the array.
+            for (int i = h; i < N; i++)
+            { // Insert a[i] among a[i-h], a[i-2*h], a[i-3*h]... .
+                for (int j = i; j >= h && this.less(a[j], a[j-h]); j -= h)
+                    this.exchange(a, j, j-h);
+            }
+            h = h/3;
+        }
+    }
+
+}
+
 //merge sort
 

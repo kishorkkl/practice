@@ -1,8 +1,5 @@
 package com.practice.graph.network;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -16,19 +13,19 @@ public class Socket
 
     public static void main(String[] args)
     {
-        try {
+        /*try {
             Daytime dt = new Daytime();
-            System.out.println(dt.getDateFromNetwork());
+//            System.out.println(dt.getDateFromNetwork());
         }catch(IOException|ParseException e)
         {
             e.printStackTrace();
-        }
+        }*/
     }
 }
 
 
 class Daytime {
-    public Date getDateFromNetwork() throws IOException, ParseException {
+    /*public Date getDateFromNetwork() throws IOException, ParseException {
         try (Socket socket = new Socket("time.nist.gov", 13)) {
             socket.setSoTimeout(15000);
             InputStream in = socket.getInputStream();
@@ -40,7 +37,7 @@ class Daytime {
             }
             return parseDate(time.toString());
         }
-    }
+    }*/
     Date parseDate(String s) throws ParseException {
         String[] pieces = s.split(" ");
         String dateTime = pieces[1] + " " + pieces[2] + " UTC";
