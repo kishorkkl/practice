@@ -481,4 +481,391 @@ public class TestEmployee {
 */
 
 
+/*
+ Q24 What will be the output of the code below ?
+
+ Answers:
+ a) 0 2 4 6 8
+ b) 0 1 2 3 4 5 6 7 8 9
+ c) compile time Error
+
+ Correct Answer:
+
+ a) 0 2 4 6 8
+ */
+/*
+public class TestEmployee {
+        public static void main(String args[])
+        {
+            int arr [] = new int[10];
+            for (int i = 0; i < 10; ++i) {
+                arr[i] = i;
+                System.out.print(arr[i] + " ");
+                i++;}}}
+*/
+
+/*
+ Q25 What will be the output of the code below ?
+
+ Answers:
+ a) 0 2 4 6 8
+ b) 0 1 2 3 4 5 6 7 8 9
+ c) compile time Error
+
+ Correct Answer:
+
+ b) 0 1 2 3 4 5 6 7 8 9
+ */
+/*
+public class TestEmployee {
+        public static void main(String args[])
+        {
+            int arr [] = new int[10];
+            for (int i = 0; i < 10; ++i) {
+                arr[i] = i;
+                System.out.print(arr[i] + " ");
+                }}}
+*/
+
+/*
+ Q26 What will be the output of the code below ?
+
+ Answers:
+ a) 3
+ b) 1
+ c) compile time Error
+
+ Correct Answer:
+
+ b) 1
+ */
+/*
+public class TestEmployee {
+        public static void main(String args[])
+        {
+            int arr[] = new int[] {0 , 1, 2, 3, 4, 5, 6, 7, 8, 9};
+            int n = 6;
+            n = arr[arr[n] / 2];
+            System.out.println(arr[n] / 2);}}
+*/
+
+/*
+ Q27 What will be the output of the code below ?
+
+ Answers:
+ a) 3
+ b) 1
+ c) compile time Error
+
+ Correct Answer:
+
+ a) 3
+ */
+/*
+public class TestEmployee {
+        public static void main(String args[])
+        {
+            int arr[] = new int[] {0 , 1, 2, 3, 4, 5, 6, 7, 8, 9};
+            int n = 6;
+            n = arr[arr[n] / 2];
+            System.out.println(arr[n]);}}
+*/
+
+
+/*
+ Q28 What will be the output of the code below ?
+
+ Answers:
+ a) 3
+ b) 1
+ c) compile time Error
+
+ Correct Answer:
+
+ a) 3
+ */
+
+/*
+public class TestEmployee {
+        public static void main(String args[]) {
+            int total = 0;
+            int[] i = new int[3];
+            for(int j=1;j< i.length; j++)
+                total += (i[j] = j);
+            System.out.println(total);}}
+*/
+
+
+/*
+ Q29 What will be the output of the code below ?
+
+ Answers:
+ a) 3
+ b) 2
+ c) compile time Error
+
+ Correct Answer:
+
+ b) 2
+ */
+
+/*
+public class TestEmployee {
+        public static void main(String args[]) {
+            int total = 0;
+            int[] i = new int[3];
+            for(int j=1;j< i.length; j++)
+                total = (i[j] = j);
+            System.out.println(total);}}
+*/
+
+/*
+ Q30 What will be the output of the code below ?
+
+ Answers:
+ a) 3
+ b) 2
+ c) compile time Error
+ d) Run time error
+
+ Correct Answer:
+
+ d) Run time error (ArrayIndexOutOfBound)
+ */
+
+/*
+public class TestEmployee {
+        public static void main(String args[]) {
+            int total = 0;
+            int[] i = new int[3];
+            for(int j=1;j<= i.length; j++)
+                total += (i[j] = j);
+            System.out.println(total);}}
+*/
+
+/*
+ Q31 What will be the output of the code below ?
+
+ Answers:
+ a) 3
+ b) 2
+ c) compile time Error
+ d) Run time error
+
+ Correct Answer:
+
+ d) Run time error (ArrayIndexOutOfBound)
+ */
+/*
+public class TestEmployee {
+        public static void main(String args[]) {
+            int total = 0;
+            int[] i = new int[3];
+            for(int j=1;j< i.length; j--)
+                total += (i[j] = j);
+            System.out.println(total);}}
+*/
+
+
+/*
+ Q32 What will be the output of the code below ?
+
+ Answers:
+ a) April has 31 days.
+ b) April has 30 days.
+ c) April has 29 days.
+ d)compile time Error
+
+ Correct Answer:
+
+ c) April has 30 days.
+ */
+/*
+public class TestEmployee {
+    public static void main(String args[]) {
+        int month_days[] = { 31, 28, 30, 29, 31, 30, 31, 31, 30, 31,
+                30, 31 };
+        System.out.println("April has " + month_days[3] + " days.");
+    }
+}
+*/
+
+/*
+ Q33 What will be the output of the code below ?
+
+ Answers:
+ a) 123
+ b) 012
+ c) compile time Error
+
+ Correct Answer:
+
+ a) 123
+ */
+
+/*
+public class TestEmployee {
+    public static void main(String args[]){
+        int count = 0;
+        int days[] = new int[3];
+        while(count < days.length){
+            days[count] = ++count;
+        }
+        for(int index = 0;index < days.length;index++){
+            System.out.print(days[index]);}}}
+*/
+
+/*
+ Q34 What will be the output of the code below ?
+
+ Answers:
+ a) 123
+ b) 012
+ c) compile time Error
+
+ Correct Answer:
+
+ b) 012
+ */
+
+/*
+public class TestEmployee {
+    public static void main(String args[]){
+        int count = 0;
+        int days[] = new int[3];
+        while(count < days.length){
+            days[count] = count++;
+        }
+        for(int index = 0;index < days.length;index++){
+            System.out.print(days[index]);}}}
+*/
+
+/*
+ Q35 What will be the output of the code below ?
+
+ Answers:
+ a) 23
+ b) 012
+ c) compile time Error
+
+ Correct Answer:
+
+ a) 23
+ */
+
+/*
+public class TestEmployee {
+    public static void main(String args[]){
+        int count = 0;
+        int days[] = new int[3];
+        while(count < days.length){
+            days[count] = ++count;
+        }
+        for(int index = 1;index < days.length;++index){
+            System.out.print(days[index]);}}}
+ */
+
+/*
+ Q36 What will be the output of the code below ?
+
+ Answers:
+ a) 1
+ b) 2
+ c) compile time Error
+
+ Correct Answer:
+
+ b) 2
+ */
+/*
+public class TestEmployee {
+
+        public static void main(String argv[]){
+
+            int ary[]=new int[]{1,2,3};
+
+            System.out.println(ary[1]);}}
+*/
+
+/*
+ Q37 What will be the output of the code below ?
+
+ Answers:
+ a) 1
+ b) 2
+ c) compile time Error
+
+ Correct Answer:
+
+ c) compile time Error (Array size can not be changed after creation of array)
+ */
+/*
+public class TestEmployee {
+        public static void main(String argv[]){
+            int[] iArray = new int[10];
+            iArray.length = 15;
+            System.out.println(iArray.length);}}
+*/
+
+
+/*
+ Q38 What will be the output of the code below ?
+
+ Answers:
+ a) 1
+ b) 2
+ c) compile time Error
+
+ Correct Answer: compile time Error (when initialising array, don't give size )
+
+ c)
+ */
+/*
+public class TestEmployee {
+        public static void main(String argv[]){
+            int[] arr = new int[2]{0,1};
+            System.out.println(arr);}}
+*/
+
+
+/*
+ Q39 Is it mandatory to use new operator to initialize an array ?
+
+ Answers:
+ a) Yes
+ b) No
+ c) None of the above
+
+ Correct Answer:
+
+ b) No, Array can be initialized using both new and comma separated expressions surrounded by curly braces.
+ */
+
+/*
+ Q40 Which of these is necessary to specify at time of array initialization?
+
+ Answers:
+ a) Column
+ b) Row
+ c) Both column and row
+ d) none of the above
+
+ Correct Answer:
+
+ b) Row
+ */
+
+/*
+ Q41 Arrays in Java are implemented as?
+
+ Answers:
+ a) Object
+ b) Class
+ c) Variable
+ d) none of the above
+
+ Correct Answer:
+
+ b) Object
+ */
 
