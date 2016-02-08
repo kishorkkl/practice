@@ -1,4 +1,5 @@
 package com.jse7p1.loops;
+import java.io.*;
 
 /**
  * Created by sandeep on 05/02/2016.
@@ -547,4 +548,574 @@ public class TestEmployee {
     }
 }
 */
+
+/*Q21.What will be the Output of the code below?
+Answers:-
+A)STRING
+B)SRN
+C)TIG
+D)RING
+E)Error
+
+correct answer:-
+D)RING
+*/
+
+/*
+public class TestEmployee {
+   public static void main(String[] args) {
+	String s = "STRING";
+	for (int i = 0; i < s.length(); i++) {
+	    char letter = s.charAt(i+2);
+	    System.out.print(letter);
+	}
+   }
+}
+*/
+
+/*Q22.What will be the Output of the code below?
+Answers:-
+A)STRING
+B)RG
+C)TIG
+D)RING
+E)Error
+
+correct answer:-
+B)RG
+*/
+
+/*
+public class TestEmployee {
+   public static void main(String[] args) {
+	String s = "STRING";
+	for (int i = 0; i < s.length(); i++) {
+        i=i+2;
+	    char letter = s.charAt(i);
+	    System.out.print(letter);
+	}
+   }
+}
+*/
+
+/*Q23.What will be the Output of the code below?
+Answers:-
+A)STRING
+B)GNIRT
+C)GNIRTS
+E)Error
+
+correct answer:-
+C)GNIRTS
+*/
+
+/*
+public class TestEmployee {
+   public static void main(String[] args) {
+	String s = "STRING";
+	for (int i = s.length()-1; i < s.length(); --i) {
+	    char letter = s.charAt(i);
+	    System.out.print(letter);
+	}
+   }
+}
+*/
+
+/*Q24.What will be the Output of the code below?
+Answers:-
+A)STRING
+B)GNIRT
+C)GNIRTS
+E)Error
+
+correct answer:-
+C)GNIRTS
+*/
+
+
+/*
+public class TestEmployee {
+   public static void main(String[] args) {
+	String s = "STRING";
+	for (int i = s.length()-1; i < s.length(); i--) {
+	    char letter = s.charAt(i);
+	    System.out.print(letter);
+	}
+   }
+}
+*/
+
+/*Q25.What will be the Output of the code below?
+Answers:-
+A)STRING
+B)RING
+c)TRING
+
+correct answer:-
+c)TRING
+*/
+
+/*
+public class TestEmployee {
+   public static void main(String[] args) {
+	String s = "STRING";
+	for (int i = 1; i < s.length(); ++i) {
+	    char letter = s.charAt(i);
+	    System.out.print(letter);
+	}
+   }
+}
+
+*/
+
+/*Q26.What will be the Output of the code below?
+Answers:-
+A)123
+B)12345
+c)1234-14
+
+correct answer:-
+A)123
+*/
+
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+        int[] numberArray = { 1, 2, 3, -1 ,4,5};
+        for (int i = 0; i < numberArray.length; i++) {
+            if (numberArray[i] == -1) {
+                break;
+            }
+            System.out.print(numberArray[i]);
+        }
+    }
+}
+*/
+
+
+/*Q27.What will be the Output of the code below?
+Answers:-
+A)123
+B)12345
+c)1234-14
+
+correct answer:-
+B)12345
+*/
+
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+        int[] numberArray = { 1, 2, 3, -1 ,4,5};
+        for (int i = 0; i < numberArray.length; i++) {
+            if (numberArray[i] == -1) {
+                continue;
+            }
+            System.out.print(numberArray[i]);
+        }
+    }
+}
+
+*/
+
+
+/*Q28.What will be the Output of the code below?
+Answers:-
+A)54-12
+B)54-121
+c)54-1
+
+
+correct answer:-
+A)54-12
+*/
+
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+        int[] numberArray = { 1, 2, 3, -1 ,4,5};
+        for (int i = numberArray.length-1; i > 0; i--) {
+            if(numberArray[i]==3) {
+            continue;
+            }
+            System.out.print(numberArray[i]);
+        }
+    }
+}
+*/
+
+/*Q29.What will be the Output of the code below?
+Answers:-
+A)54-12
+B)54-121
+c)54-1
+
+correct answer:-
+c)54-1
+*/
+
+/*public class TestEmployee {
+    public static void main(String[] args) {
+        int[] numberArray = { 1, 2, 3, -1 ,4,5};
+        for (int i = numberArray.length-1; i > 0; i--) {
+            if(numberArray[i]==3) {
+         break;
+            }
+            System.out.print(numberArray[i]);
+        }
+    }
+}*/
+
+
+/*Q30.What will be the Output of the code below?
+Answers:-
+A)54-12
+B)54-121
+c)54-1
+D)4-12
+
+correct answer:-
+A)54-12
+*/
+
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+        int[] numberArray = { 1, 2, 3, -1 ,4,5};
+        for (int i = numberArray.length-1; i > 0; --i) {
+            if(numberArray[i]==3) {
+            continue;
+            }
+            System.out.print(numberArray[i]);
+        }
+    }
+}
+*/
+
+
+/*Q31.What will be the Output of the code below?
+Answers:-
+A)54-12
+B)54-121
+c)54-1
+D)4-1
+
+correct answer:-
+c)54-1
+*/
+
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+        int[] numberArray = { 1, 2, 3, -1 ,4,5};
+        for (int i = numberArray.length-1; i > 0; --i) {
+            if(numberArray[i]==3) {
+         break;
+            }
+            System.out.print(numberArray[i]);
+        }
+    }
+}
+*/
+
+/*Q32.What will be the Output of the code below?
+Answers:-
+A)123
+B)12345
+c)1234-14
+D)23
+
+correct answer:-
+A)123
+*/
+
+
+/*public class TestEmployee {
+    public static void main(String[] args) {
+        int[] numberArray = { 1, 2, 3, -1 ,4,5};
+        for (int i = 0; i < numberArray.length; ++i) {
+            if (numberArray[i] == -1) {
+                break;
+            }
+            System.out.print(numberArray[i]);
+        }
+    }
+}*/
+
+
+
+/*Q33.What will be the Output of the code below?
+Answers:-
+A)123
+B)12345
+c)1234-14
+D)2345
+
+correct answer:-
+B)12345
+*/
+
+
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+        int[] numberArray = { 1, 2, 3, -1 ,4,5};
+        for (int i = 0; i < numberArray.length; ++i) {
+            if (numberArray[i] == -1) {
+                continue;
+            }
+            System.out.print(numberArray[i]);
+        }
+    }
+}
+*/
+
+
+/*
+Q34.What will be the Output of the code below?
+Answers:-
+A)apple
+  orange
+B)apple
+  orange
+  banana
+C)apple
+  orange
+  banana
+  plum
+D)apple
+  orange
+  plum
+correct answer:-
+D)apple
+  orange
+  plum
+*/
+
+
+/*
+public class TestEmployee {
+
+    public static void main(String[] args) {
+
+        String[] fruits = {"apple","orange","banana","plum"};
+        for (String f : fruits) {
+            if (f.startsWith("b")) {
+                continue;
+            }
+            System.out.println(f);
+        }
+    }
+}
+
+*/
+
+/*
+Q35.What will be the Output of the code below?
+Answers:-
+A)apple
+  orange
+B)apple
+  orange
+  banana
+C)apple
+  orange
+  banana
+  plum
+D)apple
+  orange
+  plum
+correct answer:-
+A)apple
+  orange
+*/
+
+
+/*
+public class TestEmployee {
+
+    public static void main(String[] args) {
+
+        String[] fruits = {"apple","orange","banana","plum"};
+        for (String f : fruits) {
+            if (f.startsWith("b")) {
+                break;
+            }
+            System.out.println(f);
+        }
+    }
+}
+*/
+
+
+/*Q36.What will be the Output of the code below?
+Answers:-
+A)0,0
+  0,1
+  1,0
+  1,1
+B)0,0
+  0,1
+  0,0
+  1,1
+c)0,0
+  0,1
+  0,1
+  1,1
+
+
+correct answer:-
+A)0,0
+  0,1
+  1,0
+  1,1
+*/
+
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+        for (int i = 0; i < 2; i++) {
+            for (int y = 0; y < 2; y++) {
+                System.out.println(i + "," + y);
+            }
+        }
+    }
+}
+*/
+
+/*Q37.What will be the Output of the code below?
+Answers:-
+A)0,0
+  0,1
+  1,0
+  1,1
+B)0,0
+  0,1
+  0,0
+  1,1
+c)0,0
+  0,1
+  0,1
+  1,1
+D)0,0
+  0,1
+  1,1
+
+correct answer:-
+D)0,0
+  0,1
+  1,1
+*/
+
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+        for (int i = 0; i < 2; i++) {
+            for (int y = i; y < 2; y++) {
+                System.out.println(i + "," + y);
+            }
+        }
+    }
+}
+
+*/
+
+/*Q38.What will be the Output of the code below?
+Answers:-
+A)0,2
+  0,3
+  1,2
+  1,3
+B)0,2
+  1,3
+  1,2
+  1,3
+c)0,2
+  1,3
+  1,2
+  1,3
+
+
+correct answer:-
+A)0,2
+  0,3
+  1,2
+  1,3
+*/
+
+
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+        for (int i = 0; i < 2; i++) {
+            for (int y = 2; y < 4; y++) {
+                System.out.println(i+","+y);
+            }
+        }
+    }
+}
+*/
+
+/*Q39.What will be the Output of the code below?
+Answers:-
+A)0,0,0
+  0,1,0
+  0,0,1
+B)0,0,1
+  0,1,1
+  1,1,1
+c)0,0,0
+
+correct answer:-
+c)0,0,0
+*/
+
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+        for (int i = 0; i < 1; i++) {
+            for (int y = 0; y < 1; y++) {
+                for (int z = 0; z < 1; z++) {
+                    System.out.println(i + "," + y + "," + z);
+                }
+            }
+        }
+    }
+}
+
+*/
+
+/*Q40.What will be the Output of the code below?
+Answers:-
+A)0,0,0
+  0,1,0
+  0,0,1
+B)0,0,1
+  0,1,1
+  1,1,1
+c)0,0,0
+D)0,0,0
+  0,0,1
+
+correct answer:-
+D)0,0,0
+  0,0,1
+*/
+
+/*public class TestEmployee {
+    public static void main(String[] args) {
+        for (int i = 0; i < 1; i++) {
+            for (int y = 0; y < 1; y++) {
+                for (int z = 0; z < 2; z++) {
+                    System.out.println(i + "," + y + "," + z);
+                }
+            }
+        }
+    }
+}*/
+
+
+
+
+
 
