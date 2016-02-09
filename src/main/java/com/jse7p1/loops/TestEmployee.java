@@ -28,7 +28,8 @@ A)2,4
   3,3
 */
 
-/*public class TestEmployee {
+/*
+public class TestEmployee {
 
         public static void main(String[] args) {
             int i = 1;
@@ -39,8 +40,8 @@ A)2,4
                 System.out.println(i + "," + z);
             }
         }
-}*/
-
+}
+*/
 
 /*Q2.What will be the Output of the code below?
 Answers:-
@@ -52,6 +53,7 @@ correct answer:-
 B)*****
 */
 
+
 /*
 public class TestEmployee {
         public static void main(String[] args) {
@@ -61,7 +63,8 @@ public class TestEmployee {
                 System.out.print("*");
             }
         }
-}*/
+}
+*/
 
 /*Q3.What will be the Output of the code below?
 Answers:-
@@ -72,6 +75,7 @@ C)54321
 correct answer:-
 A)43210
 */
+
 
 /*
 public class TestEmployee {
@@ -85,6 +89,7 @@ public class TestEmployee {
 }
 */
 
+
 /*Q4.What will be the Output of the code below?
 Answers:-
 A)12345
@@ -94,6 +99,7 @@ C)1234
 correct answer:-
 A)12345
 */
+
 
 /*
 public class TestEmployee {
@@ -108,6 +114,7 @@ public class TestEmployee {
     }
 }
 */
+
 
 /*Q5.What will be the Output of the code below?
 Answers:-
@@ -135,6 +142,7 @@ public class TestEmployee {
 }
 */
 
+
 /*Q6.What will be the Output of the code below?
 Answers:-
 A)123456
@@ -159,62 +167,7 @@ A)123456
     }
 }*/
 
-
 /*Q7.What will be the Output of the code below?
-Answers:-
-A)compile time error
-B)Run time error
-C)4
-D)4.0
-
-correct answer:-
-D)4.0
-*/
-
-/*
-public class TestEmployee {
-    public static void main(String[] args) {
-	while (true) {
-        double a=16.0;
-	    double value = Math.sqrt(a);
-	    System.out.println(value);
-	    if (a !=2) {
-            break;
-	    }
-	}
-    }
-}
-*/
-
-/*Q8.What will be the Output of the code below?
-Answers:-
-A)Infinite Loop
-B)2
-  4
-C)1
-  3
-D)0
-
-correct answer:-
-C)1
-  3
-*/
-
-/*
-public class TestEmployee {
-    public static void main(String[] args) {
-        int value = 0;
-        while (value++ < 4) {
-            if ((value % 2) == 0) {
-                continue;
-            }
-            System.out.println(value);
-        }
-    }
-}
-*/
-
-/*Q9.What will be the Output of the code below?
 Answers:-
 A)Infinite Loop
 B)i:0
@@ -238,6 +191,7 @@ B)i:0
   i:4
   all done!
 */
+
 /*
 public class TestEmployee {
 
@@ -253,41 +207,13 @@ public class TestEmployee {
         System.out.println("all done!");
     }
 }
-
 */
 
-/*Q10.What will be the Output of the code below?
-Answers:-
-A)Infinite Loop
-B)Hello
-C)Hell
-D)ello
 
-correct answer:-
-C)Hell
-*/
-
-/*
-public class TestEmployee {
-    public static void main(String[] args) {
-    String s="Hello";
-        int i=0;
-
-        while (i<s.length()-1) {
-            System.out.println(s.charAt(i));
-            i++;
-            if (s.charAt(i)=='o') {
-                continue;
-            }
-        }
-    }
-}
-*/
 
 /*Topic:2-Create and use for loops including the enhanced for loop*/
 
-
-/*Q11.What will be the Output of the code below?
+/*Q8.What will be the Output of the code below?
 Answers:-
 A)1
 B)2
@@ -299,7 +225,6 @@ C)1
   2
 
 */
-
 
 /*public class TestEmployee {
 
@@ -313,7 +238,7 @@ C)1
     }
 }*/
 
-/*Q12.What will be the Output of the code below?
+/*Q9.What will be the Output of the code below?
 Answers:-
 A)1
 B)2
@@ -326,6 +251,7 @@ C)1
   2
 
 */
+
 
 /*
 public class TestEmployee {
@@ -341,7 +267,8 @@ public class TestEmployee {
 }
 */
 
-/*Q13.What will be the Output of the code below?
+
+/*Q10.What will be the Output of the code below?
 Answers:-
 A)2
   1
@@ -367,7 +294,7 @@ C)No output
     }
 }*/
 
-/*Q14.What will be the Output of the code below?
+/*Q11.What will be the Output of the code below?
 Answers:-
 A)2
   1
@@ -394,7 +321,7 @@ B)3
     }
 }*/
 
-/*Q15.What will be the Output of the code below?
+/*Q12.What will be the Output of the code below?
 Answers:-
 A)4
   3
@@ -411,8 +338,8 @@ A)4
 
 */
 
-/*
 
+/*
 public class TestEmployee {
 
     public static void main(String args[]) {
@@ -424,9 +351,10 @@ public class TestEmployee {
         }
     }
 }
+
 */
 
-/*Q16.What will be the Output of the code below?
+/*Q13.What will be the Output of the code below?
 Answers:-
 A)will execute
 B)will return error
@@ -436,6 +364,7 @@ correct answer:-
 A)will execute
 
 */
+
 
 /*
 public class TestEmployee {
@@ -450,7 +379,8 @@ public class TestEmployee {
 */
 
 
-/*Q17.What will be the Output of the code below?
+
+/*Q14.What will be the Output of the code below?
 Answers:-
 A)will execute
 B)will return error
@@ -460,6 +390,7 @@ correct answer:-
 B)will return error
 
 */
+
 
 /*
 public class TestEmployee {
@@ -473,7 +404,8 @@ public class TestEmployee {
 }
 */
 
-/*Q18.What will be the Output of the code below?
+
+/*Q15.What will be the Output of the code below?
 Answers:-
 A)01234
 B)will return error
@@ -484,7 +416,6 @@ correct answer:-
 A)01234
 
 */
-
 
 /*
 public class TestEmployee {
@@ -498,7 +429,8 @@ public class TestEmployee {
 }
 */
 
-/*Q19.What will be the Output of the code below?
+
+/*Q16.What will be the Output of the code below?
 Answers:-
 A)01234
 B)will return error
@@ -510,8 +442,8 @@ A)01234
 
 */
 
-/*
-public class TestEmployee {
+
+/*public class TestEmployee {
 
    public static void main(String[] args){
 
@@ -521,10 +453,10 @@ public class TestEmployee {
               System.out.print( i);
          }
     }
-}
-*/
+}*/
 
-/*Q20.What will be the Output of the code below?
+
+/*Q17.What will be the Output of the code below?
 Answers:-
 A)012345
 B)will return error
@@ -535,8 +467,8 @@ correct answer:-
 A)012345
 */
 
-/*
-public class TestEmployee {
+
+/*public class TestEmployee {
 
    public static void main(String[] args){
 
@@ -546,10 +478,10 @@ public class TestEmployee {
               System.out.print( i);
          }
     }
-}
-*/
+}*/
 
-/*Q21.What will be the Output of the code below?
+
+/*Q18.What will be the Output of the code below?
 Answers:-
 A)STRING
 B)SRN
@@ -561,6 +493,7 @@ correct answer:-
 D)RING
 */
 
+
 /*
 public class TestEmployee {
    public static void main(String[] args) {
@@ -571,9 +504,10 @@ public class TestEmployee {
 	}
    }
 }
+
 */
 
-/*Q22.What will be the Output of the code below?
+/*Q19.What will be the Output of the code below?
 Answers:-
 A)STRING
 B)RG
@@ -598,7 +532,7 @@ public class TestEmployee {
 }
 */
 
-/*Q23.What will be the Output of the code below?
+/*Q20.What will be the Output of the code below?
 Answers:-
 A)STRING
 B)GNIRT
@@ -621,7 +555,7 @@ public class TestEmployee {
 }
 */
 
-/*Q24.What will be the Output of the code below?
+/*Q21.What will be the Output of the code below?
 Answers:-
 A)STRING
 B)GNIRT
@@ -645,7 +579,7 @@ public class TestEmployee {
 }
 */
 
-/*Q25.What will be the Output of the code below?
+/*Q22.What will be the Output of the code below?
 Answers:-
 A)STRING
 B)RING
@@ -668,211 +602,9 @@ public class TestEmployee {
 
 */
 
-/*Q26.What will be the Output of the code below?
-Answers:-
-A)123
-B)12345
-c)1234-14
-
-correct answer:-
-A)123
-*/
 
 /*
-public class TestEmployee {
-    public static void main(String[] args) {
-        int[] numberArray = { 1, 2, 3, -1 ,4,5};
-        for (int i = 0; i < numberArray.length; i++) {
-            if (numberArray[i] == -1) {
-                break;
-            }
-            System.out.print(numberArray[i]);
-        }
-    }
-}
-*/
-
-
-/*Q27.What will be the Output of the code below?
-Answers:-
-A)123
-B)12345
-c)1234-14
-
-correct answer:-
-B)12345
-*/
-
-/*
-public class TestEmployee {
-    public static void main(String[] args) {
-        int[] numberArray = { 1, 2, 3, -1 ,4,5};
-        for (int i = 0; i < numberArray.length; i++) {
-            if (numberArray[i] == -1) {
-                continue;
-            }
-            System.out.print(numberArray[i]);
-        }
-    }
-}
-
-*/
-
-
-/*Q28.What will be the Output of the code below?
-Answers:-
-A)54-12
-B)54-121
-c)54-1
-
-
-correct answer:-
-A)54-12
-*/
-
-/*
-public class TestEmployee {
-    public static void main(String[] args) {
-        int[] numberArray = { 1, 2, 3, -1 ,4,5};
-        for (int i = numberArray.length-1; i > 0; i--) {
-            if(numberArray[i]==3) {
-            continue;
-            }
-            System.out.print(numberArray[i]);
-        }
-    }
-}
-*/
-
-/*Q29.What will be the Output of the code below?
-Answers:-
-A)54-12
-B)54-121
-c)54-1
-
-correct answer:-
-c)54-1
-*/
-
-/*public class TestEmployee {
-    public static void main(String[] args) {
-        int[] numberArray = { 1, 2, 3, -1 ,4,5};
-        for (int i = numberArray.length-1; i > 0; i--) {
-            if(numberArray[i]==3) {
-         break;
-            }
-            System.out.print(numberArray[i]);
-        }
-    }
-}*/
-
-
-/*Q30.What will be the Output of the code below?
-Answers:-
-A)54-12
-B)54-121
-c)54-1
-D)4-12
-
-correct answer:-
-A)54-12
-*/
-
-/*
-public class TestEmployee {
-    public static void main(String[] args) {
-        int[] numberArray = { 1, 2, 3, -1 ,4,5};
-        for (int i = numberArray.length-1; i > 0; --i) {
-            if(numberArray[i]==3) {
-            continue;
-            }
-            System.out.print(numberArray[i]);
-        }
-    }
-}
-*/
-
-
-/*Q31.What will be the Output of the code below?
-Answers:-
-A)54-12
-B)54-121
-c)54-1
-D)4-1
-
-correct answer:-
-c)54-1
-*/
-
-/*
-public class TestEmployee {
-    public static void main(String[] args) {
-        int[] numberArray = { 1, 2, 3, -1 ,4,5};
-        for (int i = numberArray.length-1; i > 0; --i) {
-            if(numberArray[i]==3) {
-         break;
-            }
-            System.out.print(numberArray[i]);
-        }
-    }
-}
-*/
-
-/*Q32.What will be the Output of the code below?
-Answers:-
-A)123
-B)12345
-c)1234-14
-D)23
-
-correct answer:-
-A)123
-*/
-
-
-/*public class TestEmployee {
-    public static void main(String[] args) {
-        int[] numberArray = { 1, 2, 3, -1 ,4,5};
-        for (int i = 0; i < numberArray.length; ++i) {
-            if (numberArray[i] == -1) {
-                break;
-            }
-            System.out.print(numberArray[i]);
-        }
-    }
-}*/
-
-
-
-/*Q33.What will be the Output of the code below?
-Answers:-
-A)123
-B)12345
-c)1234-14
-D)2345
-
-correct answer:-
-B)12345
-*/
-
-
-/*
-public class TestEmployee {
-    public static void main(String[] args) {
-        int[] numberArray = { 1, 2, 3, -1 ,4,5};
-        for (int i = 0; i < numberArray.length; ++i) {
-            if (numberArray[i] == -1) {
-                continue;
-            }
-            System.out.print(numberArray[i]);
-        }
-    }
-}
-*/
-
-
-/*
-Q34.What will be the Output of the code below?
+Q23.What will be the Output of the code below?
 Answers:-
 A)apple
   orange
@@ -892,7 +624,6 @@ D)apple
   plum
 */
 
-
 /*
 public class TestEmployee {
 
@@ -910,45 +641,9 @@ public class TestEmployee {
 
 */
 
-/*
-Q35.What will be the Output of the code below?
-Answers:-
-A)apple
-  orange
-B)apple
-  orange
-  banana
-C)apple
-  orange
-  banana
-  plum
-D)apple
-  orange
-  plum
-correct answer:-
-A)apple
-  orange
-*/
 
 
-/*
-public class TestEmployee {
-
-    public static void main(String[] args) {
-
-        String[] fruits = {"apple","orange","banana","plum"};
-        for (String f : fruits) {
-            if (f.startsWith("b")) {
-                break;
-            }
-            System.out.println(f);
-        }
-    }
-}
-*/
-
-
-/*Q36.What will be the Output of the code below?
+/*Q24.What will be the Output of the code below?
 Answers:-
 A)0,0
   0,1
@@ -983,7 +678,7 @@ public class TestEmployee {
 }
 */
 
-/*Q37.What will be the Output of the code below?
+/*Q25.What will be the Output of the code below?
 Answers:-
 A)0,0
   0,1
@@ -1020,7 +715,7 @@ public class TestEmployee {
 
 */
 
-/*Q38.What will be the Output of the code below?
+/*Q26.What will be the Output of the code below?
 Answers:-
 A)0,2
   0,3
@@ -1056,7 +751,7 @@ public class TestEmployee {
 }
 */
 
-/*Q39.What will be the Output of the code below?
+/*Q27.What will be the Output of the code below?
 Answers:-
 A)0,0,0
   0,1,0
@@ -1085,7 +780,7 @@ public class TestEmployee {
 
 */
 
-/*Q40.What will be the Output of the code below?
+/*Q28.What will be the Output of the code below?
 Answers:-
 A)0,0,0
   0,1,0
@@ -1114,8 +809,583 @@ D)0,0,0
     }
 }*/
 
+/*Topic 3:- Create and use do/while loops*/
+
+/*Q29.What will be the Output of the code below?
+Answers:-
+A)1
+B)123
+c)12
+d)012
+
+correct answer:-
+d)012
+*/
+
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+        int i = 0;
+        do {
+            System.out.print(i);
+            i++;
+        } while (i < 3);
+    }
+}
+*/
+
+/*Q30.What will be the Output of the code below?
+Answers:-
+A)21
+B)321
+c)3210
+
+correct answer:-
+B)321
+*/
+
+/*
+public class TestEmployee {
+    public static void main(String args[]) {
+        int n = 3;
+        do {
+            System.out.print(n);
+            n--;
+        } while (n > 0);
+    }
+}
+
+*/
+
+/*Q31.What will be the Output of the code below?
+Answers:-
+A)1
+B)123
+c)12
+d)012
+
+correct answer:-
+B)123
+*/
+
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+        int i = 0;
+        do {
+            i++;
+            System.out.print(i);
+        } while (i < 3);
+    }
+}
+*/
+
+
+/*Q32.What will be the Output of the code below?
+Answers:-
+A)21
+B)321
+c)3210
+D)210
+correct answer:-
+D)210
+*/
+
+/*
+public class TestEmployee {
+    public static void main(String args[]) {
+        int n = 3;
+        do {
+            n--;
+            System.out.print(n);
+        } while (n > 0);
+    }
+}
+
+*/
+
+/*Q33.What will be the Output of the code below?
+Answers:-
+A)1
+B)123
+c)12
+d)012
+
+correct answer:-
+B)123
+*/
+
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+        int i = 0;
+        do {
+            ++i;
+            System.out.print(i);
+        } while (i < 3);
+    }
+}
+*/
+
+/*Q34.What will be the Output of the code below?
+Answers:-
+A)21
+B)321
+c)3210
+D)210
+correct answer:-
+D)210
+*/
+
+/*
+public class TestEmployee {
+    public static void main(String args[]) {
+        int n = 3;
+        do {
+            --n;
+            System.out.print(n);
+        } while (n > 0);
+    }
+}
+*/
+
+/*Q35.What will be the Output of the code below?
+Answers:-
+A)1
+B)123
+c)12
+D)012
+
+correct answer:-
+D)012
+*/
+
+
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+        int i = 0;
+        do {
+
+            System.out.print(i);
+            ++i;
+        } while (i < 3);
+    }
+}
+
+*/
 
 
 
+/*Q36.What will be the Output of the code below?
+Answers:-
+A)21
+B)321
+c)3210
+D)210
+correct answer:-
+B)321
+*/
+
+/*
+public class TestEmployee {
+    public static void main(String args[]) {
+        int n = 3;
+        do {
+            System.out.print(n);
+            --n;
+        } while (n > 0);
+    }
+}
+*/
+
+/*Topic 4:- Use break and continue*/
+
+/*Q37.What will be the Output of the code below?
+Answers:-
+A)Infinite Loop
+B)2
+  4
+C)1
+  3
+D)0
+
+correct answer:-
+C)1
+  3
+*/
+
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+        int value = 0;
+        while (value++ < 4) {
+            if ((value % 2) == 0) {
+                continue;
+            }
+            System.out.println(value);
+        }
+    }
+}
+*/
+
+/*Q38.What will be the Output of the code below?
+Answers:-
+A)Infinite Loop
+B)Hello
+C)Hell
+D)ello
+
+correct answer:-
+C)Hell
+*/
+
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+    String s="Hello";
+        int i=0;
+
+        while (i<s.length()-1) {
+            System.out.println(s.charAt(i));
+            i++;
+            if (s.charAt(i)=='o') {
+                continue;
+            }
+        }
+    }
+}
+*/
+
+/*Q39.What will be the Output of the code below?
+Answers:-
+A)123
+B)12345
+c)1234-14
+
+correct answer:-
+B)12345
+*/
+
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+        int[] numberArray = { 1, 2, 3, -1 ,4,5};
+        for (int i = 0; i < numberArray.length; i++) {
+            if (numberArray[i] == -1) {
+                continue;
+            }
+            System.out.print(numberArray[i]);
+        }
+    }
+}
+
+*/
+
+/*Q40.What will be the Output of the code below?
+Answers:-
+A)54-12
+B)54-121
+c)54-1
 
 
+correct answer:-
+A)54-12
+*/
+
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+        int[] numberArray = { 1, 2, 3, -1 ,4,5};
+        for (int i = numberArray.length-1; i > 0; i--) {
+            if(numberArray[i]==3) {
+            continue;
+            }
+            System.out.print(numberArray[i]);
+        }
+    }
+}
+*/
+
+/*Q41.What will be the Output of the code below?
+Answers:-
+A)54-12
+B)54-121
+c)54-1
+D)4-12
+
+correct answer:-
+A)54-12
+*/
+
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+        int[] numberArray = { 1, 2, 3, -1 ,4,5};
+        for (int i = numberArray.length-1; i > 0; --i) {
+            if(numberArray[i]==3) {
+            continue;
+            }
+            System.out.print(numberArray[i]);
+        }
+    }
+}
+*/
+
+/*Q42.What will be the Output of the code below?
+Answers:-
+A)123
+B)12345
+c)1234-14
+D)2345
+
+correct answer:-
+B)12345
+*/
+
+
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+        int[] numberArray = { 1, 2, 3, -1 ,4,5};
+        for (int i = 0; i < numberArray.length; ++i) {
+            if (numberArray[i] == -1) {
+                continue;
+            }
+            System.out.print(numberArray[i]);
+        }
+    }
+}
+*/
+
+/*Q43.What will be the Output of the code below?
+Answers:-
+A)compile time error
+B)Run time error
+C)4
+D)4.0
+
+correct answer:-
+D)4.0
+*/
+
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+	while (true) {
+        double a=16.0;
+	    double value = Math.sqrt(a);
+	    System.out.println(value);
+	    if (a !=2) {
+            break;
+	    }
+	}
+    }
+}
+*/
+
+/*
+Q44.What will be the Output of the code below?
+Answers:-
+A)apple
+  orange
+B)apple
+  orange
+  banana
+C)apple
+  orange
+  banana
+  plum
+D)apple
+  orange
+  plum
+correct answer:-
+A)apple
+  orange
+*/
+
+/*
+public class TestEmployee {
+
+    public static void main(String[] args) {
+
+        String[] fruits = {"apple","orange","banana","plum"};
+        for (String f : fruits) {
+            if (f.startsWith("b")) {
+                break;
+            }
+            System.out.println(f);
+        }
+    }
+}
+*/
+
+/*Q45.What will be the Output of the code below?
+Answers:-
+A)54-12
+B)54-121
+c)54-1
+
+correct answer:-
+c)54-1
+*/
+
+/*public class TestEmployee {
+    public static void main(String[] args) {
+        int[] numberArray = { 1, 2, 3, -1 ,4,5};
+        for (int i = numberArray.length-1; i > 0; i--) {
+            if(numberArray[i]==3) {
+         break;
+            }
+            System.out.print(numberArray[i]);
+        }
+    }
+}*/
+
+/*Q46.What will be the Output of the code below?
+Answers:-
+A)54-12
+B)54-121
+c)54-1
+D)4-1
+
+correct answer:-
+c)54-1
+*/
+
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+        int[] numberArray = { 1, 2, 3, -1 ,4,5};
+        for (int i = numberArray.length-1; i > 0; --i) {
+            if(numberArray[i]==3) {
+         break;
+            }
+            System.out.print(numberArray[i]);
+        }
+    }
+}
+*/
+
+/*Q47.What will be the Output of the code below?
+Answers:-
+A)123
+B)12345
+c)1234-14
+D)23
+
+correct answer:-
+A)123
+*/
+
+
+/*public class TestEmployee {
+    public static void main(String[] args) {
+        int[] numberArray = { 1, 2, 3, -1 ,4,5};
+        for (int i = 0; i < numberArray.length; ++i) {
+            if (numberArray[i] == -1) {
+                break;
+            }
+            System.out.print(numberArray[i]);
+        }
+    }
+}*/
+
+/*Q48.What will be the Output of the code below?
+Answers:-
+A)123
+B)12345
+c)1234-14
+
+correct answer:-
+A)123
+*/
+
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+        int[] numberArray = { 1, 2, 3, -1 ,4,5};
+        for (int i = 0; i < numberArray.length; i++) {
+            if (numberArray[i] == -1) {
+                break;
+            }
+            System.out.print(numberArray[i]);
+        }
+    }
+}
+*/
+
+/*
+Topic:5-Compare loop constructs*/
+/*
+Q49.Which is an entry control loop?*/
+
+/*Answers:-
+A)While
+B)do While
+
+correct answer:-
+A)While*/
+
+/*
+Q50.Which is an exit control loop?*/
+
+/*Answers:-
+A)While
+B)do While
+
+correct answer:-
+B)do While*/
+
+/*
+Q51.In which loop each execution occurs by testing condition?*/
+
+/*Answers:-
+A)While
+B)do While
+
+correct answer:-
+A)While*/
+
+/*
+Q52.In which loop each execution except the first one occurs by testing condition?*/
+
+/*Answers:-
+A)While
+B)do While
+
+correct answer:-
+B)do While*/
+
+/*
+Q53.In which loop test condition appears at the beginning?*/
+
+/*Answers:-
+A)While
+B)do While
+
+correct answer:-
+A)While*/
+
+/*
+Q54.In which loop test condition appears at the end?*/
+
+/*Answers:-
+A)While
+B)do While
+
+correct answer:-
+B)do While*/
+
+/*
+Q55.Which loop processes instance?*/
+
+/*Answers:-
+A)For
+B)For each
+C)Both
+D)None
+
+correct answer:-
+B)For each
+*/
