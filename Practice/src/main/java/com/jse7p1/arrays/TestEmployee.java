@@ -816,9 +816,9 @@ public class TestEmployee {
  b) 2
  c) compile time Error
 
- Correct Answer: compile time Error (when initialising array, don't give size )
+ Correct Answer:
 
- c)
+ c) compile time Error (when initialising array, don't give size )
  */
 /*
 public class TestEmployee {
@@ -869,3 +869,764 @@ public class TestEmployee {
  b) Object
  */
 
+//Topic 2: Declare, instantiate, initialize and use multi-dimensional array
+
+
+/*
+ Q42 What will be the output of the code below ?
+
+ Answers:
+ a) 1 0
+    0 2
+ b) 0 1
+    2 0
+ c) compile time Error
+
+ Correct Answer:
+
+ a) 1 0
+    0 2
+ */
+/*
+    public class TestEmployee {
+        public static void main(String[] args) {
+            int[][] arr = new int[2][2];
+            arr[0][0] = 1;
+            arr[1][1] = 2;
+            for (int i = 0; i < arr.length; i++) {
+                int[] sub = arr[i];
+                for (int x = 0; x < sub.length; x++) {
+                    System.out.print(sub[x] + " ");}
+                System.out.println();}}}
+*/
+
+/*
+ Q43 What will be the output of the code below ?
+
+ Answers:
+ a) 1 0
+    0 2
+ b) 1 0 0 2
+ c) compile time Error
+
+ Correct Answer:
+
+ b) 1 0 0 2
+ */
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+        int[][] arr = new int[2][2];
+        arr[0][0] = 1;
+        arr[1][1] = 2;
+        for (int i = 0; i < arr.length; i++) {
+            int[] sub = arr[i];
+            for (int x = 0; x < sub.length; x++) {
+                System.out.print(sub[x] + " ");}}}}
+*/
+
+/*
+ Q44 What will be the output of the code below ?
+
+ Answers:
+ a) 1
+    0
+
+    0
+    2
+ b) 1
+    0
+    0
+    2
+ c) compile time Error
+
+ Correct Answer:
+
+ a) 1
+    0
+
+    0
+    2
+ */
+/*
+    public class TestEmployee {
+        public static void main(String[] args) {
+            int[][] arr = new int[2][2];
+            arr[0][0] = 1;
+            arr[1][1] = 2;
+            for (int i = 0; i < arr.length; i++) {
+                int[] sub = arr[i];
+                for (int x = 0; x < sub.length; x++) {
+                    System.out.println(sub[x] + " ");}
+                System.out.println();}}}
+*/
+
+
+/*
+ Q45 What will be the output of the code below ?
+
+ Answers:
+ a) 5 0 0 4
+ b) 1 0 0 2
+ c) compile time Error
+
+ Correct Answer:
+
+ a) 5 0 0 4 (again we are setting new value)
+ */
+/*
+    public class TestEmployee {
+        public static void main(String[] args) {
+            int[][] arr = new int[][]{{1,0},{0,2}};
+            arr[0][0] = 5;
+            arr[1][1] = 4;
+            for (int i = 0; i < arr.length; i++) {
+                int[] sub = arr[i];
+                for (int x = 0; x < sub.length; x++) {
+                    System.out.print(sub[x] + " ");}}}}
+*/
+
+/*
+ Q46 What will be the output of the code below ?
+
+ Answers:
+ a) 10 20 30
+
+ b) 10
+    20
+    30
+ c) compile time Error
+
+ Correct Answer:
+
+ b) 10
+    20
+    30
+ */
+
+/*
+public class TestEmployee {
+        public static void main(String[] args) {
+
+            byte[][][] arr = new byte[3][3][3];
+            space[0][0][0] = 10;
+            space[1][1][1] = 20;
+            space[2][2][2] = 30;
+            System.out.println(arr[0][0][0]);
+            System.out.println(arr[1][1][1]);
+            System.out.println(arr[2][2][2]);
+        }
+    }
+*/
+
+/*
+ Q47 What will be the output of the code below ?
+
+ Answers:
+ a) 2 3
+
+ b) 2 3 4
+ c) compile time Error
+
+ Correct Answer:
+
+ a) 2 3
+ */
+
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+        int[][] arr = new int[][]{new int[]{1, 2, 3},new int[]{1, 2, 3, 4},};
+        System.out.println(arr.length);
+        System.out.println(arr[0].length);
+    }
+}
+*/
+
+
+/*
+ Q48 What will be the output of the code below ?
+
+ Answers:
+ a) 2 3
+
+ b) 2 3 4
+ c) compile time Error
+
+ Correct Answer:
+
+ b) 2 3 4
+ */
+
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+        int[][] arr = new int[][]{new int[]{1, 2, 3},new int[]{1, 2, 3, 4},};
+        System.out.println(arr.length);
+        System.out.println(arr[0].length);
+        System.out.println(arr[1].length);
+    }
+}
+*/
+
+
+/*
+ Q49 What will be the output of the code below ?
+
+ Answers:
+ a) 2
+ b) 3
+ c) 4
+ d) compile time Error
+
+ Correct Answer:
+
+ c) 4
+ */
+
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+        int[][] arr = new int[][]{new int[]{1, 2, 3},new int[]{1, 2, 3, 4},new int[]{1, 2, 3, 4,5,6},new int[]{1, 2}};
+        System.out.println(arr.length);}}
+*/
+
+/*
+ Q50 What will be the output of the code below ?
+
+ Answers:
+ a) 2
+ b) 6
+ c) 4
+ d) compile time Error
+
+ Correct Answer:
+
+ b) 6
+ */
+
+/*
+public class TestEmployee {
+    public static void main(String[] args) {
+        int[][] arr = new int[][]{new int[]{1, 2, 3},new int[]{1, 2, 3, 4},new int[]{1, 2, 3, 4,5,6},new int[]{1, 2}};
+        System.out.println(arr[2].length);}}
+
+*/
+
+/*
+ Q51 What will be the output of the code below ?
+
+ Answers:
+ a) 1 0 0 2
+ b) 1
+    0
+    0
+    2
+ c) compile time Error
+ d) Run time error
+
+ Correct Answer:
+
+ d) Run time error (NullPointerException)
+ */
+
+/*
+    public class TestEmployee {
+        public static void main(String[] args) {
+            int[][] arr = new int[2][];
+            arr[0][0] = 1;
+            arr[1][1] = 2;
+            for (int i = 0; i < arr.length; i++) {
+                int[] sub = arr[i];
+                for (int x = 0; x < sub.length; x++) {
+                    System.out.print(sub[x] + " ");}
+                }}}
+*/
+
+
+/*
+ Q52 What will be the output of the code below ?
+
+ Answers:
+ a) 1 0 0 2
+ b) 1
+    0
+    0
+    2
+ c) compile time Error
+ d) Run time error
+
+ Correct Answer:
+
+ d) compile time Error(while creating two dimensional array first dimension is must)
+ */
+
+/*
+    public class TestEmployee {
+        public static void main(String[] args) {
+            int[][] arr = new int[][2];
+            arr[0][0] = 1;
+            arr[1][1] = 2;
+            for (int i = 0; i < arr.length; i++) {
+                int[] sub = arr[i];
+                for (int x = 0; x < sub.length; x++) {
+                    System.out.print(sub[x] + " ");}
+                }}}
+*/
+
+
+/*
+ Q53 What is an array of arrays ?
+
+ Answers:
+ a) One dimensional array
+ b) Two dimensional array
+ c) Three dimensional array
+ d) None of the above
+
+ Correct Answer:
+
+ d) Two dimensional array
+ */
+
+/*
+ Q54 What is an array of arrays of arrays ?
+
+ Answers:
+ a) One dimensional array
+ b) Two dimensional array
+ c) Three dimensional array
+ d) None of the above
+
+ Correct Answer:
+
+ d) Three dimensional array
+ */
+
+/*
+ Q55 Which array is best to construct a board or grid ?
+
+ Answers:
+ a) One dimensional array
+ b) Two dimensional array
+ c) Three dimensional array
+ d) None of the above
+
+ Correct Answer:
+
+ d) Two dimensional array
+ */
+
+/*
+ Q56 Can we copy one array to another ?
+
+ Answers:
+ a) yes
+ b) no
+ c) None of the above
+
+ Correct Answer:
+
+ d) Yes,We can copy an array to another by the arraycopy method of System class.
+ */
+
+/*
+ Q57 While creating two or three dimensional array,first dimension is must?
+
+ Answers:
+ a) yes
+ b) no
+ c) None of the above
+
+ Correct Answer:
+
+ d) Yes,first dimension is must, without that compile will throw error e.g. int[][3] is Not Ok but int[3][] is Ok.
+ */
+
+//Topic 3: Declare and use an ArrayList
+
+
+/*
+ Q58 What will be the output of the code below ?
+
+ Answers:
+ a) ABC XYZ
+ b) compile time Error
+ c) Run time error
+
+ Correct Answer:
+
+ a) ABC XYZ
+ */
+
+/*
+import java.util.*;
+  public class TestEmployee {
+        public static void main(String args[]){
+
+            ArrayList<String> al = new ArrayList();
+            al.add("ABC");
+            al.add("XYZ");
+            Iterator itr = al.iterator();
+            while(itr.hasNext()){
+                System.out.print(itr.next()+" ");}}}
+ */
+
+/*
+ Q59 What will be the output of the code below ?
+
+ Answers:
+ a) 1 XYZ
+ b) compile time Error
+ c) Run time error
+
+ Correct Answer:
+
+ a) 1 XYZ (Array list can accept heterogeneous elements)
+ */
+
+/*
+import java.util.*;
+  public class TestEmployee {
+        public static void main(String args[]){
+
+            ArrayList al = new ArrayList();
+            al.add(1);
+            al.add("XYZ");
+            Iterator itr = al.iterator();
+            while(itr.hasNext()){
+                System.out.print(itr.next()+" ");}}}
+*/
+
+/*
+ Q60 What will be the output of the code below ?
+
+ Answers:
+ a) 1 XYZ 2
+ b) 1 XYZ 2 3
+ c) compile time Error
+
+ Correct Answer:
+
+ b) 1 XYZ 2 3
+ */
+/*
+import java.util.*;
+  public class TestEmployee {
+        public static void main(String args[]){
+
+            ArrayList al = new ArrayList(2);
+            al.add(1);
+            al.add("XYZ");
+            al.add(2);
+            al.add(3);
+            Iterator itr = al.iterator();
+            while(itr.hasNext()){
+                System.out.print(itr.next()+" ");}}}
+*/
+
+/*
+ Q61 What will be the output of the code below ?
+
+ Answers:
+ a) 1 XYZ yes 2
+ b) 1 XYZ
+ c) yes 2
+ d) compile time Error
+
+ Correct Answer:
+
+ b) compile time Error (Array list is defined as String)
+ */
+/*
+import java.util.*;
+  public class TestEmployee {
+        public static void main(String args[]){
+
+            ArrayList al = new ArrayList(2);
+            al.add(1);
+            al.add("XYZ");
+            ArrayList<String> al2=new ArrayList<String>();
+            al2.add("yes");
+            al2.add(2);
+            al.addAll(al2);
+            Iterator itr = al.iterator();
+            while(itr.hasNext()){
+                System.out.print(itr.next()+" ");}}}
+*/
+
+
+/*
+ Q62 What will be the output of the code below ?
+
+ Answers:
+ a) 1 XYZ yes 2
+ b) 1 XYZ
+ c) yes 2
+ d) compile time Error
+
+ Correct Answer:
+
+ a) 1 XYZ yes 2
+ */
+/*
+import java.util.*;
+  public class TestEmployee {
+        public static void main(String args[]){
+
+            ArrayList al = new ArrayList(2);
+            al.add(1);
+            al.add("XYZ");
+            ArrayList al2=new ArrayList();
+            al2.add("yes");
+            al2.add(2);
+            al.addAll(al2);
+            Iterator itr = al.iterator();
+            while(itr.hasNext()){
+                System.out.print(itr.next()+" ");}}}
+*/
+
+
+/*
+ Q63 What will be the output of the code below ?
+
+ Answers:
+ a) 3
+ b) 2
+ c) compile time Error
+
+ Correct Answer:
+
+ a) 2
+ */
+/*
+import java.util.*;
+  public class TestEmployee {
+          public static void main(String args[]) {
+              ArrayList<Integer> al = new ArrayList<Integer>();
+              al.add(1);
+              al.add(88);
+              al.add(9);
+              al.add(17);
+              System.out.println("index of "+al.lastIndexOf(9));}}
+*/
+
+/*
+ Q63 What will be the output of the code below ?
+
+ Answers:
+ a) 10 20 30
+ b) Run time error
+ c) compile time Error
+
+ Correct Answer:
+
+ a) 10 20 30
+ */
+
+/*
+import java.util.*;
+public class TestEmployee {
+    public static void main(String[] args) {
+        ArrayList<Integer> al = new ArrayList<>();
+        al.add(10);
+        al.add(20);
+        al.add(30);
+        for (int value : al) {
+            System.out.print(value+ " ");}}}
+*/
+
+/*
+ Q64 What will be the output of the code below ?
+
+ Answers:
+ a) 10 20 30
+ b) 30 20
+ c) 20 10
+ c) compile time Error
+
+ Correct Answer:
+
+ b) 30 20
+ */
+
+/*
+import java.util.*;
+public class TestEmployee {
+    public static void main(String[] args) {
+        ArrayList<Integer> al = new ArrayList<>();
+        al.add(10);
+        al.add(20);
+        al.set(0, 30);
+        for (int value : al) {
+            System.out.print(value+ " ");}}}
+*/
+
+/*
+ Q64 What will be the output of the code below ?
+
+ Answers:
+ a) 10 20
+ b) 30
+ c) 10 20
+ c) compile time Error
+
+ Correct Answer:
+
+ b) 30
+ */
+
+/*
+import java.util.*;
+public class TestEmployee {
+    public static void main(String[] args) {
+        ArrayList<Integer> al = new ArrayList<>();
+        al.add(10);
+        al.add(20);
+        al.clear();
+        al.add(30);
+        System.out.print(al+ " ");}}
+*/
+
+/*
+ Q65 What will be the output of the code below ?
+
+ Answers:
+ a) 30
+ b) 20
+ c) 10
+ c) compile time Error
+
+ Correct Answer:
+
+ c) 10
+ */
+
+/*
+import java.util.*;
+public class TestEmployee {
+    public static void main(String[] args) {
+        ArrayList<Integer> al = new ArrayList<>();
+        al.add(10);
+        al.add(20);
+        al.add(30);
+        int minimum = Collections.min(al);
+        System.out.print(minimum);}}
+*/
+
+
+/*
+ Q66 What will be the output of the code below ?
+
+ Answers:
+ a) 30
+ b) 20
+ c) 10
+ c) compile time Error
+
+ Correct Answer:
+
+ a) 30
+ */
+
+/*
+import java.util.*;
+public class TestEmployee {
+    public static void main(String[] args) {
+        ArrayList<Integer> al = new ArrayList<>();
+        al.add(10);
+        al.add(20);
+        al.add(30);
+        int minimum = Collections.max(al);
+        System.out.print(minimum);}}
+*/
+
+/*
+ Q67 What will be the output of the code below ?
+
+ Answers:
+ a) 9 2 17
+ b) 17 2 9
+ c) 2 9 17
+ c) compile time Error
+
+ Correct Answer:
+
+ c) 2 9 17
+ */
+
+/*
+import java.util.*;
+public class TestEmployee {
+    public static void main(String[] args) {
+        ArrayList<Integer> al = new ArrayList<>();
+        al.add(9);
+        al.add(2);
+        al.add(17);
+        Collections.sort(al);
+        System.out.print(al+ " ");}}
+*/
+
+/*
+ Q68 Can ArrayList store duplicate values ?
+
+ Answers:
+ a) no
+ b) yes
+ c) compile time Error
+
+ Correct Answer:
+
+ b) yes
+ */
+
+/*
+ Q69 Can ArrayList allow random access ?
+
+ Answers:
+ a) no
+ b) yes
+ c) compile time Error
+
+ Correct Answer:
+
+ b) yes, array works at the index basis.
+ */
+/*
+ Q70 Is Array list growable or not?
+
+ Answers:
+ a) yes
+ b) no
+ c) compile time Error
+
+ Correct Answer:
+
+ a) yes,arrya list is dynamic and increase its size according to data.
+ */
+
+/*
+ Q71 Can Array List shrink automatically?
+
+ Answers:
+ a) yes
+ b) no
+ c) compile time Error
+
+ Correct Answer:
+
+ a) yes,when object is removed, array list shrink automatically.
+ */
+
+/*
+ Q72 Can Array List shrink automatically?
+
+ Answers:
+ a) yes
+ b) no
+ c) compile time Error
+
+ Correct Answer:
+
+ a) yes,when object is removed, array list shrink automatically.
+ */
