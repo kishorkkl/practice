@@ -30,7 +30,7 @@ package com.jse7p1.javabasics;
 
   /*Testing Topic 1: Java applications with a main method
 
-/* Q1.What will be the output of the code below?
+Q1.What will be the output of the code below?
 
         Answers:
 
@@ -42,9 +42,9 @@ package com.jse7p1.javabasics;
         a)Runtime Error
 */
 
-/*
+
   public class TestCalendar{
-    public static int main(String [] args)
+    public static void main(String [] args)
         {
             double result,min=7.0,sec=5.9;
             result=min+sec;
@@ -52,7 +52,7 @@ package com.jse7p1.javabasics;
             return 0;
         }
     }
-*/
+
 
 
 /*
