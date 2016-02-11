@@ -679,3 +679,662 @@ Q30. Constructor can be inherited by subclass?
         a) no (The constructor in Java is not inherited by the subclass)
 */
 
+// Topic 2 : Develop code that demonstrates the use of polymorphism
+
+
+/*
+Q31. What will be the output of the code below?
+
+        Answers:
+
+        a) coding
+        b) Java coding
+        c) Compile time error
+
+        Correct Answer:
+        b) Java coding
+*/
+
+/*
+class Test
+{
+    void work(){System.out.println("coding");}}
+class TestEmployee extends Test
+{
+    void work(){System.out.println("Java coding");}
+    public static void main(String arg[]){Test p=new TestEmployee();p.work();}}
+*/
+
+/*
+Q32. What will be the output of the code below?
+
+        Answers:
+
+        a) coding
+        b) Java coding
+        c) Compile time error
+
+        Correct Answer:
+        b) Java coding
+*/
+/*
+
+class Test
+{
+    void work(){System.out.println("coding");}}
+class TestEmployee extends Test
+{
+    void work(){System.out.println("Java coding");}
+    public static void main(String arg[]){TestEmployee p=new TestEmployee();p.work();}}
+*/
+
+/*
+Q33. What will be the output of the code below?
+
+        Answers:
+
+        a) coding
+        b) Java coding
+        c) Compile time error
+
+        Correct Answer:
+        a) coding
+*/
+
+/*
+class Test
+{
+    void work(){System.out.println("coding");}}
+class TestEmployee extends Test
+{
+    void work(){System.out.println("Java coding");}
+    public static void main(String arg[]){Test p=new Test();p.work();}}
+*/
+
+/*
+Q34. What will be the output of the code below?
+
+        Answers:
+
+        a) coding
+        b) Java coding
+        c) Compile time error
+
+        Correct Answer:
+        c) Compile time error
+*/
+
+/*
+class Test
+{
+    void work(){System.out.println("coding");}}
+class TestEmployee extends Test
+{
+    void work(){System.out.println("Java coding");}
+    public static void main(String arg[]){TestEmployee p=new Test();p.work();}}
+*/
+
+/*
+Q35. What will be the output of the code below?
+
+        Answers:
+
+        a) java
+           c++
+        b) Java c++
+        c) c++ java
+        d) c++
+           java
+
+        Correct Answer:
+        b) Java c++
+*/
+
+/*
+import java.util.ArrayList;
+import java.util.List;
+abstract class Test{public abstract void solveTest();}
+class java extends Test{public void solveTest() {System.out.print("java ");}}
+
+class ctest extends Test{public void solveTest() {System.out.println("C++ ");}}
+
+public class TestEmployee{
+
+    public static void main(String args[]) {
+        List<Test> lt = new ArrayList<Test>();lt.add(new java());lt.add(new ctest());for(Test list : lt){list.solveTest();}}}
+*/
+
+
+/*
+Q36. What will be the output of the code below?
+
+        Answers:
+
+        a) java
+           c++
+        b) Java c++
+        c) c++ java
+        d) compile time error
+
+        Correct Answer:
+        d) compile time error
+*/
+
+/*
+import java.util.ArrayList;
+import java.util.List;
+abstract class Test{public abstract void solveTest();}
+class java extends Test{public void solveTest() {System.out.print("java ");}}
+
+class ctest extends Test{public void solveTest() {System.out.println("C++ ");}}
+
+public class TestEmployee{
+
+    public static void main(String args[]) {
+        List lt = new ArrayList();lt.add(new java());lt.add(new ctest());for(Test list : lt){list.solveTest();}}}
+*/
+
+
+/*
+Q37. What will be the output of the code below?
+
+        Answers:
+
+        a) 10
+           30.25
+        b) 30.25 10
+        c) 10 30.25
+        d) compile time error
+
+        Correct Answer:
+        c) 10 30.25
+*/
+/*
+
+class Java{void Test (int a){System.out.print(a+" ");}double Test(double a) {return a*a;}}
+
+class TestEmployee
+{
+    public static void main (String args [])
+    {Java jv = new Java();double result;jv.Test(10);result = jv.Test(5.5);System.out.println(result);}}
+*/
+
+/*
+Q38. What will be the output of the code below?
+
+        Answers:
+
+        a) 10
+           30.25
+        b) 30.25 10
+        c) 10 30.25
+        d) compile time error
+
+        Correct Answer:
+        d) compile time error
+*/
+
+/*
+class Java{double Test (int a){System.out.print(a+" ");}double Test(double a) {return a*a;}}
+
+class TestEmployee
+{
+    public static void main (String args [])
+    {Java jv = new Java();double result;jv.Test(10);result = jv.Test(5.5);System.out.println(result);}}
+*/
+
+
+/*
+Q39. What will be the output of the code below?
+
+        Answers:
+
+        a) 20.030.25
+        b) 30.2520.0
+        c) compile time error
+
+        Correct Answer:
+        b) 30.2520.0
+*/
+
+/*
+class Java{double Test (int a){return (a+a);}double Test(double a) {return a*a;}}
+
+class TestEmployee
+{
+    public static void main (String args [])
+    {Java jv = new Java();double result1,result2;result2=jv.Test(10);result1 = jv.Test(5.5);
+        System.out.print(result1);System.out.println(result2);}}
+*/
+
+/*
+Q40. What will be the output of the code below?
+
+        Answers:
+
+        a) base derived
+        b) derived base
+        c) compile time error
+
+        Correct Answer:
+        a) base derived
+*/
+
+/*
+class BaseClass{public void method(){System.out.print("base ");}}
+
+class DerivedClass extends BaseClass{public void method(){System.out.println("derived");}}
+
+public class TestEmployee
+{
+    public static void main (String args []) {
+        BaseClass bc = new BaseClass();BaseClass bc1 = new DerivedClass();bc.method();bc1.method();}}
+*/
+
+
+/*
+Q41. Why method overloading called static polymorphism ?
+
+        Answers:
+
+        a) compiler know at compile time that which method link to which call
+        b) compiler don't know at compile time that which method link to which call
+        c) none of the above
+
+        Correct Answer:
+        a) compiler know at compile time that which method link to which call
+*/
+
+/*
+Q42. In Dynamic binding ?
+
+        Answers:
+
+        a) create derived class object
+        b) create base class object
+        c) none of the above
+
+        Correct Answer:
+        b) create base class object
+*/
+
+/*
+Q43. Method overloading is ?
+
+        Answers:
+
+        a) compile time activity
+        b) run time activity
+        c) none of the above
+
+        Correct Answer:
+        a) compile time activity
+*/
+
+/*
+Q44. Basic meaning of polymorphism ?
+
+        Answers:
+
+        a) representation of many form into one
+        b) representation of one form into many
+        c) representation of many form into many
+        c) none of the above
+
+        Correct Answer:
+        b) representation of one form into many
+*/
+
+// Topic 3: Differentiate between the type of a reference and the type of an object
+
+/*
+Q45. In below code line emp is which type of reference?
+       Employee emp = new Employee();
+
+        Answers:
+
+        a) Strong
+        b) Soft
+        c) Weak
+        d) Phantom
+
+        Correct Answer:
+        a) Strong
+*/
+
+
+/*
+Q46. In below code line emp is Strong reference, is it eligible to garbage collection?
+       Employee emp = new Employee();
+
+        Answers:
+
+        a) No
+        b) yes
+        c) none of the above
+
+        Correct Answer:
+        b) yes ( but in only case when emp is pointed to null...emp=null)
+*/
+
+
+/*
+Q47. What is object type in below code line?
+       Object o = new Integer(3);
+
+        Answers:
+
+        a) Integer
+        b) Object
+        c) none of the above
+
+        Correct Answer:
+        a) Integer
+*/
+
+/*
+Q48. What is reference type in below code line?
+       Object o = new Integer(3);
+
+        Answers:
+
+        a) Integer
+        b) Object
+        c) none of the above
+
+        Correct Answer:
+        b) Object
+*/
+
+/*
+Q49. What is reference type based on?
+
+
+        Answers:
+
+        a) Class
+        b) primitive data type
+        c) none of the above
+
+        Correct Answer:
+        a) Class
+*/
+
+// Topic 4 : Determine when casting is necessary
+
+
+/*
+Q50. What will be the output of the code below?
+
+        Answers:
+
+        a) 100100
+        b) 100 100
+        c) 100
+           100
+        d) compile time error
+
+        Correct Answer:
+        a) 100100
+*/
+/*
+public class TestEmployee
+{
+    public static void main(String[] args)
+    {
+        int i = 100;
+        long l = i;
+        System.out.print(i);
+        System.out.println(l);}}
+*/
+
+/*
+Q51. What will be the output of the code below?
+
+        Answers:
+
+        a) 100 100
+        b) 100100.0
+        c) 100
+           100
+        d) compile time error
+
+        Correct Answer:
+        b) 100100.0
+*/
+/*
+public class TestEmployee
+{
+    public static void main(String[] args)
+    {
+        int i = 100;
+        float l = i;
+        System.out.print(i);
+        System.out.println(l);}}
+*/
+
+/*
+Q52. What will be the output of the code below?
+
+        Answers:
+
+        a) 100.0100.0
+        b) 100 100
+        c) 100.0
+           100.0
+        d) compile time error
+
+        Correct Answer:
+        a) 100.0100.0
+*/
+
+/*
+public class TestEmployee
+{
+    public static void main(String[] args)
+    {
+        float i = 100;
+        double l = i;
+        System.out.print(i);
+        System.out.println(l);}}
+*/
+
+
+/*
+Q53. What will be the output of the code below?
+
+        Answers:
+
+        a) 100.04100
+        b) 100.04 100
+        c) 100.04
+           100
+        d) compile time error
+
+        Correct Answer:
+        a) 100.04100
+*/
+
+/*
+public class TestEmployee
+{
+    public static void main(String[] args)
+    {
+        double d = 100.04;
+        long l = (long)d;
+        System.out.print(d);
+        System.out.println(l);}}
+*/
+
+/*
+Q54. What will be the output of the code below?
+
+        Answers:
+
+        a) Login id & pwd is : xyz abc
+        b) Login id & pwd is : abc xyz
+        c) compile time error
+
+        Correct Answer:
+        b) Login id & pwd is : abc xyz
+*/
+
+
+/*
+import java.util.ArrayList;
+public class TestEmployee {
+
+    public static void main(String args[]) {
+        String username = "abc";String password = "xyz";
+        ArrayList al = new ArrayList();al.add(username);al.add(password);
+        Object u = al.get(0);String uname = (String) al.get(0);String pass = (String) al.get(1);
+        System.out.print("Login id & pwd is : " + uname+ " "+pass);}}
+*/
+
+
+/*
+Q55. What will be the output of the code below?
+
+        Answers:
+
+        a) Login id & pwd is : xyz abc
+        b) Login id & pwd is : abc xyz
+        c) compile time error
+
+        Correct Answer:
+        c) compile time error
+*/
+
+
+/*
+import java.util.ArrayList;
+public class TestEmployee {
+
+    public static void main(String args[]) {
+        String username = "abc";String password = "xyz";
+        ArrayList al = new ArrayList();al.add(username);al.add(password);
+        Object u = al.get(0);String uname = al.get(0);String pass =al.get(1);
+        System.out.print("Login id & pwd is : " + uname+ " "+pass);}}
+*/
+
+/*
+Q56. What will be the output of the code below?
+
+        Answers:
+
+        a) 65.0 66.0
+        b) 65.0 B
+        c) compile time error
+
+        Correct Answer:
+        b) 65.0 B
+*/
+
+/*
+public class TestEmployee
+    {
+        public static void main (String args[])
+        {
+            char ch1 = 'A';double d1 = ch1;
+            double d2 = 66.0;char ch2 = (char) d2;
+            System.out.print(d1+" ");System.out.println(ch2);}}
+*/
+
+/*
+Q57. What will be the output of the code below?
+
+        Answers:
+
+        a) 65.0 66.0
+        b) 65.0 B
+        c) compile time error
+
+        Correct Answer:
+        c) compile time error
+*/
+
+/*
+public class TestEmployee
+    {
+        public static void main (String args[])
+        {
+            char ch1 = "A";double d1 = ch1;
+            double d2 = 66.0;char ch2 = (char) d2;
+            System.out.print(d1+" ");System.out.println(ch2);}}
+*/
+
+
+/*
+Q58. What will be the output of the code below?
+
+        Answers:
+
+        a) 2 6 6
+        b) 2 6 8
+        c) Compile time error
+
+        Correct Answer:
+        b) 2 6 8
+*/
+
+/*
+public class TestEmployee {
+    public static void main(String[] arg) {
+        int i, ans;double d = 2.75;i = (int)d;System.out.print(i+" ");
+        ans = (int)d * 3;System.out.print(ans+" ");
+        ans = (int)(d * 3);System.out.println(ans);}}
+*/
+
+/*
+Q59. Primitive Casting is used to convert data from one primitive data type to another primitive data type?
+
+        Answers:
+
+        a) True
+        b) False
+        c) none of the above
+
+        Correct Answer:
+        a) True
+*/
+
+
+/*
+Q60. Converting data from small sized data type to big sized data type is called?
+
+        Answers:
+
+        a) Explicit Narrowing
+        b) Auto Widening
+        c) none of the above
+
+        Correct Answer:
+        b) Auto Widening
+*/
+
+/*
+Q61. When you are converting data from big sized data type to small sized data type is called?
+
+        Answers:
+
+        a) Explicit Narrowing
+        b) Auto Widening
+        c) none of the above
+
+        Correct Answer:
+        a) Explicit Narrowing
+*/
+
+/*
+Q62. When we cast a particular variable?
+
+        Answers:
+
+        a) variable data type changed
+        b) a new copy of variable is made and its data type changed
+        c) none of the above
+
+        Correct Answer:
+        b) a new copy of variable is made and its data type changed
+*/
+
