@@ -1338,3 +1338,540 @@ Q62. When we cast a particular variable?
         b) a new copy of variable is made and its data type changed
 */
 
+// Topic 5 : Use super and this to access objects and constructors
+
+
+
+/*
+Q63. What will be the output of the code below?
+
+        Answers:
+
+        a) 100
+        b) 50
+        c) Compile time error
+
+        Correct Answer:
+        b) 50
+*/
+/*
+class Test{
+    int sal=50;
+}
+
+class TestEmployee extends Test{
+    int sal=100;
+
+    void display(){
+        System.out.println(super.sal);
+    }
+    public static void main(String args[]){
+        TestEmployee te = new TestEmployee();
+        te.display();}}
+*/
+
+/*
+Q64. What will be the output of the code below?
+
+        Answers:
+
+        a) 100
+        b) 50
+        c) Compile time error
+
+        Correct Answer:
+        a) 100
+*/
+
+/*
+class Test{
+    int sal=50;
+}
+
+class TestEmployee extends Test{
+    int sal=100;
+
+    void display(){
+        System.out.println(sal);
+    }
+    public static void main(String args[]){
+        TestEmployee te = new TestEmployee();
+        te.display();}}
+*/
+
+/*
+Q65. What will be the output of the code below?
+
+        Answers:
+
+        a) 100 50
+        b) 50 100
+        c) Compile time error
+
+        Correct Answer:
+        b) 50 100
+*/
+
+/*
+class Test{
+    int sal=50;
+}
+
+class TestEmployee extends Test{
+    int sal=100;
+
+    void display(){
+        System.out.print(super.sal+" ");
+        System.out.println(sal);
+    }
+    public static void main(String args[]){
+        TestEmployee te = new TestEmployee();
+        te.display();}}
+*/
+
+
+/*
+Q66. What will be the output of the code below?
+
+        Answers:
+
+        a) 50 100
+        b) 100 50
+        c) Compile time error
+
+        Correct Answer:
+        a) 50 100
+*/
+
+/*
+class Test{
+    int sal=50;
+    Test() {
+        System.out.print(sal+" ");
+    }
+}
+
+class TestEmployee extends Test{
+    int sal = 100;
+    TestEmployee() {
+        super();
+        System.out.println(sal);
+}
+    public static void main(String args[]){
+        TestEmployee te = new TestEmployee();
+        }}
+*/
+
+/*
+Q67. What will be the output of the code below?
+
+        Answers:
+
+        a) 50 100
+        b) 100 50
+        c) Compile time error
+
+        Correct Answer:
+        c) Compile time error
+*/
+
+/*
+class Test{
+    int sal=50;
+    Test() {
+        System.out.print(sal+" ");
+    }
+}
+
+class TestEmployee extends Test{
+    int sal = 100;
+    TestEmployee() {
+        super();
+        System.out.println(sal);
+}
+    public static void main(String args[]){
+        TestEmployee te = new TestEmployee();
+        te.display();}}
+*/
+
+/*
+Q67. What will be the output of the code below?
+
+        Answers:
+
+        a) java c++
+        b) c++ java
+        c) Compile time error
+
+        Correct Answer:
+        c) c++ java
+*/
+
+/*
+class Employee{
+    void code(){System.out.println("java");}
+}
+
+class TestEmployee extends Employee{
+    void code(){System.out.print("c++"+ " ");}
+    void display(){
+        code();
+        super.code();}
+    public static void main(String args[]){
+        TestEmployee s=new TestEmployee();
+        s.display();}}
+*/
+
+/*
+Q68. What will be the output of the code below?
+
+        Answers:
+
+        a) java c++
+        b) c++ java
+        c) java
+        d) Compile time error
+
+        Correct Answer:
+        b) c++ java
+*/
+
+/*
+class Employee{
+    void code(){System.out.println("java");}
+}
+
+class TestEmployee extends Employee{
+    void code(){System.out.print("c++"+ " ");}
+    void display(){
+        code();
+        super.code();}
+    public static void main(String args[]){
+        TestEmployee s=new TestEmployee();
+        s.display();}}
+*/
+
+/*
+Q69. What will be the output of the code below?
+
+        Answers:
+
+        a) java c++
+        b) c++ java
+        c) java
+        d) Compile time error
+
+        Correct Answer:
+        c) java
+*/
+
+/*
+class Employee{
+    void code(){System.out.println("java");}
+}
+
+class TestEmployee extends Employee{
+    void code(){System.out.print("c++"+ " ");}
+    void display(){
+        super.code();}
+    public static void main(String args[]){
+        TestEmployee s=new TestEmployee();
+        s.display();}}
+*/
+
+
+/*
+Q70. What will be the output of the code below?
+
+        Answers:
+
+        a) Good Better
+        b) Better Good
+        c) Good
+        d) Compile time error
+
+        Correct Answer:
+        a) Good Better
+*/
+
+/*
+class Test{void display (){System.out.print("Good"+ " ");}}
+
+class Test1 extends Test{void display (){super.display ();System.out.println ("Better");}}
+
+class TestEmployee
+{
+    public static void main (String k []){Test1 t1=new Test1 ();t1.display ();}}
+*/
+
+/*
+Q71. What will be the output of the code below?
+
+        Answers:
+
+        a) Good Better
+        b) Better Good
+        c) Compile time error
+        d) Run time error
+
+        Correct Answer:
+        d) Run time error
+*/
+
+/*
+class Test{void display (){System.out.print("Good"+ " ");}}
+
+class Test1 extends Test{void display (){display ();System.out.println ("Better");}}
+
+class TestEmployee
+{
+    public static void main (String k []){Test1 t1=new Test1 ();t1.display ();}}
+*/
+
+
+/*
+Q72. What will be the output of the code below?
+
+        Answers:
+
+        a) 10 20
+        b) 20 10
+        c) Compile time error
+
+        Correct Answer:
+        a) 10 20
+*/
+
+/*
+class Employee{int a;Employee (int a){this.a=a;System.out.print(a+" ");}};
+
+class Employee1 extends Employee{int b;Employee1 (){super (10);this.b=20;System.out.println (+b);}};
+
+class TestEmployee{public static void main (String arr []){Employee1 em1 = new Employee1 ();}};
+*/
+
+/*
+Q73. What will be the output of the code below?
+
+        Answers:
+
+        a) 10 20
+        b) 20 10
+        c) Compile time error
+
+        Correct Answer:
+        a) Compile time error
+*/
+
+/*
+class Employee{int a;Employee (int a){a=a;System.out.print(a+" ");}};
+
+class Employee1 extends Employee{int b;Employee1 (){super (10);this.b=20;System.out.println (+b);}};
+
+class TestEmployee{public static void main (String arr []){Employee1 em1 = new Employee1 (10);}};
+*/
+
+/*
+Q74. What will be the output of the code below?
+
+        Answers:
+
+        a) 10 20
+        b) 20 10
+        c) Compile time error
+
+        Correct Answer:
+        a) Compile time error ( call to super must be first statement in constructor)
+*/
+
+/*
+class Test{
+    int sal=50;
+    Test() {
+        System.out.print(sal+" ");
+    }
+}
+
+class TestEmployee extends Test{
+    int sal = 100;
+    TestEmployee() {
+        System.out.println(sal);
+        super();
+    }
+    public static void main(String args[]){
+        TestEmployee te = new TestEmployee();
+        }}
+*/
+
+
+
+/*
+Q75. Super keyword can be used at one of the below levels?
+
+        Answers:
+
+        a) Variable level
+        b) Method level
+        c) Constructor level
+        d) All of the above
+
+        Correct Answer:
+        d) All of the above
+*/
+
+/*
+Q76. Super keyword is?
+
+        Answers:
+
+        a) Reference variable
+        b) Local variable
+        c) Instance variable
+        d) None of the above
+
+        Correct Answer:
+        a) Reference variable (The super keyword in java is a reference variable that is used to refer immediate parent class object.)
+*/
+
+/*
+Q77. Can Super keyword work in static method?
+
+        Answers:
+
+        a) Yes
+        b) No
+        c) None of the above
+
+        Correct Answer:
+        b) No(Super keyword can not work in static method but can call static method)
+*/
+
+/*
+Q78. Need of Super keyword in java?
+
+        Answers:
+
+        a) To call super class variables, methods, constructors in sub class when there is some similarity.
+        b) To call sub class variables, methods, constructors in super class when there is some similarity.
+        c) None of the above
+
+        Correct Answer:
+        a) To call super class variables, methods, constructors in sub class when there is some similarity.
+*/
+
+/*
+Q79. super() is used to call?
+
+        Answers:
+
+        a) Methods of super class
+        b) Variables of super class
+        c) Constructor of super class
+        d) All of the above
+
+        Correct Answer:
+        c) Constructor of super class
+*/
+
+/*
+Q80. super is used to call?
+
+        Answers:
+
+        a) Methods and Variables of super class
+        b) Constructor of super class
+        c) Both a & b
+        d) All of the above
+
+        Correct Answer:
+        a) Methods and Variables of super class
+*/
+
+/*
+Q81. super() placed only in constructors's first statement?
+
+        Answers:
+
+        a) True
+        b) False
+        c) None of the above
+
+        Correct Answer:
+        a) True ( otherwise compiler gives--call to super must be first statement in constructor)
+*/
+
+/*
+Q82. What will be the output of the code below?
+
+        Answers:
+
+        a) 5000
+        b) salary is 5000
+        c) Compile time error
+
+        Correct Answer:
+        a) salary is 5000
+*/
+
+/*
+class Test{
+    Test(){System.out.print("salary is ");}
+}
+
+class TestEmployee extends Test{
+    int sal;
+    TestEmployee(int sal){
+        this.sal=sal;
+        System.out.println(sal);
+    }
+    public static void main(String args[]){
+        TestEmployee te = new TestEmployee(5000);}}
+*/
+
+/*
+Q83. What will be the output of the code below?
+
+        Answers:
+
+        a) Hello
+        b) Run time error
+        c) Compile time error
+
+        Correct Answer:
+        a) Hello
+*/
+
+/*
+class Test {public void show() {this.print();}private void print() {System.out.println("Hello");}}
+public class TestEmployee extends Test{
+    public static void main(String [] arg){
+        Test ab = new Test();ab.show();}}
+*/
+
+/*
+Q84. What will be the output of the code below?
+
+        Answers:
+
+        a) 20 10
+        b) 10 20
+        c) Compile time error
+
+        Correct Answer:
+        b) 10 20
+*/
+
+/*
+class Test {
+    int var;public void show(int testVariable) {System.out.print(this.var+" ");}}
+public class TestEmployee {
+    public static void main(String args[]) {
+        Test obj1 = new Test();
+        Test obj2 = new Test();
+        obj1.var = 10;obj2.var = 20;
+        obj1.show(50);obj2.show(50);}}
+*/
+
+
+
+
