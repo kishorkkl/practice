@@ -1873,5 +1873,294 @@ public class TestEmployee {
 */
 
 
+/*
+Q85. What will be the output of the code below?
+
+        Answers:
+
+        a) 20 abc 21 xyz
+        b) 21 abc 20 xyz
+        c) Compile time error
+
+        Correct Answer:
+        a) 20 abc 21 xyz
+*/
+
+/*
+class TestEmployee{
+    int id;String name;
+    TestEmployee(int id,String name){this.id=id;this.name=name;}
+    void display(){System.out.print(id+" "+name+" ");}
+    public static void main(String args[]){
+        TestEmployee s1 = new TestEmployee(20,"abc");
+        TestEmployee s2 = new TestEmployee(21,"xyz");
+        s1.display();s2.display();}}
+*/
 
 
+/*
+Q86. this keyword can call?
+
+        Answers:
+
+        a) Overloaded Constructor
+        b) Constructor of same class
+        c) Both a and b
+        d) current class instance variable
+
+        Correct Answer:
+        d) current class instance variable
+*/
+
+
+/*
+Q87. this() can call?
+
+        Answers:
+
+        a) Overloaded Constructor
+        b) Constructor of same class
+        c) Both a and b
+        d) current class instance variable
+
+        Correct Answer:
+        c) Both a and b
+*/
+
+
+/*
+Q88. this keyword can be used to differentiate between instance variable and local variable.?
+
+        Answers:
+
+        a) yes
+        b) no
+        c) None of the above
+
+
+        Correct Answer:
+        a) yes
+*/
+
+
+/*
+Q89. this keyword can be used to differentiate between instance variable and local variable.?
+
+        Answers:
+
+        a) yes
+        b) no
+        c) None of the above
+
+
+        Correct Answer:
+        a) yes
+*/
+
+// Topic 6 : Use abstract classes and interfaces
+
+/*
+Q90. What will be the output of the code below?
+
+        Answers:
+
+        a) THANKS
+        b) HELLO
+        c) HELLO THANKS
+        d) None of the above
+
+        Correct Answer:
+        c) HELLO THANKS
+*/
+
+/*
+interface First{void print();}
+class  Second implements First{
+public void print(){System.out.print("HELLO"+" ");}}
+class  SuperMario implements First{public void print(){System.out.println("THANKS");}}
+class  TestEmployee{
+public static void main(String args[]){
+            First obj=new Second();obj.print();
+        obj=new SuperMario();obj.print();}}
+*/
+
+
+/*
+Q91. What will be the output of the code below?
+
+        Answers:
+
+        a) THANKS HELLO
+        b) HELLO THANKS
+        c) Compile time error
+        d) None of the above
+
+        Correct Answer:
+        c) Compile time error
+*/
+
+/*
+interface First{void print();}
+class  Second implements First{
+public void print(){System.out.print("HELLO"+" ");}}
+class  SuperMario implements First{public void print(){System.out.println("THANKS");}}
+class  TestEmployee{
+public static void main(String args[]){
+            First obj=new First();obj.print();
+        obj=new SuperMario();obj.print();}}
+*/
+
+
+/*
+Q92. What will be the output of the code below?
+
+        Answers:
+
+        a) A B
+        b) A B B
+        c) Compile time error
+
+        Correct Answer:
+        A) A B
+*/
+
+/*
+interface A{void displayA();}
+abstract class B{public void displayB(){System.out.println("B"+" ");}
+abstract public void display();}
+ class  Test  implements A{public void displayB(){System.out.println("B"+ " ");}
+public void displayA(){System.out.print("A"+" ");}}
+class  TestClass{
+public static void main(String args[]){Test obj=new Test();obj.displayA();obj.displayB();}}
+*/
+
+
+/*
+Q93. What will be the output of the code below?
+
+        Answers:
+
+        a) A B
+        b) A B B
+        c) Compile time error
+
+        Correct Answer:
+        C) Compile time error
+*/
+
+/*
+interface A{void displayA();}
+abstract class B{public void displayB(){System.out.println("B"+" ");}
+abstract public void display();}
+ class  Test  implements A{public void displayB(){System.out.println("B"+ " ");}
+public void displayA(){System.out.print("A"+" ");}}
+class  TestClass{
+public static void main(String args[]){Test obj=new Test();obj.displayA();obj.display();obj.displayB();}}
+*/
+
+/*
+Q94. What will be the output of the code below?
+
+        Answers:
+
+        a) Hello
+        b) Compile time error
+        c) Run time error
+
+        Correct Answer:
+        a) Hello
+*/
+
+/*
+interface Test1{public void Draw();}
+
+class Test implements Test1{public void Draw() {System.out.println("Hello");}}
+
+public class TestEmployee {public static void main(String[] args) {Test te=new Test();te.Draw();}}
+*/
+
+/*
+Q95. What will be the output of the code below?
+
+        Answers:
+
+        a) Two One
+        b) One Two
+        c) Run time error
+
+        Correct Answer:
+        b) One Two
+*/
+/*
+interface One {public void one();public void one1();}
+public class TestEmployee implements One{public void one(){System.out.print("One"+" ");}
+    public void one1(){System.out.println("Two");}
+    public static void main(String args[]){
+        TestEmployee m = new TestEmployee();m.one();m.one1();}}
+*/
+
+/*
+Q96. Can we declare interface abstract?
+
+        Answers:
+
+        a) Yes
+        b) No
+        c) None of the above
+
+        Correct Answer:
+        b) No (interface is implicitly abstract)
+*/
+
+/*
+Q97. Can we instantiate a interface?
+
+        Answers:
+
+        a) Yes
+        b) No
+        c) None of the above
+
+        Correct Answer:
+        b) No
+*/
+
+/*
+Q98. All the methods in interface is abstract?
+
+        Answers:
+
+        a) True
+        b) False
+        c) None of the above
+
+        Correct Answer:
+        a) True
+*/
+
+/*
+Q99. A class can implement more than one interface at a time?
+
+        Answers:
+
+        a) True
+        b) False
+        c) None of the above
+
+        Correct Answer:
+
+        a) True (A class can extend only one class, but implement many interfaces.)
+*/
+
+/*
+Q100. Which keyword is used when an interface extends another?
+
+        Answers:
+
+        a) implement
+        b) extend
+        c) None of the above
+
+        Correct Answer:
+        a) extend
+*/
