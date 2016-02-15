@@ -1,5 +1,6 @@
 package com.jse7p1.exceptions;
 import java.io.*;
+import java.util.IllegalFormatException;
 import java.util.Random;
 
 /**
@@ -253,12 +254,10 @@ A)Division by zero
 B)Division by zero
 C) After catch statement.
 
-
 /*correct answer:-
 A)Division by zero
   After catch statement.
 */
-
 
 /*public class TestEmployee {
     public static void main(String args[]) {
@@ -273,179 +272,310 @@ A)Division by zero
     }
 }*/
 
-
-/*Topic:-3 Describe what Exceptions are used for in Java*/
-
 /*Q22.what will be the Output of the code below?*/
+/*Answers:-
+A)HELLO
+B)GOOD MORNING
+C)HELLO
+GOOD MORNING
+D)HELLO
+FRIEND
+GOOD MORNING
+E)Error
+
+/*correct answer:-
+E)Error
+System.out.println("FRIEND"); is  unreachable statement
+*/
 
 /*
-Answers:-
-A)ArithmeticException
-B)NullPointerException
-c)Error
-
-correct answer:-
-A)ArithmeticException*/
-
-/*public class TestEmployee {
-    public static void main(String[] args) {
-        int i = 1/0;
-        System.out.println(i);
+public class TestEmployee {
+    public static void main(String args[]) {
+       try
+       {
+       System.out.println("HELLO");
+           throw new ArithmeticException();
+         System.out.println("FRIEND");
+       }
+       catch(ArithmeticException e)
+       {
+           System.out.println("GOOD MORNING");
+       }
     }
-}*/
+}
+*/
 
 /*Q23.what will be the Output of the code below?*/
-/*
-Answers:-
-A)ArithmeticException
-B)NullPointerException
-c)Error
-D)ArrayIndexOutOfBoundsException
+/*Answers:-
+A)Exception
+B)Error
 
-correct answer:-
-D)ArrayIndexOutOfBoundsException*/
-
-/*
-public class TestEmployee {
-     public static void main(String[] args) {
-        int arr[] = {'0','1','2'};
-        System.out.println(arr[4]);
-    }
-}
+/*correct answer:-
+B)Error
 */
-
-/*Q24.what will be the Output of the code below?*/
-/*
-Answers:-
-A)ArithmeticException
-B)NullPointerException
-c)Error
-D)ArrayIndexOutOfBoundsException
-
-correct answer:-
-B)NullPointerException*/
-
-
-/*
-public class TestEmployee {
-     public static void main(String[] args) {
-    String s=null;
-    System.out.println(s.length());
-}
-}
-*/
-
-/*Q25.what occurs when an unexpected exception occurs in a static initializer
-Answers:-
-A) AssertionError is thrown
-B)ExceptionInInitializeError is thrown
-C)VirtualMachineError is thrown
-
-Correct answer:-
-B)ExceptionInInitializeError is thrown
-*/
-
-/*Q26.OutOfMemoryError is thrown
-Answers:-
-A)when a JVM error occurs.
-B)when garbage collection is performed but is unable to free up any space.
-C)upon a failed assertion
-
-Correct answer:-
-B)
-*/
-
-/*Q27.what will be the Output of the code below?*/
-/*
-Answers:-
-A)ArithmeticException
-B)NullPointerException
-c)NumberFormatException
-D)ArrayIndexOutOfBoundsException
-
-correct answer:-
-c)NumberFormatException*/
 
 
 /*public class TestEmployee {
-      public static void main(String args[])
-   {
-      try{
-	    int i=Integer.parseInt ("STRING") ;
-	    System.out.println(i);
-      }catch(NumberFormatException e){
-	    System.out.println(e);
+    public static void main(String args[]) {
+       try
+       {
+           throw new ArithmeticException();
        }
-   }
+
+       catch(IllegalFormatException Ife )
+       {
+           Ife.printStackTrace();
+       }
+       catch(RuntimeException Re)
+       {
+           Re.printStackTrace();
+       }
+       catch(ArithmeticException e)
+       {
+           e.printStackTrace();
+       }
+    }
 }*/
 
 
-/*Q28.which exception will be thrown by code below?*/
-/*
-Answers:-
+/*Q24.what will be the Output of the code below?*/
+/*Answers:-
+A)Exception
+B)Error
 
-A)IndexOutOfBoundsException
-B)ArrayIndexOutOfBoundsException
-C)StringIndexOutOfBoundsException
+/*correct answer:-
+A)Exception
+*/
 
-correct answer:-
-C)StringIndexOutOfBoundsException*/
 
+/*public class TestEmployee {
+    public static void main(String args[]) {
+       try
+       {
+           throw new ArithmeticException();
+       }
+       catch(IllegalFormatException Ife )
+       {
+           Ife.printStackTrace();
+       }
+       catch(RuntimeException Re)
+       {
+           Re.printStackTrace();
+       }
+    }
+}*/
+
+/*Q25.what will be the Output of the code below?*/
+/*Answers:-
+A)Exception
+B)Error
+c)No output
+D)Null
+/*correct answer:-
+D)Null
+*/
 
 /*
 public class TestEmployee {
-     public static void main(String args[])
-   {
-      try{
-	 String str="STRING";
-	 System.out.println(str.length());;
-	 char c = str.charAt(0);
-	 c = str.charAt(10);
-	 System.out.println(c);
-      }catch(StringIndexOutOfBoundsException e){
-	  System.out.println(e);
+    public static void main(String args[]) {
+       try
+       {
+           throw new ArithmeticException();
        }
-   }
+       catch(ArithmeticException e)
+       {
+          System.out.print(e.getMessage());
+       }
+       catch(IllegalFormatException Ife )
+       {
+           Ife.printStackTrace();
+       }
+       catch(RuntimeException Re)
+       {
+           Re.printStackTrace();
+       }
+    }
 }
 */
 
-/*Topic-4:Invoke a method that throws an exception*/
 
-/*Q29.what will be the Output of the code below*/
-/*
-Answers:-
-
-A)No output
+/*Q26.what will be the Output of the code below?*/
+/*Answers:-
+A)ArithmeticException
 B)Error
-C)java.lang.NullPointerException
-
-correct answer:-
-C)java.lang.NullPointerException
+c)No output
+D)/ by zero
+/*correct answer:-
+D)/ by zero
 */
 
 /*
 public class TestEmployee {
-    static void throwsMethod() throws NullPointerException  {
-        throw new NullPointerException();
-    }
-
     public static void main(String args[]) {
-        try {
-            throwsMethod();
-        } catch (NullPointerException e) {
-            System.out.println(e);
+       try
+       {
+           int r = 2/0;
+           throw new ArithmeticException();
+       }
+       catch(ArithmeticException e)
+       {
+           System.out.println(e.getMessage());
+
+       }
+    }
+}
+*/
+
+
+/*Q27.what will be the Output of the code below?*/
+/*Answers:-
+A)ArithmeticException
+B)Error
+c)ArithmeticException: / by zero
+D)/ by zero
+/*correct answer:-
+c)ArithmeticException: / by zero
+*/
+
+/*
+public class TestEmployee {
+    public static void main(String args[]) {
+       try
+       {
+           int r = 9/0;
+
+       }
+       catch(ArithmeticException e)
+       {
+          System.out.println(e.toString());
+       }
+    }
+}
+*/
+
+/*Q28.what will be the Output of the code below?*/
+/*Answers:-
+A)NumberFormatException
+B)Error
+c)No Output
+D)caught
+/*correct answer:-
+c)No Output
+*/
+
+
+/*public class TestEmployee {
+    public static void main(String args[]) {
+       try
+       {
+           throw new NumberFormatException();
+       }
+       catch(NumberFormatException e)
+       {
+
+       }
+    }
+}*/
+
+
+/*Q29.what will be the Output of the code below?*/
+/*Answers:-
+A)NumberFormatException
+B)Error
+c)IllegalFormatException
+
+/*correct answer:-
+A)NumberFormatException
+When exceptions are being caught, if the exception class is not found, the system will look for the
+superclass of the exception being thrown
+*/
+
+
+/*
+public class TestEmployee {
+    public static void main(String args[]) {
+       try
+       {
+           throw new NumberFormatException();
+       }
+       catch(IllegalFormatException ie)
+       {
+           System.out.println(ie);
+       }
+    }
+}
+*/
+
+/*Q30.what will be the Output of the code below?*/
+/*Answers:-
+A)NumberFormatException
+B)Error
+c)NumberFormatException
+   FAB
+D)No output
+
+/*correct answer:-
+c)NumberFormatException
+   FAB
+*/
+
+/*public class TestEmployee {
+    public static void main(String args[]) {
+        try{
+            int i=Integer.parseInt ("STRING") ;
+            System.out.println(i);
+        }finally{
+            System.out.println("FAB");
         }
     }
 }*/
 
-/*Topic-5:Recognize common exception classes and categories*/
+/*Q31.what will be the Output of the code below?*/
+/*Answers:-
+A)STRING
+B)Error
+c)STRING
+   FAB
+D)FAB
 
-/*Q30.All exceptions and errors inherit from which class
-Answers:-
-A)Throwable class
-B)Object class
-C)StackTraceElement
+/*correct answer:-
+A)STRING
+*/
 
-Correct answer:-
-A)Throwable class
+/*
+public class TestEmployee {
+    public static void main(String args[]) {
+        try{
+           System.out.println("STRING");
+            System.exit(0);
+        }finally{
+            System.out.println("FAB");
+        }
+    }
+}
+*/
+
+/*Q32.what will be the Output of the code below?*/
+/*Answers:-
+A)ArithmeticException
+B)Error
+c)GOOD
+D)MORNING
+
+/*correct answer:-
+B)Error
+java: unreachable statement- System.out.println("MORNING");
+*/
+
+/*
+public class TestEmployee {
+    public static void main(String args[]) {
+        try{
+           throw new ArithmeticException();
+        }finally{
+            System.out.println("GOOD");
+        }
+        System.out.println("MORNING");
+    }
+}
 */
