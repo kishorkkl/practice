@@ -220,9 +220,261 @@ C)Throw
 Correct answer:-
 B)Throws*/
 
+/*Q20.IllegalArgumentException  is
+Answers:-
+A)Compile-time exception
+B)Run-time exception
+
+Correct answer:-
+B)Run-time exception
+*/
+
+/*Q21.ArithmeticException  is
+Answers:-
+A)Compile-time exception
+B)Run-time exception
+
+Correct answer:-
+B)Run-time exception
+*/
+
+/*Q22.ClassCastException  is
+Answers:-
+A)Compile-time exception
+B)Run-time exception
+
+Correct answer:-
+B)Run-time exception
+*/
+
+/*Q23.IllegalStateException  is
+Answers:-
+A)Compile-time exception
+B)Run-time exception
+
+Correct answer:-
+B)Run-time exception
+*/
+
+/*Q24.NullPointerException  is
+Answers:-
+A)Compile-time exception
+B)Run-time exception
+
+Correct answer:-
+B)Run-time exception
+*/
+
+/*Q25.IndexOutBoundsException  is
+Answers:-
+A)Compile-time exception
+B)Run-time exception
+
+Correct answer:-
+B)Run-time exception
+*/
+
+/*Q26.Base class  of NumberFormatException?
+Answers:-
+A)IndexOutBoundsException
+B)IllegalArgumentException
+
+Correct answer:-
+B)IllegalArgumentException
+*/
+
+/*Q27.Base class  of ArrayIndexOutOfBoundsException?
+Answers:-
+A)IndexOutBoundsException
+B)IllegalArgumentException
+
+Correct answer:-
+A)IndexOutBoundsException
+*/
+
+/*Q28.NoSuchMethodException  is
+Answers:-
+A)Compile-time exception
+B)Run-time exception
+
+Correct answer:-
+A)Compile-time exception
+*/
+
+/*Q29.FileNotFoundException  is
+Answers:-
+A)Compile-time exception
+B)Run-time exception
+
+Correct answer:-
+A)Compile-time exception
+*/
+
+/*Q30.InterruptedIOException  is
+Answers:-
+A)Compile-time exception
+B)Run-time exception
+
+Correct answer:-
+A)Compile-time exception
+*/
+
+/*Q31.ClassNotFoundException  is
+Answers:-
+A)Compile-time exception
+B)Run-time exception
+
+Correct answer:-
+A)Compile-time exception
+*/
+
+/*Q32.IOException  is
+Answers:-
+A)Compile-time exception
+B)Run-time exception
+
+Correct answer:-
+A)Compile-time exception
+*/
+
+/*Q33.SQLException  is
+Answers:-
+A)Compile-time exception
+B)Run-time exception
+
+Correct answer:-
+A)Compile-time exception
+*/
+
+/*Q34.FontFormatException  is
+Answers:-
+A)Compile-time exception
+B)Run-time exception
+
+Correct answer:-
+A)Compile-time exception
+*/
+
+/*Q35.CloneNotSupportedException  is
+Answers:-
+A)Compile-time exception
+B)Run-time exception
+
+Correct answer:-
+A)Compile-time exception
+*/
+
+/*Q36.Base class  of FileNotFoundException?
+Answers:-
+A)IndexOutBoundsException
+B)IllegalArgumentException
+C)ReflectiveOperationException
+D)IOException
+
+Correct answer:-
+D)IOException
+*/
+
+/*Q37.Base class  of SQLException?
+Answers:-
+A)IndexOutBoundsException
+B)IllegalArgumentException
+C)ReflectiveOperationException
+D)IOException
+
+Correct answer:-
+D)IOException
+*/
+
+/*Q38.Base class  of InterruptedIOException?
+Answers:-
+A)IndexOutBoundsException
+B)IllegalArgumentException
+C)ReflectiveOperationException
+D)IOException
+
+Correct answer:-
+D)IOException
+*/
+
+/*Q39.Base class  of ClassNotFoundException?
+Answers:-
+A)IndexOutBoundsException
+B)IllegalArgumentException
+C)ReflectiveOperationException
+D)IOException
+
+Correct answer:-
+C)ReflectiveOperationException
+*/
+
+/*Q40.Base class  of NoSuchMethodException?
+Answers:-
+A)IndexOutBoundsException
+B)IllegalArgumentException
+C)ReflectiveOperationException
+D)IOException
+
+Correct answer:-
+C)ReflectiveOperationException
+*/
+
+/*Q41.what occurs when an unexpected exception occurs in a static initializer
+Answers:-
+A) AssertionError is thrown
+B)ExceptionInInitializeError is thrown
+C)VirtualMachineError is thrown
+
+Correct answer:-
+B)ExceptionInInitializeError is thrown
+*/
+
+/*Q42.OutOfMemoryError is thrown
+Answers:-
+A)when a JVM error occurs.
+B)when garbage collection is performed but is unable to free up any space.
+C)upon a failed assertion
+
+Correct answer:-
+B)
+*/
+
+/*Q43.VirtualMachineError is thrown
+Answers:-
+A)when a JVM error occurs.
+B)when garbage collection is performed but is unable to free up any space.
+C)upon a failed assertion
+D)when JVM cannot find a class definition.
+
+Correct answer:-
+A)when a JVM error occurs.
+*/
+
+/*Q44.when JVM cannot find a class definition
+Answers:-
+A)AssertionError is thrown
+B)ExceptionInInitializeError is thrown
+C)VirtualMachineError is thrown
+D)NoClassDefFoundError is thrown
+
+Correct answer:-
+D)NoClassDefFoundError is thrown
+*/
+
+/*Q45.Error thrown upon a failed assertion
+Answers:-
+A)AssertionError
+B)ExceptionInInitializeError
+C)VirtualMachineError
+D)NoClassDefFoundError
+
+Correct answer:-
+A)AssertionError
+*/
+
 /*Topic:-2: Create a try-catch block and determine how exceptions alter normal program flow*/
 
-/*Q20.what will be the Output of the code below?*/
+/*Q46.what will be the Output of the code below?*/
 /*Answers:-
 A)java.lang.ArrayIndexOutOfBoundsException: 3
 B)Exception thrown  :java.lang.ArrayIndexOutOfBoundsException: 3
@@ -247,7 +499,7 @@ public class TestEmployee {
 
 */
 
-/*Q21.what will be the Output of the code below?*/
+/*Q47.what will be the Output of the code below?*/
 /*Answers:-
 A)Division by zero
   After catch statement.
@@ -272,7 +524,7 @@ A)Division by zero
     }
 }*/
 
-/*Q22.what will be the Output of the code below?*/
+/*Q48.what will be the Output of the code below?*/
 /*Answers:-
 A)HELLO
 B)GOOD MORNING
@@ -305,7 +557,7 @@ public class TestEmployee {
 }
 */
 
-/*Q23.what will be the Output of the code below?*/
+/*Q49.what will be the Output of the code below?*/
 /*Answers:-
 A)Exception
 B)Error
@@ -313,7 +565,6 @@ B)Error
 /*correct answer:-
 B)Error
 */
-
 
 /*public class TestEmployee {
     public static void main(String args[]) {
@@ -338,7 +589,7 @@ B)Error
 }*/
 
 
-/*Q24.what will be the Output of the code below?*/
+/*Q50.what will be the Output of the code below?*/
 /*Answers:-
 A)Exception
 B)Error
@@ -365,7 +616,7 @@ A)Exception
     }
 }*/
 
-/*Q25.what will be the Output of the code below?*/
+/*Q51.what will be the Output of the code below?*/
 /*Answers:-
 A)Exception
 B)Error
@@ -399,7 +650,7 @@ public class TestEmployee {
 */
 
 
-/*Q26.what will be the Output of the code below?*/
+/*Q52.what will be the Output of the code below?*/
 /*Answers:-
 A)ArithmeticException
 B)Error
@@ -427,7 +678,7 @@ public class TestEmployee {
 */
 
 
-/*Q27.what will be the Output of the code below?*/
+/*Q53.what will be the Output of the code below?*/
 /*Answers:-
 A)ArithmeticException
 B)Error
@@ -453,7 +704,7 @@ public class TestEmployee {
 }
 */
 
-/*Q28.what will be the Output of the code below?*/
+/*Q54.what will be the Output of the code below?*/
 /*Answers:-
 A)NumberFormatException
 B)Error
@@ -478,7 +729,7 @@ c)No Output
 }*/
 
 
-/*Q29.what will be the Output of the code below?*/
+/*Q55.what will be the Output of the code below?*/
 /*Answers:-
 A)NumberFormatException
 B)Error
@@ -506,7 +757,7 @@ public class TestEmployee {
 }
 */
 
-/*Q30.what will be the Output of the code below?*/
+/*Q56.what will be the Output of the code below?*/
 /*Answers:-
 A)NumberFormatException
 B)Error
@@ -530,7 +781,7 @@ c)NumberFormatException
     }
 }*/
 
-/*Q31.what will be the Output of the code below?*/
+/*Q57.what will be the Output of the code below?*/
 /*Answers:-
 A)STRING
 B)Error
@@ -555,7 +806,7 @@ public class TestEmployee {
 }
 */
 
-/*Q32.what will be the Output of the code below?*/
+/*Q58.what will be the Output of the code below?*/
 /*Answers:-
 A)ArithmeticException
 B)Error
@@ -579,3 +830,216 @@ public class TestEmployee {
     }
 }
 */
+
+/*Q59.what will be the Output of the code below?*/
+/*Answers:-
+A)NumberFormatException
+B)Error
+c)GOOD
+D)MORNING
+E)GOOD
+MORNING
+
+/*correct answer:-
+E)GOOD
+MORNING
+*/
+
+/*
+public class TestEmployee {
+    public static void main(String args[]) {
+        try{
+           throw new NumberFormatException();
+        }catch(NumberFormatException nfe){
+
+        }
+        finally{
+            System.out.println("GOOD");
+        }
+        System.out.println("MORNING");
+    }
+}
+*/
+
+/*Q60.what will be the Output of the code below?*/
+/*Answers:-
+A)Exception
+B)Error
+c)APPLES
+D)APPLES
+JUICE
+
+/*correct answer:-
+D)APPLES
+JUICE
+*/
+
+/*public class TestEmployee {
+
+private static class Fruits{
+
+    void fruits()
+    {
+        System.out.println("APPLES");
+    }
+}
+    public static void main(String args[]) {
+        try{
+            Fruits f = new Fruits();
+            f.fruits();
+        }catch(Exception e){
+            System.out.println(e);
+        }
+        finally{
+            System.out.println("JUICE");
+        }
+
+    }
+}*/
+
+/*Topic:-3 Describe what Exceptions are used for in Java*/
+
+/*Q61.what will be the Output of the code below?*/
+
+/*
+Answers:-
+A)ArithmeticException
+B)NullPointerException
+c)Error
+
+correct answer:-
+A)ArithmeticException*/
+
+/*public class TestEmployee {
+    public static void main(String[] args) {
+        int i = 1/0;
+        System.out.println(i);
+    }
+}*/
+
+/*Q62.what will be the Output of the code below?*/
+/*
+Answers:-
+A)ArithmeticException
+B)NullPointerException
+c)Error
+D)ArrayIndexOutOfBoundsException
+E)IndexOutOfBoundsException
+
+correct answer:-
+D)ArrayIndexOutOfBoundsException*/
+
+/*
+public class TestEmployee {
+     public static void main(String[] args) {
+        int arr[] = {'0','1','2'};
+        System.out.println(arr[4]);
+    }
+}
+*/
+
+/*Q63.what will be the Output of the code below?*/
+/*
+Answers:-
+A)ArithmeticException
+B)NullPointerException
+c)Error
+D)ArrayIndexOutOfBoundsException
+E)IndexOutOfBoundsException
+
+correct answer:-
+B)NullPointerException*/
+
+
+/*
+public class TestEmployee {
+     public static void main(String[] args) {
+    String s=null;
+    System.out.println(s.length());
+}
+}
+*/
+
+
+
+/*Q64.what will be the Output of the code below?*/
+/*
+Answers:-
+A)ArithmeticException
+B)NullPointerException
+c)NumberFormatException
+D)ArrayIndexOutOfBoundsException
+
+correct answer:-
+c)NumberFormatException*/
+
+
+/*public class TestEmployee {
+      public static void main(String args[])
+   {
+      try{
+	    int i=Integer.parseInt ("STRING") ;
+	    System.out.println(i);
+      }catch(NumberFormatException e){
+	    System.out.println(e);
+       }
+   }
+}*/
+
+
+/*Q65.which exception will be thrown by code below?*/
+/*
+Answers:-
+
+A)IndexOutOfBoundsException
+B)ArrayIndexOutOfBoundsException
+C)StringIndexOutOfBoundsException
+
+correct answer:-
+C)StringIndexOutOfBoundsException*/
+
+
+/*
+public class TestEmployee {
+     public static void main(String args[])
+   {
+      try{
+	 String str="STRING";
+	 System.out.println(str.length());;
+	 char c = str.charAt(0);
+	 c = str.charAt(10);
+	 System.out.println(c);
+      }catch(StringIndexOutOfBoundsException e){
+	  System.out.println(e);
+       }
+   }
+}
+*/
+
+/*Q66.which exception will be thrown by code below?*/
+/*
+Answers:-
+A)FileNotFoundException
+B)IOException
+C)ClassNotFoundException
+
+correct answer:-
+A)FileNotFoundException*/
+
+/*
+public class TestEmployee {
+     public static void main(String args[])
+   {
+	FileInputStream fis = null;
+	try{
+	    fis = new FileInputStream("file.txt");
+	}catch(Exception e){
+            System.out.println(e);
+	 }
+   }
+}
+*/
+
+
+
+
