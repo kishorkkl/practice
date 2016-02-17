@@ -49,7 +49,6 @@ Q1.What will be the output of the code below?
             double result,min=7.0,sec=5.9;
             result=min+sec;
             System.out.println("Result is:" +result);
-            return 0;
         }
     }
 
