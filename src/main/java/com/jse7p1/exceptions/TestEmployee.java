@@ -1,6 +1,8 @@
 package com.jse7p1.exceptions;
 import java.io.*;
+import java.util.ArrayList;
 import java.util.IllegalFormatException;
+import java.util.Iterator;
 import java.util.Random;
 
 /**
@@ -1026,8 +1028,7 @@ C)ClassNotFoundException
 correct answer:-
 A)FileNotFoundException*/
 
-/*
-public class TestEmployee {
+/*public class TestEmployee {
      public static void main(String args[])
    {
 	FileInputStream fis = null;
@@ -1037,9 +1038,114 @@ public class TestEmployee {
             System.out.println(e);
 	 }
    }
+}*/
+
+/*Q67.which exception will be thrown by code below?*/
+/*
+Answers:-
+A)FileNotFoundException
+B)IOException
+C)IllegalArgumentException
+D)NumberFormatException
+
+correct answer:-
+C)IllegalArgumentException*/
+
+/*
+public class TestEmployee {
+    static void temp(int i, int j) {
+        int temp;
+        temp = i;
+        i = j;
+        j = temp;
+    }
+    public static void main(String args[]) {
+        try {
+            TestEmployee te = new TestEmployee();
+            te.temp(4,8,9);
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
 }
 */
 
+/*Q68.which exception will be thrown by code below?*/
+/*
+Answers:-
+A)FileNotFoundException
+B)IOException
+C)IllegalArgumentException
+D)NumberFormatException
+E)Error
+correct answer:-
+D)NumberFormatException*/
+
+/*
+public class TestEmployee {
+    private static final String str = "0.3";
+    public static void main(String[] args){
+        int i = Integer.parseInt(str);
+        System.out.println(i);
+    }
+}
+
+*/
+
+
+/*Q69.which exception will be thrown by code below?*/
+/*
+Answers:-
+A)FileNotFoundException
+B)IllegalStateException
+C)IllegalArgumentException
+D)NumberFormatException
+E)Error
+correct answer:-
+B)IllegalStateException*/
+
+
+/*
+public class TestEmployee {
+
+    public static void main(String[] args){
+      ArrayList a = new ArrayList();
+        a.add("A");
+        a.add("B");
+        a.add("C");
+
+        Iterator i = a.iterator();
+        while(i.hasNext())
+        {
+            i.next();
+            i.remove();
+            i.remove();
+        }
+
+    }
+}
+*/
+
+
+/*Q70.which exception will be thrown by code below?*/
+/*
+Answers:-
+A)ClassCastException
+B)IllegalStateException
+C)IllegalArgumentException
+D)NumberFormatException
+E)Error
+correct answer:-
+A)ClassCastException*/
+
+/*
+public class TestEmployee {
+    public static void main(String[] args){
+        Object x = new Float("1.0");
+        System.out.println((double) x);
+    }
+}
+*/
 
 
 
