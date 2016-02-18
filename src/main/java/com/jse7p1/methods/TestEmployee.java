@@ -1110,3 +1110,493 @@ Q45. During class loading in java, static code block is executed first than main
 */
 
 
+// Topic 3 : Create an overloaded method
+
+/*
+Q46. What will be the output of the code below?
+
+        Answers:
+
+        a) a a 10
+        b) 10 a a
+        c) a 10 a
+        d) Compile time error
+
+        Correct Answer:
+        a) a a 10
+*/
+
+/*
+class Test
+{
+    public void display(char c){System.out.print(c+" ");}
+    public void display(char c, int num){System.out.println(c + " "+num);}}
+public class TestEmployee
+{
+    public static void main(String args[])
+    {
+        Test obj = new Test();obj.display('a');obj.display('a',10);}}
+*/
+
+
+/*
+Q47. What will be the output of the code below?
+
+        Answers:
+
+        a) a a 10
+        b) 10 a a
+        c) a 10 a
+        d) Compile time error
+
+        Correct Answer:
+        c) a 10 a
+*/
+
+/*
+class Test
+{
+    public void display(char c){System.out.print(c+" ");}
+    public void display(char c, int num){System.out.print(c + " "+num+" ");}}
+public class TestEmployee
+{
+    public static void main(String args[])
+    {
+        Test obj = new Test();obj.display('a',10);obj.display('a');}}
+*/
+
+/*
+Q48. What will be the output of the code below?
+
+        Answers:
+
+        a) a a 10
+        b) 10 a a
+        c) a 10 a
+        d) Compile time error
+
+        Correct Answer:
+        d) Compile time error
+*/
+
+/*
+class Test
+{
+    public void display(char c){System.out.print(c + " "+num+" ");}
+    public void display(char c, int num){System.out.print(c+" ");}}
+public class TestEmployee
+{
+    public static void main(String args[])
+    {
+        Test obj = new Test();obj.display('a');obj.display('a',10);}}
+*/
+
+/*
+Q49. What will be the output of the code below?
+
+        Answers:
+
+        a) a 5
+        b) 5 a
+        c) Compile time error
+
+        Correct Answer:
+        a) a 5
+*/
+
+/*
+class Test
+{
+    public void display(char c){System.out.print(c+" ");}
+    public void display(int c){System.out.print(c+" ");}}
+class TestEmployee
+{
+    public static void main(String args[])
+    {
+        Test obj = new Test();obj.display('a');obj.display(5);}}
+*/
+
+
+/*
+Q50. What will be the output of the code below?
+
+        Answers:
+
+        a) a 5
+        b) 5 a
+        c) Compile time error
+
+        Correct Answer:
+        c) Compile time error
+*/
+
+/*
+class Test
+{
+    public void display(char c){System.out.print(c+" ");}
+    public void display(int c){System.out.print(c+" ");}}
+class TestEmployee
+{
+    public static void main(String args[])
+    {
+        Test obj = new Test();obj.display("a");obj.display(5);}}
+*/
+
+
+/*
+Q51. What will be the output of the code below?
+
+        Answers:
+
+        a) 12
+        b) 21
+        c) 22
+        d) Compile time error
+
+        Correct Answer:
+        b) 21
+*/
+
+/*
+class Test
+{
+    public void display(char c, int num){System.out.print("2");}
+
+    public void display(int num, char c){System.out.print("1" );}}
+
+public class TestEmployee
+{
+    public static void main(String args[])
+    {
+        Test obj = new Test();obj.display('x',51 );obj.display(52, 'y');}}
+*/
+
+
+/*
+Q52. What will be the output of the code below?
+
+        Answers:
+
+        a) 12
+        b) 21
+        c) 22
+        d) Compile time error
+
+        Correct Answer:
+        c) 22
+*/
+
+/*
+class Test
+{
+    public void display(char c, int num){System.out.print("1");}
+
+    public void display(int num, char c){System.out.print("2" );}}
+
+public class TestEmployee
+{
+    public static void main(String args[])
+    {
+        Test obj = new Test();obj.display(51,'x' );
+        obj.display(52, 'y');}}
+*/
+
+
+/*
+Q53. What will be the output of the code below?
+
+        Answers:
+
+        a) 12
+        b) 21
+        c) 22
+        d) Compile time error
+
+        Correct Answer:
+        d) Compile time error
+*/
+
+/*
+class Test
+{
+    public void display(int num,char c){System.out.print("1");}
+
+    public void display(int num, char c){System.out.print("2" );}}
+
+public class TestEmployee
+{
+    public static void main(String args[])
+    {
+        Test obj = new Test();obj.display(51,'x' );
+        obj.display(52, 'y');}}
+*/
+
+
+
+/*
+Q54. What will be the output of the code below?
+
+        Answers:
+
+        a) var1
+        b) int1
+        c) int1 var1
+        d) Compile time error
+
+        Correct Answer:
+        c) Compile time error
+*/
+
+/*
+class Test
+{
+    public double display(int num1, int num2)
+    {
+        System.out.print("int1 ");return num1+num2;}
+    public int display(int var1, int var2)
+    {
+        System.out.print("var1 ");return var1-var2;}}
+public class TestEmployee
+{
+    public static void main(String args[])
+    {
+        Test obj2= new Test();obj2.display1(10,10);obj2.display(20,12);}}
+*/
+
+/*
+Q55. What will be the output of the code below?
+
+        Answers:
+
+        a) int1 var1
+        b) int1 int1
+        c) var1 var1
+        d) Compile time error
+
+        Correct Answer:
+        b) int 1 int1
+*/
+
+/*
+class Test
+{
+    public double display(int num1, int num2)
+    {
+        System.out.print("int1 ");return num1+num2;}
+    public int display(int var1, int var2,int var3)
+    {
+        System.out.print("var1 ");return var1-var2;}}
+public class TestEmployee
+{
+    public static void main(String args[])
+    {
+        Test obj2= new Test();obj2.display(10,10);obj2.display(20,12);}}
+*/
+
+/*
+Q56. What will be the output of the code below?
+
+        Answers:
+
+        a) int1 var1
+        b) int1 int1
+        c) var1 var1
+        d) Compile time error
+
+        Correct Answer:
+        a) int1 var1
+*/
+
+/*
+class Test
+{
+    public double display(int num1, int num2)
+    {
+        System.out.print("int1 ");return num1+num2;}
+    public int display(int var1, int var2,int var3)
+    {
+        System.out.print("var1 ");return var1-var2;}}
+public class TestEmployee
+{
+    public static void main(String args[])
+    {
+        Test obj2= new Test();obj2.display(10,10);obj2.display(20,12,5);}}
+*/
+
+
+/*
+Q57. What will be the output of the code below?
+
+        Answers:
+
+        a) int1 var1
+        b) int1 int1
+        c) var1 var1
+        d) Compile time error
+
+        Correct Answer:
+        c) var1 var1
+*/
+
+/*
+class Test
+{
+    public double display(int num1, int num2)
+    {
+        System.out.print("int1 ");return num1+num2;}
+    public int display(int var1, int var2,int var3)
+    {
+        System.out.print("var1 ");return var1-var2;}}
+public class TestEmployee
+{
+    public static void main(String args[])
+    {
+        Test obj2= new Test();obj2.display(10,10,2);obj2.display(20,12,5);}}
+*/
+
+
+/*
+Q58. What will be the output of the code below?
+
+        Answers:
+
+        a) 20.9 40
+        b) 40 20.9
+        c) Compile time error
+
+        Correct Answer:
+        a) 20.9 40
+*/
+
+/*
+class TestEmployee{
+    void sum(int a,int b){System.out.print(a+b+" ");}
+    void sum(double a,double b){System.out.print(a+b+" ");}
+
+    public static void main(String args[]){
+        TestEmployee ob=new TestEmployee();
+        ob.sum(10.5,10.4);
+        ob.sum(20,20);}}
+*/
+
+
+/*
+Q59. What will be the output of the code below?
+
+        Answers:
+
+        a) 20.9 40
+        b) 40 20.9
+        c) Compile time error
+
+        Correct Answer:
+        c) Compile time error
+*/
+
+/*
+class TestEmployee{
+    void sum(int a,int b){System.out.print(a+b+" ");}
+    void sum(double a,double b){System.out.print(a+b+" ");}
+
+    public static void main(String args[]){
+        TestEmployee ob=new TestEmployee();
+        ob.sum(10.5,10.4);
+        int result=ob.sum(20,20);}}
+*/
+
+/*
+Q60. What will be the output of the code below?
+
+        Answers:
+
+        a) 50
+        b) Run time error
+        c) Compile time error
+
+        Correct Answer:
+        a) 50
+*/
+
+/*
+class TestEmployee{
+    public static void main (int a){
+        System.out.println(a);
+    }
+
+    public static void main(String args[]){
+        main(50);}}
+*/
+
+
+/*
+Q61. What will be the output of the code below?
+
+        Answers:
+
+        a) ok
+        b) 218
+        c) Compile time error
+        d) Run time error
+
+        Correct Answer:
+        b) 218
+*/
+
+/*
+class TestEmployee{
+    public  void add(int a, int b){
+        System.out.println(a  + b);}
+    public static void main(String args[]){
+        TestEmployee te = new TestEmployee();
+        te.add('o','k');}}
+*/
+
+
+/*
+Q62. Suppose we made two methods with same name in class, one will add two numbers and another will add three numbers. Will it work?
+
+        Answers:
+
+        a) yes
+        b) No
+        c) Will give compile time error
+
+        Correct Answer:
+        a) yes
+*/
+
+/*
+Q63. Can we change return type of overloading method?
+
+        Answers:
+
+        a) yes
+        b) No
+
+        Correct Answer:
+        b) No
+*/
+
+/*
+Q64. Can we overload main() method?
+
+        Answers:
+
+        a) yes
+        b) No
+
+        Correct Answer:
+        a) yes
+*/
+
+/*
+Q65. Overloaded method are bonded using?
+
+        Answers:
+
+        a) Static binding
+        b) Dynamic binding
+
+        Correct Answer:
+        a) Static binding
+*/
