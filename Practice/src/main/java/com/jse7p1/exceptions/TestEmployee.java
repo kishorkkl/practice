@@ -1168,7 +1168,6 @@ correct answer:-
 C)java.lang.NullPointerException
 */
 
-
 /*
 public class TestEmployee {
     static void throwsMethod() throws NullPointerException  {
