@@ -1600,3 +1600,249 @@ Q65. Overloaded method are bonded using?
         Correct Answer:
         a) Static binding
 */
+
+// Topic 4 : Differentiate between default and user defined constructors
+
+
+/*
+Q66. What will be the output of the code below?
+
+        Answers:
+
+        a) C M
+        b) M C
+        c) C
+        d) Compile time error
+
+        Correct Answer:
+        a) C M
+*/
+
+/*
+class TestEmployee{
+    TestEmployee(){System.out.print("C ");}
+
+    public void method(){System.out.print("M ");}
+
+    public static void main(String args[]){
+        TestEmployee te = new TestEmployee(); te.method();}}
+*/
+
+/*
+Q67. What will be the output of the code below?
+
+        Answers:
+
+        a) C M
+        b) M C
+        c) C
+        d) Compile time error
+
+        Correct Answer:
+        c) C
+*/
+
+/*
+class TestEmployee{
+    TestEmployee(){System.out.print("C ");}
+
+    public void method(){System.out.print("M ");}
+
+    public static void main(String args[]){
+        TestEmployee te = new TestEmployee();}}
+*/
+
+/*
+Q68. What will be the output of the code below?
+
+        Answers:
+
+        a) C M
+        b) M C
+        c) C
+        d) Compile time error
+
+        Correct Answer:
+        c) C
+*/
+
+/*
+class TestEmployee{
+    TestEmployee(){System.out.print("C ");}
+
+    public void method(){System.out.print("M ");}
+
+    public static void main(String args[]){
+         new TestEmployee();}}
+*/
+
+/*
+Q69. Will it compile successfully or not?
+
+        Answers:
+
+        a) Yes
+        b) No
+        c) Will compile but gave run time error
+
+
+        Correct Answer:
+        a) Yes ( when there is no constructor,compiler made a empty constructor automatically)
+*/
+
+/*
+class TestEmployee{
+    public static void main(String args[]){
+        TestEmployee te =new TestEmployee();}}
+*/
+
+/*
+Q70. Will it compile successfully or not?
+
+        Answers:
+
+        a) Hello
+        b) Will compile but no output
+        c) Run time error
+
+
+        Correct Answer:
+        b) Will compile but no output
+*/
+
+/*
+public class TestEmployee{
+    public static void main(String argv[]){
+        TestEmployee c = new TestEmployee();}
+    void TestEmployee(){
+        System.out.println("Hello");}}
+*/
+
+
+/*
+Q71. What will be output of below code?
+
+        Answers:
+
+        a) B
+        b) Will compile but no output
+        c) Run time error
+
+
+        Correct Answer:
+        a) B
+*/
+
+
+/*
+class Test{
+    Test(int i){
+            System.out.print("A ");}}
+public class TestEmployee{
+        public static void main(String arg[]){
+            TestEmployee s = new TestEmployee();}
+         TestEmployee(){
+            System.out.print("B ");}}
+*/
+
+/*
+Q72. Default constructor is?
+
+        Answers:
+
+        a) parameterised constructor
+        b) non-parameterised constructor
+        c) None of the above
+
+
+        Correct Answer:
+        b) non-parameterised constructor
+*/
+
+/*
+Q73. Constructor can be?
+
+        Answers:
+
+        a) static
+        b) final
+        c) abstract
+        d) None of the above
+
+
+        Correct Answer:
+        d) None of the above
+*/
+
+/*
+Q74. Suppose there is a constructor in class, then default constructor is also created by compiler?
+
+        Answers:
+
+        a) No
+        b) Yes
+        c) None of the above
+
+
+        Correct Answer:
+        a) No
+*/
+
+/*
+Q75. Can we access default constructor is created by compiler?
+
+        Answers:
+
+        a) Yes
+        b) No
+        c) None of the above
+
+
+        Correct Answer:
+        b) No
+*/
+
+/*
+Q76. Default constructor created by compiler and created by user is same?
+
+        Answers:
+
+        a) Yes
+        b) No
+        c) None of the above
+
+
+        Correct Answer:
+        b) No ()
+*/
+
+/*
+Q77. What will be the output of the code below?
+
+        Answers:
+
+        a) 0 null
+        b) null 0
+        c) Compile time error
+
+        Correct Answer:
+        c) C
+*/
+
+/*
+class Test {
+
+    private int eid;
+    private String ename;
+    public void display() {
+        System.out.print(eid+" ");
+        System.out.println(ename+" ");}}
+public class TestEmployee {
+
+    public static void main ( String[] args ) {
+        Test t=new Test();
+        t.display();}}
+*/
+
+
+
