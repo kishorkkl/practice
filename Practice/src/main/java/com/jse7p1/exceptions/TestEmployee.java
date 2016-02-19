@@ -486,6 +486,7 @@ C)Error*/
 B)Exception thrown  :java.lang.ArrayIndexOutOfBoundsException: 3
 */
 
+
 /*
 public class TestEmployee {
 
@@ -493,13 +494,14 @@ public class TestEmployee {
             try {
                 int a[] = new int[2];
                 System.out.println(a[3]);
-            } catch (ArrayIndexOutOfBoundsException e) {
+            } catch (Exception e) {
                 System.out.println("Exception thrown  :" + e);
             }
         }
     }
-
 */
+
+
 
 /*Q47.what will be the Output of the code below?*/
 /*Answers:-
@@ -982,7 +984,7 @@ c)NumberFormatException*/
       try{
 	    int i=Integer.parseInt ("STRING") ;
 	    System.out.println(i);
-      }catch(NumberFormatException e){
+      }catch(Exception e){
 	    System.out.println(e);
        }
    }
@@ -1047,9 +1049,11 @@ A)FileNotFoundException
 B)IOException
 C)IllegalArgumentException
 D)NumberFormatException
+E)Error
 
 correct answer:-
-C)IllegalArgumentException*/
+E)Error
+reason: actual and formal argument lists differ in length */
 
 /*
 public class TestEmployee {
@@ -1069,6 +1073,7 @@ public class TestEmployee {
     }
 }
 */
+
 
 /*Q68.which exception will be thrown by code below?*/
 /*
@@ -1148,4 +1153,660 @@ public class TestEmployee {
 */
 
 
+
+/*Topic-4:Invoke a method that throws an exception*/
+
+/*Q71.what will be the Output of the code below*/
+/*
+Answers:-
+
+A)No output
+B)Error
+C)java.lang.NullPointerException
+
+correct answer:-
+C)java.lang.NullPointerException
+*/
+
+
+/*
+public class TestEmployee {
+    static void throwsMethod() throws NullPointerException  {
+        throw new NullPointerException();
+    }
+
+    public static void main(String args[]) {
+        try {
+            throwsMethod();
+        } catch (NullPointerException e) {
+            System.out.println(e);
+        }
+    }
+}
+*/
+
+/*Q72.what will be the Output of the code below*/
+/*
+Answers:-
+
+A)No output
+B)Error
+C)java.lang.NullPointerException
+D)java.lang.ArithmeticException
+
+correct answer:-
+D)java.lang.ArithmeticException
+*/
+
+
+/*
+public class TestEmployee {
+    static void throwsMethod() throws Exception  {
+       int  m=l-1;
+        int n=1/m;
+    }
+
+    public static void main(String args[]) {
+        try {
+            throwsMethod();
+        } catch ( Exception e) {
+            System.out.println(e);
+        }
+    }
+
+    static int k =8,j=9,l=j-k;
+}
+*/
+
+/*Q73.what will be the Output of the code below*/
+/*
+Answers:-
+
+A)No output
+B)Error
+C)java.lang.NullPointerException
+D)java.lang.ArithmeticException
+E)ArrayIndexOutOfBoundsException
+
+correct answer:-
+E)ArrayIndexOutOfBoundsException
+*/
+
+
+
+/*public class TestEmployee {
+
+    public static void main(String args[]) {
+        try {
+            throwsMethod();
+        } catch ( Exception e) {
+            System.out.println(e);
+        }
+    }
+
+    static void throwsMethod() throws Exception  {
+        int arr[] = {'0','1','2'};
+        System.out.println(arr[4]);
+    }
+
+}*/
+
+/*Q74.what will be the Output of the code below*/
+/*
+Answers:-
+
+A)No output
+B)Error
+C)java.lang.NullPointerException
+D)java.lang.ArithmeticException
+E)java.lang.ArrayIndexOutOfBoundsException
+F)java.lang.StringIndexOutOfBoundsException
+
+correct answer:-
+C)java.lang.NullPointerException
+*/
+
+
+/*
+public class TestEmployee {
+
+    public static void main(String args[]) {
+        try {
+            throwsMethod();
+        } catch ( Exception e) {
+            System.out.println(e);
+        }
+    }
+
+    static void throwsMethod() throws Exception  {
+       String s=null;
+        System.out.println(s.length());
+    }
+
+}
+*/
+
+/*Q75.what will be the Output of the code below*/
+/*
+Answers:-
+
+A)No output
+B)Error
+C)java.lang.NumberFormatException
+D)java.lang.ArithmeticException
+E)java.lang.ArrayIndexOutOfBoundsException
+F)java.lang.StringIndexOutOfBoundsException
+
+correct answer:-
+C)java.lang.NumberFormatException
+*/
+
+/*
+public class TestEmployee {
+
+    public static void main(String args[]) {
+        try {
+            throwsMethod();
+        } catch ( Exception e) {
+            System.out.println(e);
+        }
+    }
+
+    static void throwsMethod() throws Exception  {
+        int i=Integer.parseInt ("STRING") ;
+        System.out.println(i);
+    }
+
+}
+*/
+
+/*Q76.what will be the Output of the code below*/
+/*
+Answers:-
+
+A)No output
+B)Error
+C)java.lang.NumberFormatException
+D)java.lang.ArithmeticException
+E)java.lang.ArrayIndexOutOfBoundsException
+F)java.lang.StringIndexOutOfBoundsException
+
+correct answer:-
+C)java.lang.NumberFormatException
+*/
+
+/*
+public class TestEmployee {
+
+    public static void main(String args[]) {
+        try {
+            throwsMethod();
+        } catch ( Exception e) {
+            System.out.println(e);
+        }
+    }
+
+    static void throwsMethod() throws Exception  {
+        int i=Integer.parseInt ("STRING") ;
+        System.out.println(i);
+    }
+
+}
+*/
+
+/*Q77.what will be the Output of the code below*/
+/*
+Answers:-
+
+A)Null
+B)Error
+C)java.lang.NumberFormatException
+D)java.lang.ArithmeticException
+E)java.lang.ArrayIndexOutOfBoundsException
+F)java.lang.StringIndexOutOfBoundsException
+
+correct answer:-
+F)java.lang.StringIndexOutOfBoundsException
+*/
+
+
+/*
+public class TestEmployee {
+
+    public static void main(String args[]) {
+        try {
+            throwsMethod();
+        } catch ( Exception e) {
+            System.out.println(e);
+        }
+    }
+
+    static void throwsMethod() throws Exception  {
+        String str="STRING";
+        System.out.println(str.length());;
+        char c = str.charAt(0);
+        c = str.charAt(10);
+        System.out.println(c);
+    }
+
+}
+*/
+
+/*Q78.what will be the Output of the code below*/
+/*
+Answers:-
+
+A)Null
+B)Error
+C)java.lang.IOException
+D)java.lang.FileNotFoundException
+E)java.lang.NullPointerException
+
+correct answer:-
+F)java.lang.FileNotFoundException
+*/
+
+
+/*public class TestEmployee {
+
+    public static void main(String args[]) {
+        try {
+            throwsMethod();
+        } catch ( Exception e) {
+            System.out.println(e);
+        }
+    }
+
+    static void throwsMethod() throws Exception  {
+        FileInputStream fis = null;
+        fis = new FileInputStream("file.txt");
+    }
+
+}*/
+
+
+/*Q79.what will be the Output of the code below*/
+/*
+Answers:-
+
+A)java.lang.IllegalArgumentException
+B)Error
+C)java.lang.IOException
+D)java.lang.FileNotFoundException
+E)java.lang.NullPointerException
+
+correct answer:-
+B)Error
+  reason: actual and formal argument lists differ in length
+*/
+
+
+/*
+public class TestEmployee {
+
+    public static void main(String args[]) {
+        try {
+            TestEmployee te = new TestEmployee();
+            te.throwsMethod(4,8,9);
+        } catch ( Exception e) {
+            System.out.println(e);
+        }
+    }
+
+    static void throwsMethod(int i, int j) throws Exception  {
+       int temp;
+        temp = i;
+        i = j;
+        j = temp;
+    }
+
+}
+*/
+
+/*Q80.what will be the Output of the code below*/
+/*
+Answers:-
+
+A)Null
+B)Error
+C)java.lang.NumberFormatException
+D)java.lang.ArithmeticException
+C)java.lang.IOException
+
+correct answer:-
+C)java.lang.NumberFormatException
+*/
+
+
+/*
+public class TestEmployee {
+
+    public static void main(String args[]) {
+        try {
+            throwsMethod();
+        } catch ( Exception e) {
+            System.out.println(e);
+        }
+    }
+
+    static void throwsMethod() throws Exception  {
+        int i = Integer.parseInt(str);
+        System.out.println(i);
+    }
+
+    private static final String str = "0.3";
+
+}
+*/
+
+
+/*Q81.what will be the Output of the code below*/
+/*
+Answers:-
+A)FileNotFoundException
+B)IllegalStateException
+C)IllegalArgumentException
+D)NumberFormatException
+E)Error
+
+correct answer:-
+B)IllegalStateException
+*/
+
+/*public class TestEmployee {
+
+    public static void main(String args[]) {
+        try {
+            throwsMethod();
+        } catch ( Exception e) {
+            System.out.println(e);
+        }
+    }
+
+    static void throwsMethod() throws Exception  {
+        ArrayList a = new ArrayList();
+        a.add("A");
+        a.add("B");
+        a.add("C");
+        Iterator i = a.iterator();
+        while(i.hasNext())
+        {
+            i.next();
+            i.remove();
+            i.remove();
+        }
+    }
+
+}*/
+
+/*Q82.what will be the Output of the code below*/
+/*
+Answers:-
+A)ClassCastException
+B)IllegalStateException
+C)IllegalArgumentException
+D)NumberFormatException
+E)Error
+correct answer:-
+A)ClassCastException*/
+
+/*public class TestEmployee {
+
+    public static void main(String args[]) {
+        try {
+            throwsMethod();
+        } catch ( Exception e) {
+            System.out.println(e);
+        }
+    }
+
+    static void throwsMethod() throws Exception  {
+
+        Object x = new String("1.0");
+        System.out.println((double) x);
+
+    }
+
+}*/
+
+/*Topic:5-Recognize common exception classes and categories*/
+
+/*Q83.All exceptions and errors inherit from which class
+Answers:-
+A)Throwable class
+B)Object class
+C)StackTraceElement
+
+Correct answer:-
+A)Throwable class
+*/
+
+/*Q84.which exception is thrown when attempting to access an array with an invalid index value
+Answers:-
+
+        A)ArithmeticException
+        B)NullPointerException
+        C)ArrayIndexOutOfBoundsException
+        D)IndexOutOfBoundsException
+        */
+
+/*
+correct answer:-
+        c)ArrayIndexOutOfBoundsException*/
+
+/*Q85.which exception is thrown when attempting to access an array with an  ndex value either negative or beyond the length of the array.
+Answers:-
+
+        A)ArithmeticException
+        B)NumberFormatException
+        C)ArrayIndexOutOfBoundsException
+        D)IndexOutOfBoundsException
+        */
+
+/*
+correct answer:-
+        c)ArrayIndexOutOfBoundsException*/
+
+
+/*Q86.which exception is thrown when attempting to cast a reference variable to a type that fails the IS-A test.
+Answers:-
+
+        A)NumberCastException
+        B)NumberFormatException
+        C)ClassCastException
+        D)IndexOutOfBoundsException
+        */
+
+/*
+correct answer:-
+        c)ClassCastException */
+
+
+
+/*Q87.which exception is thrown when a method receives an argument formatted differently than the method expects.
+Answers:-
+
+        A)IllegalArgumentException
+        B)IllegalMonitorStateException
+        C)IllegalStateException
+        D)IllegalThreadStateException
+        */
+
+/*
+correct answer:-
+          A)IllegalArgumentException */
+
+/*Q88.which exception is thrown when the state of the environment does not match the operation being attempted
+Answers:-
+
+        A)IllegalArgumentException
+        B)IllegalMonitorStateException
+        C)IllegalStateException
+        D)IllegalThreadStateException
+        */
+
+/*
+correct answer:-
+              C)IllegalStateException*/
+
+
+/*Q89.which exception is thrown when attempting to access an object with a reference variable whose current value is null.
+Answers:-
+
+        A)ArithmeticException
+        B)NullPointerException
+        C)ArrayIndexOutOfBoundsException
+        D)IndexOutOfBoundsException
+        */
+
+/*
+correct answer:-
+          B)NullPointerException*/
+
+
+/*Q90.which exception is thrown when a method that converts a String to a number receives a String that it cannot convert.
+Answers:-
+
+        A)ArithmeticException
+        B)NullPointerException
+        C)NumberFormatException
+        D)StringIndexOutOfBoundsException
+        */
+
+/*
+correct answer:-
+          C)NumberFormatException */
+
+/*Q91.which exception is thrown when a statement’s boolean test returns false.
+Answers:-
+
+        A)ArithmeticException
+        B)NullPointerException
+        C)NumberFormatException
+        D)AssertionError
+        */
+
+/*
+correct answer:-
+          D)AssertionError  */
+
+/*Q92.which Error is thrown when attempting to initialize a static variable or an initialization block.
+Answers:-
+
+        A)StackOverflowError
+        B)NullPointerException
+        C)ExceptionInInitializerError
+        D)NoClassDefFoundError
+        */
+
+/*
+correct answer:-
+            C)ExceptionInInitializerError  */
+
+/*Q93.which Error is thrown when a method recurses too deeply.
+Answers:-
+
+        A)StackOverflowError
+        B)ExceptionInInitializerError
+        C)NoClassDefFoundError
+        */
+
+/*
+correct answer:-
+            A)StackOverflowError  */
+
+
+/*Q94.which Error is thrown when the JVM can’t find a class it needs, because of a command-line error, a classpath issue, or a missing .class file.
+Answers:-
+
+        A)StackOverflowError
+        B)ExceptionInInitializerError
+        C)NoClassDefFoundError
+        */
+
+/*
+correct answer:-
+            C)NoClassDefFoundError  */
+
+
+/*Q95.which exception is thrown when Assignment to an array element of an incompatible type.
+Answers:-
+
+        A)ArithmeticException
+        B)ArrayStoreException
+        C)ArrayIndexOutOfBoundsException
+        D)IndexOutOfBoundsException
+        */
+
+/*
+correct answer:-
+          B)ArrayStoreException*/
+
+/*Q96.which exception is thrown when an attempt to index outside the bounds of a string.
+Answers:-
+
+        A)ArithmeticException
+        B)StringIndexOutOfBoundsException
+        C)ArrayIndexOutOfBoundsException
+        D)IndexOutOfBoundsException
+        */
+
+/*
+correct answer:-
+         B)StringIndexOutOfBoundsException*/
+
+
+/*Q97.which exception is thrown when  an access to a class is denied
+Answers:-
+
+        A)IllegalStateException
+        B)IllegalAccessException
+        C)IllegalArgumentException
+        D)IndexOutOfBoundsException
+        */
+
+/*
+correct answer:-
+         B)IllegalAccessException*/
+
+
+/*Q98.which exception is thrown when  a requested field does not exist
+Answers:-
+
+        A)IllegalFieldException
+        B)IllegalAccessException
+        C)IllegalArgumentException
+        D)NoSuchFieldException
+        */
+
+/*
+correct answer:-
+         D)NoSuchFieldException*/
+
+
+/*Q99.which exception is thrown when  a requested method does not exist
+Answers:-
+
+        A)IllegalMethodException
+        B)IllegalAccessException
+        C)IllegalArgumentException
+        D)NoSuchMethodException
+        */
+
+/*
+correct answer:-
+         D)NoSuchMethodException*/
+
+/*Q100.which exception is thrown when one thread has been interrupted by another thread
+Answers:-
+
+        A)IllegalStateException
+        B)IllegalAccessException
+        C)IllegalMonitorStateException
+        D)InterruptedException
+        */
+
+/*
+correct answer:-
+         D)InterruptedException*/
 
