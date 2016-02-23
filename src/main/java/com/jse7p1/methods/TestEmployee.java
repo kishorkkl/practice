@@ -1844,5 +1844,828 @@ public class TestEmployee {
         t.display();}}
 */
 
+// Topic 5 : Create and overload constructors
 
 
+/*
+Q78. What will be the output of the code below?
+
+        Answers:
+
+        a) A
+        b) Null
+        c) Compile time error
+
+        Correct Answer:
+        a) C
+*/
+
+/*
+class Test
+{
+    public Test(int i){System.out.println("A");}}
+class TestEmployee extends Test
+{
+    public TestEmployee(){this(10);}
+    public TestEmployee(int i){super(i);}
+    public  static void main(String arg[]){Test tt = new Test(5);}}
+*/
+
+
+/*
+Q79. What will be the output of the code below?
+
+        Answers:
+
+        a) Null
+        b) Compile time error
+
+        Correct Answer:
+        b) Null
+*/
+
+/*
+class TestEmployee
+{
+    private static TestEmployee object = null;
+    private TestEmployee(){}
+
+    public TestEmployee getObject(){if(object == null){object = new TestEmployee();}return object;}
+
+    public  static void main(String arg[]){TestEmployee te = new TestEmployee();}}
+*/
+
+/*
+Q80. What will be the output of the code below?
+
+        Answers:
+
+        a) A
+        b) Null
+        c) Compile time error
+
+        Correct Answer:
+        c) Compile time error
+*/
+
+
+/*
+class TestEmployee
+{
+    private static TestEmployee object = null;
+    private TestEmployee(){System.out.println("A");}
+    public TestEmployee getObject(){if(object == nulll){object = new TestEmployee();}return object;}
+    public  static void main(String arg[]){TestEmployee te = new TestEmployee();}}
+*/
+
+
+/*
+Q81. What will be the output of the code below?
+
+        Answers:
+
+        a) A
+        b) B
+        c) Compile time error
+
+        Correct Answer:
+        c) Compile time error
+*/
+
+
+
+/*
+class Test
+{public Test(){System.out.println("A");}}
+class TestEmployee extends Test
+{
+    public TestEmployee(){System.out.println("B");}
+    void method(){this();super();}
+    public  static void main(String arg[]){TestEmployee te = new TestEmployee();}}
+*/
+
+/*
+Q82. What will be the output of the code below?
+
+        Answers:
+
+        a) 20
+        b) 40
+        c) Compile time error
+
+        Correct Answer:
+        b) 40
+*/
+
+/*
+class Test {
+    int t = 20;
+    Test() {t = 40;}}
+class TestEmployee {
+    public static void main(String args[]) {
+        Test t = new Test();System.out.println(t.t);}}
+*/
+
+
+/*
+Q83. Can we throw exception from constructor?
+
+        Answers:
+
+        a) Yes
+        b) No
+
+        Correct Answer:
+        a) Yes
+*/
+
+/*
+Q84. Can we throw exception from constructor?
+
+        Answers:
+
+        a) Yes
+        b) No
+
+        Correct Answer:
+        a) Yes
+*/
+
+// Topic 6 : Apply access modifiers
+
+/*
+Q85. Can we throw exception from constructor?
+
+        Answers:
+
+        a) A 40
+        b) 40 A
+        c) Compile time error
+
+        Correct Answer:
+        c) Compile time error
+*/
+
+/*
+class Test{
+    private int data=40;
+    void msg(){System.out.print("A ");}
+}
+public class TestEmployee{
+    public static void main(String args[]){
+        Test obj=new Test();
+        System.out.print(obj.data+" ");
+        obj.msg();}}
+*/
+
+/*
+Q86. Can we throw exception from constructor?
+
+        Answers:
+
+        a) A 40
+        b) 40 A
+        c) Compile time error
+
+        Correct Answer:
+        c) Compile time error
+*/
+
+/*
+class Test{
+     int data=40;
+    private void msg(){System.out.print("A ");}
+}
+public class TestEmployee{
+    public static void main(String args[]){
+        Test obj=new Test();
+        System.out.print(obj.data+" ");
+        obj.msg();}}
+*/
+
+/*
+Q87. Can we throw exception from constructor?
+
+        Answers:
+
+        a) A 40
+        b) 40 A
+        c) Compile time error
+
+        Correct Answer:
+        b) 40 A
+*/
+
+/*
+class Test{
+     int data=40;
+     void msg(){System.out.print("A ");}
+}
+public class TestEmployee{
+    public static void main(String args[]){
+        Test obj=new Test();
+        System.out.print(obj.data+" ");
+        obj.msg();}}
+*/
+
+// Topic 6 : Apply access modifiers
+
+/*
+Q88. Can we throw exception from constructor?
+
+        Answers:
+
+        a) 34
+        b) 45
+        c) Compile time error
+
+        Correct Answer:
+        a) 34
+*/
+
+/*
+class Test
+{
+    protected int x = 34;
+    public void display(){System.out.println(x);}}
+ public class TestEmployee extends Test
+{
+    public static void main(String[] args){
+    {
+        Test t = new Test();t.display();t.x = 45;}}}
+*/
+
+
+/*
+Q89. Can we throw exception from constructor?
+
+        Answers:
+
+        a) 34
+        b) 45
+        c) Compile time error
+
+        Correct Answer:
+        b) Compile time error
+*/
+
+/*
+class Test
+{
+    protected int x = 34;
+    public void display(){System.out.println(x);}}
+private class Test1 extends  Test
+{
+
+}
+ public class TestEmployee extends Test1
+{
+    public static void main(String[] args){
+    {
+        Test1 t = new Test1();t.display();t.x = 45;}}}
+*/
+
+
+/*
+Q90. Can we throw exception from constructor?
+
+        Answers:
+
+        a) 34
+        b) Compile time error
+        c) Run time error
+
+        Correct Answer:
+        b) Compile time error
+*/
+
+/*
+class Test
+{
+    protected int x = 34;
+    public void display(){System.out.println(x);}}
+protected class Test1 extends  Test
+{
+
+}
+ public class TestEmployee extends Test1
+{
+    public static void main(String[] args){
+    {
+        Test1 t = new Test1();t.display();t.x = 45;}}}
+*/
+
+/*
+Q90. Can we throw exception from constructor?
+
+        Answers:
+
+        a) 40
+        b) Compile time error
+        c) Run time error
+
+        Correct Answer:
+        b) Compile time error
+*/
+
+/*
+class Test{
+    private int data=40;
+}
+
+public class TestEmployee{
+    public static void main(String args[]){
+        Test obj=new Test();
+        System.out.println(obj.data);
+    }
+}
+*/
+
+
+/*
+Q91. Can we throw exception from constructor?
+
+        Answers:
+
+        a) 40
+        b) Compile time error
+        c) Run time error
+
+        Correct Answer:
+        a) 40
+*/
+
+/*
+class Test{
+    int data=40;
+}
+
+public class TestEmployee{
+    public static void main(String args[]){
+        Test obj=new Test();
+        System.out.println(obj.data);
+    }
+}
+*/
+
+/*
+Q92. Can we throw exception from constructor?
+
+        Answers:
+
+        a) 40
+        b) Compile time error
+        c) Run time error
+
+        Correct Answer:
+        b) Compile time error
+*/
+
+/*
+class Test{
+    int data=40;
+    private void msg(){System.out.println("Hello java");}
+}
+
+public class TestEmployee{
+    public static void main(String args[]){
+        Test obj=new Test();
+        System.out.println(obj.data);
+       obj.msg();
+    }
+}
+*/
+
+
+/*
+Q93. Which of the below specifier must be used in main() method?
+
+        Answers:
+
+        a) public
+        b) private
+        c) protected
+
+        Correct Answer:
+        a) public
+*/
+
+/*
+Q94. What is output of below code?
+
+        Answers:
+
+        a) 2 3
+        b) 3 2
+        c) 3 3
+        d) compile time error
+
+        Correct Answer:
+        c) 3 3
+*/
+
+/*
+class Test{
+    public int x;
+    public int y;
+    void val(int a, int b){
+        x =  a + 1;
+        y =  b;}}
+public class TestEmployee {
+    public static void main(String args[])
+    { Test obj = new Test(); obj.val(2, 3);System.out.println(obj.x + " " + obj.y);}}
+*/
+
+
+/*
+Q95. What is output of below code?
+
+        Answers:
+
+        a) 2 3
+        b) 3 2
+        c) 3 3
+        d) compile time error
+
+        Correct Answer:
+        d) compile time error
+*/
+
+/*
+class Test{
+    public int x;
+    private int y;
+    void val(int a, int b){
+        x =  a + 1;
+        y =  b;}}
+public class TestEmployee {
+    public static void main(String args[])
+    { Test obj = new Test(); obj.val(2, 3);System.out.println(obj.x + " " + obj.y);}}
+*/
+
+/*
+Q96. The protected fields or methods cannot be used for?
+
+        Answers:
+
+        a) classes
+        b) Interfaces
+        c) Both a and b
+
+        Correct Answer:
+        c) Both a and b
+*/
+
+/*
+Q97. If a class has no modifier, then it can only be accessed from?
+
+        Answers:
+
+        a) same class
+        b) same package
+        c) Anywhere
+
+        Correct Answer:
+        b) same package
+*/
+
+/*
+Q98. If a method or variable is marked as private then it can be accessed?
+
+        Answers:
+
+        a) in sub class of same package
+        b) in same package
+        c) in same class
+        d) Anywhere
+
+        Correct Answer:
+
+        c) in same class
+*/
+
+/*
+Q99. Which is most restrictive access modifier?
+
+        Answers:
+
+        a) public
+        b) private
+        c) protected
+        d) default
+
+        Correct Answer:
+
+        b) private
+*/
+
+/*
+Q100. Is access specifier and modifier are same?
+
+        Answers:
+
+        a) yes
+        b) No
+
+        Correct Answer:
+
+        b) No
+*/
+
+
+// Topic 7 : Apply encapsulation principles to a class
+
+/*Q101. Process of wrapping code and data together into a single unit?*/
+
+/*    Answers:-
+
+A)Polymorphism
+B)Inheritance
+C)Data Abstraction
+D)Encapsulation
+
+
+Correct answer:-
+            D)Encapsulation*/
+
+
+/*Q102.Fully encapsulated class means?*/
+
+/*    Answers:-
+
+A)All methods are private
+B)All variables are private
+C)All members are private
+D)None of the above
+
+Correct answer:-
+C)All members are private*/
+
+
+/*Q103.Encapsulation is also known as?*/
+
+/*    Answers:-
+
+A)Data Binding
+B)Data Hiding
+C)Data Abstraction
+
+Correct answer:-
+B)Data Hiding*/
+
+
+/*Q104.Can we access private members of a class in another class?*/
+
+/*    Answers:-
+A)yes
+B)No
+
+Correct answer:-
+A)yes
+ Through Getter and Setter
+ */
+
+
+/*Q105.Encapsulation supports?*/
+
+/*    Answers:-
+A)can made class read-only
+B)can made class write-only
+C)A class can have total control over what is stored in its fields.
+D)All of the Above
+
+Correct answer:-
+D)All of the Above
+
+ */
+
+
+/*Q106.Encapsulation provides security through the access specifier?*/
+
+/* Answers:-
+A)private
+B)public
+C)protected
+D)All of the Above
+
+Correct answer:-
+D)All of the Above
+ */
+
+
+    /*Q107.A method return value when?
+
+
+A)completes all the statements in the method,
+B)reaches a return statement, or
+C)throws an exception (covered later)
+        */
+
+
+        /* Answers:-
+A)a only
+B)a & b
+C)c & a
+D)a,b & c
+
+Correct answer:-
+D)a,b & c
+ */
+
+/*Q108.In java unit testing become easy by?*/
+/*    Answers:-
+
+A)Polymorphism
+B)Inheritance
+C)Data Abstraction
+D)Encapsulation
+
+
+Correct answer:-
+            D)Encapsulation*/
+
+
+    /*Q109. Encapsulation allows you to change one part of code without affecting other part of code. */
+
+/*    Answers:-
+A)True
+B)False
+
+Correct answer:-
+A)True
+
+
+  /*Q110. Encapsulation also helps to write immutable class in Java which are a good choice in multi-threading
+environment.
+
+/*    Answers:-
+A)True
+B)False
+
+Correct answer:-
+A)True */
+
+     /*Q111. Encapsulation reduce coupling of modules
+
+/*    Answers:-
+A)True
+B)False
+
+Correct answer:-
+A)True */
+
+       /*Q112. Encapsulation decrease cohesion inside a module
+
+/*    Answers:-
+A)True
+B)False
+
+Correct answer:-
+B)False */
+
+
+// Topic:-8. Determine the effect upon object references and primitive values when they are passed  into methods that change the values
+
+    /*Q113.In java values of primitive types and values that are references to objects are passed by
+
+ /*    Answers:-
+A)value
+B)reference
+
+Correct answer:-
+A)value */
+
+
+
+    /*Q114.In java objects are passed by
+
+ /*    Answers:-
+A)value
+B)reference
+
+Correct answer:-
+A)value*/
+
+
+    /*Q115.In java reference variable is passed by
+
+ /*    Answers:-
+A)value
+B)reference
+
+Correct answer:-
+A)value */
+
+
+     /*Q116. In java, variables do not take on the values of "objects" but values of "references to objects"
+
+/*    Answers:-
+A)True
+B)False
+
+Correct answer:-
+B)False*/
+
+     /*Q117. In java the caller's copy of primitive type arguments change when the corresponding parameter is changed.
+/*    Answers:-
+A)True
+B)False
+
+Correct answer:-
+B)False */
+
+
+/*Q118. In java the fields of the caller's object change when the called method changes the corresponding fields of the object (reference) passed as a parameter.
+/*    Answers:-
+A)True
+B)False
+
+Correct answer:-
+A)True */
+
+
+/*Q119.Output of the code below?*/
+
+/*    Answers:-
+A)10
+20
+20
+B)10
+10
+20
+C)10
+20
+10
+*/
+/*Correct answer:-
+A)10
+20
+20
+*/
+
+
+/*public class TestEmployee {
+
+    class ValHold{
+        public int i = 10;
+    }
+
+    public static void main(String argv[]) {
+        TestEmployee te = new TestEmployee();
+        te.methodA();
+    }
+
+    public void methodA() {
+        ValHold v = new ValHold();
+        v.i = 10;
+        System.out.println(v.i);
+        methodB(v);
+        System.out.println(v.i);
+    }
+
+    public void methodB(ValHold v) {
+        v.i = 20;
+        System.out.println( v.i);
+    }
+}*/
+
+
+
+/*Q120.Output of the code below?*/
+
+/*    Answers:-
+A)10
+20
+20
+B)10
+10
+20
+C)10
+20
+10
+*/
+/*Correct answer:-
+C)10
+20
+10
+*/
+
+/*public class TestEmployee{
+    public static void main(String argv[]){
+        TestEmployee p = new TestEmployee();
+        p.methodA();
+    }
+
+    public void methodA(){
+        int i=10;
+        System.out.println(i);
+        methodB(i);
+        System.out.println(i);
+}
+
+    public void methodB(int i){
+        i+=10;
+        System.out.println(i);
+    }
+
+}*/
