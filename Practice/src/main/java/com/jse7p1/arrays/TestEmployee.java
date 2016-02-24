@@ -389,7 +389,7 @@ public class TestEmployee {
  */
 
 /*
- Q19 Is Array growable ?
+ Q19 Is Array grow able ?
 
  Answers:
  a) no
@@ -403,7 +403,7 @@ public class TestEmployee {
  */
 
 /*
- Q20 Is Array growable ?
+ Q20 Is Array grow able ?
 
  Answers:
  a) no
@@ -573,7 +573,7 @@ public class TestEmployee {
 
 
 /*
- Q28 What will be the output of the code below ?
+ Q28 What will be the output of the code below?
 
  Answers:
  a) 3
@@ -1243,11 +1243,372 @@ public class TestEmployee {
  d) Yes,first dimension is must, without that compile will throw error e.g. int[][3] is Not Ok but int[3][] is Ok.
  */
 
+/*
+ Q58 What will be the output of the code below ?
+
+ Answers:
+ a) Red Balls
+ b)Red
+ c)Balls
+
+ Correct Answer:
+ b)Red
+ */
+/*
+class TestEmployee {
+
+    public static void main(String[] args) {
+        String[][] Balls = {{"Red ", "Blue ", "Pink"}, {"Balls"}};
+
+        System.out.println(Balls[0][0]);
+
+    }
+}
+*/
+
+
+
+/*
+ Q59 What will be the output of the code below ?
+
+ Answers:
+ a) Red Balls
+ b)Blue
+ c)Balls
+ d)Red Blue
+
+ Correct Answer:
+ a) Red Balls
+ */
+
+/*class TestEmployee {
+
+    public static void main(String[] args) {
+        String[][] Balls = {{"Red ", "Blue ", "Pink"}, {"Balls"}};
+
+        System.out.println(Balls[0][0] + Balls[1][0]);
+
+        //    System.out.println(Balls[0][1] + Balls[1][0]);
+    }
+}*/
+
+
+
+/*
+ Q60 What will be the output of the code below ?
+
+ Answers:
+ a)Red Balls
+   Blue Balls
+ b)Red Balls
+   Blue Blue
+ c)Red Blue
+   Blue Balls
+ d)Error
+
+ Correct Answer:
+ a)Red Balls
+   Blue Balls
+ */
+
+/*
+class TestEmployee {
+
+    public static void main(String[] args) {
+        String[][] Balls = {{"Red ", "Blue ", "Pink"}, {"Balls"}};
+
+        System.out.println(Balls[0][0] + Balls[1][0]);
+
+        System.out.println(Balls[0][1] + Balls[1][0]);
+    }
+}
+*/
+
+/*
+ Q61 What will be the output of the code below ?
+
+ Answers:
+ a)Red Balls
+   Blue Balls
+ b)Red Balls
+   Blue Blue
+ c)Red Blue
+   Blue Balls
+ d)Error
+ e)Exception
+
+ Correct Answer:
+ e)ArrayIndexOutOfBoundsException
+ */
+
+
+/*
+class TestEmployee {
+
+    public static void main(String[] args) {
+        String[][] Balls = {{"Red ", "Blue ", "Pink"}, {"Balls" ,"Pins"}};
+
+        System.out.println(Balls[0][3] + Balls[1][0]);
+
+        System.out.println(Balls[0][1] + Balls[1][0]);
+    }
+}
+*/
+
+/*
+ Q62. What will be the output of the code below ?
+
+ Answers:
+ a)Blue Balls
+   Red Balls
+ b)Blue Balls
+   Red Pins
+ c)Pink Balls
+   Blue Pins
+ d)Error
+ e)Exception
+
+ Correct Answer:
+  c)Pink Balls
+   Blue Pins
+ */
+
+
+
+/*
+class TestEmployee {
+
+    public static void main(String[] args) {
+        String[][] Balls = {{"Red ", "Blue ", "Pink "}, {"Balls" ,"Pins"}};
+
+        System.out.println(Balls[0][2] + Balls[1][0]);
+
+        System.out.println(Balls[0][1] + Balls[1][1]);
+    }
+}
+*/
+
+/*
+ Q63. What will be the output of the code below ?
+
+ Answers:
+ a)Blue Balls
+   Red Balls
+ b)Blue Balls
+   Red Pins
+ c)Pink Balls
+   Blue Pins
+ d)Error
+ e)Exception
+
+ Correct Answer:
+ e)ArrayIndexOutOfBoundsException
+ */
+
+/*
+class TestEmployee {
+
+    public static void main(String[] args) {
+        String[][] Balls = {{"Red ", "Blue ", "Pink "}, {"Balls" ,"Pins"}};
+
+        System.out.println(Balls[1][2] + Balls[1][0]);
+
+        System.out.println(Balls[1][1] + Balls[1][1]);
+    }
+}
+*/
+
+/*
+ Q64. What will be the output of the code below ?
+
+ Answers:
+ a)Blue Balls
+   Red Balls
+ b)Blue Balls
+   Red Pins
+ c)Pink Balls
+   Blue Blue
+ d)Pins Balls
+   Pins Pins
+ e)Exception
+
+ Correct Answer:
+ d)Pins Balls
+   Pins Pins
+ */
+
+
+/*
+class TestEmployee {
+
+    public static void main(String[] args) {
+        String[][] Balls = {{"Red ", "Blue ", "Pink "}, {"Balls" ,"Pins "}};
+
+        System.out.println(Balls[1][1] + Balls[1][0]);
+
+        System.out.println(Balls[1][1] + Balls[1][1]);
+    }
+}
+*/
+
+/*
+ Q65. What will be the output of the code below ?
+
+ Answers:
+ a)Red Red
+   Red Red
+ b)Pins Pins
+    Pins Pins
+ c)Blue Blue
+   Blue Blue
+ d)Pins Balls
+   Pins Pins
+ e)Exception
+
+ Correct Answer:
+ b)Pins Pins
+    Pins Pins
+ */
+
+
+
+/*
+class TestEmployee {
+
+    public static void main(String[] args) {
+        String[][] Balls = {{"Red ", "Blue ", "Pink "}, {"Balls" ,"Pins "}};
+
+        System.out.println(Balls[1][1] + Balls[1][1]);
+
+        System.out.println(Balls[1][1] + Balls[1][1]);
+    }
+}
+*/
+
+/*
+ Q66. What will be the output of the code below ?
+
+ Answers:
+ a)Red Red
+   Red Red
+ b)Pins Pins
+    Pins Pins
+ c)Blue Blue
+   Blue Blue
+ d)Pins Balls
+   Pins Pins
+ e)Exception
+
+ Correct Answer:
+ e)ArrayIndexOutOfBoundsException
+ */
+
+
+/*class TestEmployee {
+
+    public static void main(String[] args) {
+        String[][] Balls = {{"Red ", "Blue ", "Pink "}, {"Balls" ,"Pins "}};
+
+        System.out.println(Balls[2][2] + Balls[2][2]);
+
+        System.out.println(Balls[2][2] + Balls[2][2]);
+    }
+}*/
+
+/*
+ Q67. What will be the output of the code below ?
+
+ Answers:
+ a)Red Red
+   Red Red
+ b)Red Balls
+   Red Balls
+ c)Blue Blue
+   Blue Blue
+ d)Balls Balls
+   Balls Balls
+ e)Exception
+
+ Correct Answer:
+ a)Red Red
+   Red Red
+ */
+
+
+/*
+class TestEmployee {
+
+    public static void main(String[] args) {
+        String[][] Balls = {{"Red ", "Blue ", "Pink "}, {"Balls" ,"Pins "}};
+
+        System.out.println(Balls[0][0] + Balls[0][0]);
+
+        System.out.println(Balls[0][0] + Balls[0][0]);
+    }
+}
+
+*/
+
+/*
+ Q68. What will be the output of the code below ?
+
+ Answers:
+ a)Red
+ b)Balls
+ c)Exception
+
+ Correct Answer:
+  a)Red
+ */
+
+
+/*
+class TestEmployee {
+
+    public static void main(String[] args) {
+        String[][] Balls = {{"Red ", "Blue ", "Pink "}, {"Balls" ,"Pins "}};
+
+        System.out.println(Balls[0][0]);
+
+    }
+}
+*/
+
+/*
+ Q69. What will be the output of the code below ?
+
+ Answers:
+ a)Blue
+ b)Balls
+ c)Exception
+
+
+ Correct Answer:
+ c)ArrayIndexOutOfBoundsException
+ */
+
+
+
+/*
+class TestEmployee {
+
+    public static void main(String[] args) {
+        String[][] Balls = {{"Red ", "Blue ", "Pink "}, {"Balls" ,"Pins "}};
+
+        System.out.println(Balls[2][1]);
+
+    }
+}
+*/
+
+
+
+
 //Topic 3: Declare and use an ArrayList
 
 
 /*
- Q58 What will be the output of the code below ?
+ Q70 What will be the output of the code below ?
 
  Answers:
  a) ABC XYZ
@@ -1270,10 +1631,10 @@ import java.util.*;
             Iterator itr = al.iterator();
             while(itr.hasNext()){
                 System.out.print(itr.next()+" ");}}}
- */
+*/
 
 /*
- Q59 What will be the output of the code below ?
+ Q71 What will be the output of the code below ?
 
  Answers:
  a) 1 XYZ
@@ -1299,7 +1660,7 @@ import java.util.*;
 */
 
 /*
- Q60 What will be the output of the code below ?
+ Q72 What will be the output of the code below ?
 
  Answers:
  a) 1 XYZ 2
@@ -1326,7 +1687,7 @@ import java.util.*;
 */
 
 /*
- Q61 What will be the output of the code below ?
+ Q73 What will be the output of the code below ?
 
  Answers:
  a) 1 XYZ yes 2
@@ -1357,7 +1718,7 @@ import java.util.*;
 
 
 /*
- Q62 What will be the output of the code below ?
+ Q74 What will be the output of the code below ?
 
  Answers:
  a) 1 XYZ yes 2
@@ -1388,7 +1749,7 @@ import java.util.*;
 
 
 /*
- Q63 What will be the output of the code below ?
+ Q75 What will be the output of the code below ?
 
  Answers:
  a) 3
@@ -1399,6 +1760,7 @@ import java.util.*;
 
  a) 2
  */
+
 /*
 import java.util.*;
   public class TestEmployee {
@@ -1408,11 +1770,11 @@ import java.util.*;
               al.add(88);
               al.add(9);
               al.add(17);
-              System.out.println("index of "+al.lastIndexOf(9));}}
+              System.out.println(al.lastIndexOf(9));}}
 */
 
 /*
- Q63 What will be the output of the code below ?
+ Q76 What will be the output of the code below ?
 
  Answers:
  a) 10 20 30
@@ -1437,7 +1799,7 @@ public class TestEmployee {
 */
 
 /*
- Q64 What will be the output of the code below ?
+ Q77 What will be the output of the code below ?
 
  Answers:
  a) 10 20 30
@@ -1463,7 +1825,7 @@ public class TestEmployee {
 */
 
 /*
- Q64 What will be the output of the code below ?
+ Q78 What will be the output of the code below ?
 
  Answers:
  a) 10 20
@@ -1489,7 +1851,7 @@ public class TestEmployee {
 */
 
 /*
- Q65 What will be the output of the code below ?
+ Q79 What will be the output of the code below ?
 
  Answers:
  a) 30
@@ -1516,7 +1878,7 @@ public class TestEmployee {
 
 
 /*
- Q66 What will be the output of the code below ?
+ Q80 What will be the output of the code below ?
 
  Answers:
  a) 30
@@ -1542,7 +1904,7 @@ public class TestEmployee {
 */
 
 /*
- Q67 What will be the output of the code below ?
+ Q81 What will be the output of the code below ?
 
  Answers:
  a) 9 2 17
@@ -1568,7 +1930,7 @@ public class TestEmployee {
 */
 
 /*
- Q68 Can ArrayList store duplicate values ?
+ Q82 Can ArrayList store duplicate values ?
 
  Answers:
  a) no
@@ -1581,7 +1943,7 @@ public class TestEmployee {
  */
 
 /*
- Q69 Can ArrayList allow random access ?
+ Q83 Can ArrayList allow random access ?
 
  Answers:
  a) no
@@ -1593,7 +1955,7 @@ public class TestEmployee {
  b) yes, array works at the index basis.
  */
 /*
- Q70 Is Array list growable or not?
+ Q84 Is Array list grow able or not?
 
  Answers:
  a) yes
@@ -1602,11 +1964,11 @@ public class TestEmployee {
 
  Correct Answer:
 
- a) yes,arrya list is dynamic and increase its size according to data.
+ a) yes,array list is dynamic and increase its size according to data.
  */
 
 /*
- Q71 Can Array List shrink automatically?
+ Q85 Can Array List shrink automatically?
 
  Answers:
  a) yes
@@ -1619,14 +1981,352 @@ public class TestEmployee {
  */
 
 /*
- Q72 Can Array List shrink automatically?
+ Q86 What will be the output of the code below ?
 
  Answers:
- a) yes
- b) no
- c) compile time Error
+ a) 1 1
+ b) 1 2
+ c) 2 2
+ d) compile time Error
 
  Correct Answer:
 
- a) yes,when object is removed, array list shrink automatically.
+ a) 1 1
+ */
+
+/*
+import java.util.ArrayList;
+public class TestEmployee
+{
+    public static void main(String args[])
+    {
+        int[] arr = new int[3];
+        arr[0] = 1;arr[1] = 2;
+        System.out.print(arr[0]+" ");
+        ArrayList<Integer> arrL = new ArrayList<Integer>(2);
+        arrL.add(1);arrL.add(2);
+        System.out.println(arrL.get(0));}}
+*/
+
+/*
+ Q87 What will be the output of the code below ?
+
+ Answers:
+ a) 1 1
+ b) 1 4
+ c) 2 2
+ d) compile time Error
+
+ Correct Answer:
+
+ b) 1 4
+ */
+
+/*
+import java.util.ArrayList;
+public class TestEmployee
+{
+    public static void main(String args[])
+    {
+        int[] arr = new int[3];
+        arr[0] = 1;arr[1] = 2;
+        System.out.print(arr[0]+" ");
+        ArrayList<Integer> arrL = new ArrayList<Integer>(1);
+        arrL.add(1);arrL.add(2);arrL.add(3);arrL.add(4);
+        System.out.println(arrL.get(3));}}
+*/
+
+/*
+ Q88 What will be the output of the code below ?
+
+ Answers:
+ a) 1 2 1 2
+ b) 2 1 1 2
+ c) 1 2 2 1
+ d) compile time Error
+
+ Correct Answer:
+
+ c) 1 2 2 1
+ */
+
+/*
+import java.util.ListIterator;
+import java.util.ArrayList;
+public class TestEmployee {
+    public static void main(String[] args) {
+        ArrayList arrL = new ArrayList();
+        arrL.add("1");arrL.add("2");
+        ListIterator lt = arrL.listIterator();
+        while(lt.hasNext())
+            System.out.print(lt.next()+" ");
+        while(lt.hasPrevious())
+            System.out.print(lt.previous()+" ");}}
+*/
+
+
+/*
+ Q89 What will be the output of the code below ?
+
+ Answers:
+ a) Blank
+ b) 2 1
+ c) 1 2
+ d) compile time Error
+
+ Correct Answer:
+
+ a) Blank
+ */
+
+/*
+import java.util.ListIterator;
+import java.util.ArrayList;
+public class TestEmployee {
+    public static void main(String[] args) {
+        ArrayList arrL = new ArrayList();
+        arrL.add("1");arrL.add("2");
+        ListIterator lt = arrL.listIterator();
+        while(lt.hasPrevious())
+            System.out.print(lt.previous()+" ");}}
+*/
+
+/*
+ Q90 What will be the output of the code below ?
+
+ Answers:
+ a) 2 1 2 1
+ b) 2 1 1 2
+ c) 1 2 1 2
+ d) compile time Error
+
+ Correct Answer:
+
+ c) 1 2 1 2
+ */
+
+/*
+import java.util.ArrayList;
+public class TestEmployee {
+    public static void main(String[] args) {
+        ArrayList arrL = new ArrayList();
+        arrL.add("1");arrL.add("2");arrL.clone();
+        System.out.print(arrL+" ");
+        ArrayList al2 = (ArrayList)arrL.clone();
+            System.out.print(al2+" ");}}
+*/
+
+/*
+ Q91 What will be the output of the code below ?
+
+ Answers:
+
+ a) A B
+ b) D E
+ c) A B D E
+ d) compile time Error
+
+ Correct Answer:
+
+ c) A B
+ */
+
+/*
+import java.util.*;
+public class TestEmployee{
+    public static void main(String args[]){
+        ArrayList<String> al=new ArrayList<String>();
+        al.add("A");
+        al.add("B");
+        ArrayList<String> al2=new ArrayList<String>();
+        al2.add("D");
+        al2.add("E");
+        al2.removeAll(al);
+        Iterator itr=al.iterator();
+        while(itr.hasNext()){
+            System.out.print(itr.next()+" ");}}}
+*/
+
+/*
+ Q92 What will be the output of the code below ?
+
+ Answers:
+
+ a) A B
+ b) D E
+ c) A B D E
+ d) compile time Error
+
+ Correct Answer:
+
+ c) D E
+ */
+
+/*
+import java.util.*;
+public class TestEmployee{
+    public static void main(String args[]){
+        ArrayList<String> al=new ArrayList<String>();
+        al.add("A");
+        al.add("B");
+        ArrayList<String> al2=new ArrayList<String>();
+        al2.add("D");
+        al2.add("E");
+        Iterator itr=al2.iterator();
+        while(itr.hasNext()){
+            System.out.print(itr.next()+" ");}}}
+*/
+
+
+/*
+ Q93 What will be the output of the code below ?
+
+ Answers:
+
+ a) B A C
+ b) A B C
+ c) A C B
+ d) compile time Error
+
+ Correct Answer:
+
+ c) A C B
+ */
+
+/*
+import java.util.ArrayList;
+import java.util.Collections;
+public class TestEmployee {
+    public static void main(String a[]){
+        ArrayList<String> list = new ArrayList<String>();
+        list.add("A");list.add("B");list.add("C");
+        Collections.swap(list, 1, 2);
+        for(String str: list){
+            System.out.print(str+" ");}}}
+*/
+
+
+/*
+ Q94 What will be the output of the code below ?
+
+ Answers:
+
+ a) A C B
+ b) A B C
+ c) compile time Error
+ d) Run time error
+
+ Correct Answer:
+
+ d) Run time error
+ */
+
+/*
+import java.util.ArrayList;
+import java.util.Collections;
+public class TestEmployee {
+    public static void main(String a[]){
+        ArrayList<String> list = new ArrayList<String>();
+        list.add("A");list.add("B");list.add("C");
+        Collections.swap(list, 1, 5);
+        for(String str: list){
+            System.out.print(str+" ");}}}
+*/
+
+/*
+ Q95 What will be the output of the code below ?
+
+ Answers:
+
+ a) C B A
+ b) B C A
+ c) compile time Error
+ d) Run time error
+
+ Correct Answer:
+
+ a) C B A
+ */
+
+/*
+import java.util.ArrayList;
+import java.util.Collections;
+public class TestEmployee {
+    public static void main(String a[]){
+        ArrayList<String> list = new ArrayList<String>();
+        list.add("A");list.add("B");list.add("C");
+        Collections.shuffle(list);
+        for(String str: list){
+            System.out.print(str+" ");}}}
+*/
+
+/*
+ Q96 obj.add("hello"); --- code line will add "hello" in array list at?
+
+ Answers:
+
+ a) First Position
+ b) Last Position
+ c) Anywhere in array list
+
+ Correct Answer:
+
+ b) Last Position
+ */
+
+/*
+ Q97 obj.add(2, "bye");  will add "bye" in array list at?
+
+ Answers:
+
+ a) 3rd position(2nd index)
+ b) 3rd position(3nd index)
+ c) 2nd position(3nd index)
+
+ Correct Answer:
+
+ a) 3rd position(2nd index)
+ */
+
+/*
+ Q98 obj.remove(3);  will remove?
+
+ Answers:
+
+ a) 4th element (index 4)
+ b) 3rd element (index 4)
+ c) 4th element (index 3)
+
+ Correct Answer:
+
+ c) 4th element (index 3)
+ */
+
+/*
+ Q99 obj.set(2, "ok"); will replace?
+
+ Answers:
+
+ a) 2nd element (index 3) with ok
+ b) 3rd element (index 2) with ok
+ c) 3rd element (index 3) with ok
+
+ Correct Answer:
+
+ b) 3rd element (index 2) with ok
+ */
+
+
+/*
+ Q100 when we initialize ArrayList, its initial capacity will be?
+
+ Answers:
+
+ a) 16
+ b) 8
+ c) 10
+
+ Correct Answer:
+
+ c) 10
  */
