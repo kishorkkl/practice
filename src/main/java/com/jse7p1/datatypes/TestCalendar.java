@@ -195,7 +195,7 @@ class TestSeconds {
 
      /*Testing Topic 2: Call methods on objects */
 /*
-    Q1.What will be the output of the code below?
+    Q9.What will be the output of the code below?
 
         Answers:
 
@@ -224,7 +224,7 @@ public class TestCalendar {
 */
 
 /*
-    Q2.What will be the output of the code below?
+    Q10.What will be the output of the code below?
 
         Answers:
 
@@ -252,7 +252,7 @@ public class TestCalendar {
 */
 
 /*
-    Q3.What will be the output of the code below?
+    Q11.What will be the output of the code below?
 
         Answers:
 
@@ -282,7 +282,7 @@ public class TestCalendar {
 */
 
 /*
-    Q4.What will be the output of the code below?
+    Q12.What will be the output of the code below?
 
         Answers:
 
@@ -311,7 +311,7 @@ public class TestCalendar {
 */
 
 /*
-    Q5.What will be the output of the code below?
+    Q13.What will be the output of the code below?
 
         Answers:
 
@@ -342,7 +342,7 @@ public class TestCalendar {
 */
 
 /*
-    Q6. Which of these method of Object class is used to obtain class of an
+    Q14. Which of these method of Object class is used to obtain class of an
         object at run time?
 
         Answers:
@@ -360,7 +360,7 @@ public class TestCalendar {
 
 
 /*
-    Q1.What will be the output of the code below?
+    Q15.What will be the output of the code below?
 
         Answers:
 
@@ -391,7 +391,7 @@ public class TestCalendar {
 
 
 /*
-    Q2.What will be the output of the code below?
+    Q16.What will be the output of the code below?
 
         Answers:
 
@@ -417,7 +417,7 @@ public class TestCalendar {
 */
 
 /*
-    Q3.What will be the output of code below?
+    Q17.What will be the output of code below?
 
     Answers
 
@@ -440,7 +440,7 @@ public class TestCalendar {
 */
 
 /*
-    Q4.What will be the output of code below?
+    Q18.What will be the output of code below?
 
     Answers
 
@@ -469,7 +469,7 @@ public class TestCalendar {
 */
 
 /*
-    Q5.What will be the output of code below?
+    Q19.What will be the output of code below?
 
     Answers
 
